@@ -45,4 +45,4 @@
 <minecraft:golden_chestplate>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
 <minecraft:golden_leggings>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
 <minecraft:golden_boots>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
-<minecraft:golden_pickaxe>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY");
+<minecraft:golden_pickaxe>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
