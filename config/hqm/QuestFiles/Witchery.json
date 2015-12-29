@@ -1,0 +1,117 @@
+{
+  "name": "Witchery",
+  "quests": [
+    {
+      "name": "Getting Green",
+      "description": "To get your witch on, one of the first things you should do is get all of the Witchery plants. These you will need for all of those lotions and potions you will be making.",
+      "x": 26,
+      "y": 19,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 21
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:seedsmandrake"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:seedsbelladonna"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:seedssnowbell"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:seedswolfsbane"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:garlic"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:seedsartichoke"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 22
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 21
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 78
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 156
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 69
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unnamed",
+      "description": "Now that you have the seeds and plants you can craft yourself some anointing paste. Use that on a cauldron and you will get your very own witches cauldron.",
+      "x": 56,
+      "y": 21,
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 153
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:cauldron"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}
