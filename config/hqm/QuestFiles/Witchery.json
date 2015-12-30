@@ -13,6 +13,8 @@
       "tasks": [
         {
           "type": "DETECT",
+          "description": "Get punching Grass",
+          "longDescription": "Punch Grass and get the seeds simple enough.",
           "items": [
             {
               "item": {
@@ -48,6 +50,8 @@
         },
         {
           "type": "DETECT",
+          "description": "Get growing",
+          "longDescription": "Grow those seed you just got you will need a few.",
           "items": [
             {
               "item": {
@@ -81,31 +85,359 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:dye",
+          "damage": 15,
+          "amount": 64
+        }
       ]
     },
     {
-      "name": "Unnamed",
+      "name": "Bubble, bubble",
       "description": "Now that you have the seeds and plants you can craft yourself some anointing paste. Use that on a cauldron and you will get your very own witches cauldron.",
       "x": 56,
       "y": 21,
+      "icon": {
+        "id": "witchery:cauldron"
+      },
+      "prerequisites": [
+        "Getting Green"
+      ],
       "tasks": [
         {
           "type": "CRAFT",
+          "description": "Anointing",
           "items": [
             {
               "item": {
                 "id": "witchery:ingredient",
                 "damage": 153
               }
+            },
+            {
+              "item": {
+                "id": "witchery:cauldronbook"
+              }
             }
           ]
         },
         {
           "type": "DETECT",
+          "description": "Witches Special Cauldron",
+          "longDescription": "The regular Minecraft cauldron not witchy enough. Well with the anointing paste you just made. Right click it on your regular Minecraft cauldron to spice it up. You will need it pick it into your inventory to get credit for this one.",
           "items": [
             {
               "item": {
                 "id": "witchery:cauldron"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fumes",
+      "description": "Able to capture the by-products produced in the cooking process, the witches oven is esential in your witching career.",
+      "x": 83,
+      "y": 21,
+      "icon": {
+        "id": "witchery:witchesovenidle"
+      },
+      "prerequisites": [
+        "Bubble, bubble"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Oven (no cooking children)",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:witchesovenidle"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Getting fumes",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 26
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 27
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 28
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 31
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 33
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 32
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mutate all the things ",
+      "description": "Mutandis is a mutagen that is used by witches and warlocks to mutate plants into other species.",
+      "x": 108,
+      "y": 21,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 14
+      },
+      "prerequisites": [
+        "Fumes"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Mutating",
+          "longDescription": "Craft this magical stuff in your witches cauldron",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 14
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Witchery saplings",
+          "longDescription": "Simply use Mutandis on small plants, grass, flowers, saplings, etc. and it will be randomly converted to another plant. Mutating plants is the only way to acquire Rowan, Hawthorn and Alder saplings.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:witchsapling"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:witchsapling",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:witchsapling",
+                "damage": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Special Fumes",
+          "longDescription": "These are the fumes that you could not get before. Now with these now saplings at your disposal you can get those.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 36
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 34
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 35
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Continue Mutating ",
+          "longDescription": "With the mutandis you should probably grab those other plants that popped up in the process. ",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:spanishmoss"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:glintweed"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:embermoss"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Mystery Meat?",
+          "longDescription": "It is little known that mutandis can also be used on meat to mutate it to the other kinds of meat. It even works on rotten flesh. This is a crafting quest so no killing to complete this quest.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:porkchop"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 50
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:beef"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:chicken"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Altar POWA",
+      "description": "The altar when placed with nature around (Sapling, grass, crops, trees, etc.)",
+      "x": 23,
+      "y": 50,
+      "icon": {
+        "id": "witchery:altar"
+      },
+      "prerequisites": [
+        "Mutate all the things "
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "The altar",
+          "longDescription": "The Altar is what will power your future circle magic. It generates power from nature.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:altar"
+              },
+              "required": 6
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Altar Power",
+          "longDescription": "These items pretty important. By placing these items on the altar, you can improve aspects of your altar like charge rate and base energy.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:arthana"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Moar Powa",
+          "longDescription": "A skull placed on the altar is one of the most powerful objects to be placed on it. Diffent skulls are more effective then others but an altar can only have one head on it.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:skull",
+                "damage": 3
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Distilling",
+      "description": "Witchery requires you to distill vapors into new vapors and other magical components. This requires an altar near by and will use a little of its power to run.",
+      "x": 56,
+      "y": 48,
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Microbrew",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:distilleryidle"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "New fumes",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 30
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 17
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 37
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 29
               }
             }
           ]
