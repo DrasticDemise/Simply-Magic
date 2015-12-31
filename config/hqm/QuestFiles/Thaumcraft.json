@@ -1,0 +1,225 @@
+{
+  "name": "Thaumcraft",
+  "quests": [
+    {
+      "name": "Yer a Thaumaturge Harry",
+      "description": "The Thaumonomicon serves as the starting point in Thaumcraft in which accumulated knowledge is stored for later reference. It can be created by tapping a bookcase with a wand.",
+      "x": 23,
+      "y": 14,
+      "icon": {
+        "id": "Thaumcraft:ItemThaumonomicon"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:WandCasting",
+                "nbt": "{cap:\"iron\",rod:\"wood\"}"
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:ItemThaumonomicon"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Research and Discovery",
+      "description": "Those that wish to expand their knowledge will require additional tools, starting with the Research Table which can be crafted by placing two table\u0027s adjacent and tapping it with scribing tools. When accessed, the research table provides information on the available \"research points.\" The Thaumometer allows the user to scan items and blocks in the world for their \"aspects\". Scanning new items or nodes provides additional research points and updates the thaumonomicon to organize each respective item and their aspects.",
+      "x": 60,
+      "y": 14,
+      "icon": {
+        "id": "Thaumcraft:ItemInkwell"
+      },
+      "prerequisites": [
+        "Yer a Thaumaturge Harry"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockTable"
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:ItemInkwell"
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:ItemThaumometer"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemResearchNotes",
+          "damage": 64,
+          "nbt": "{copies:0,color:16761523,complete:1b,hexgrid:[0:{hexq:0b,hexr:0b,aspect:\"lux\",type:2b},1:{hexq:1b,hexr:0b,aspect:\"aer\",type:2b},2:{hexq:-2b,hexr:2b,aspect:\"cognitio\",type:1b},3:{hexq:2b,hexr:0b,aspect:\"sensus\",type:1b},4:{hexq:-1b,hexr:-1b,aspect:\"potentia\",type:2b},5:{hexq:-1b,hexr:1b,aspect:\"ignis\",type:2b},6:{hexq:-1b,hexr:0b,aspect:\"ignis\",type:2b},7:{hexq:0b,hexr:-2b,aspect:\"ordo\",type:1b}],key:\"RESEARCHER1\"}"
+        }
+      ]
+    },
+    {
+      "name": "I Can See Clearly Now",
+      "description": "While the thaumometer is useful for scanning on demand, it can become wearisome holding it all the time. Time for an upgrade.",
+      "x": 124,
+      "y": 13,
+      "icon": {
+        "id": "Thaumcraft:ItemGoggles"
+      },
+      "prerequisites": [
+        "Research and Discovery"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemGoggles"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Node Theory",
+      "description": "While the nodes across the world are extremely useful for vis and research, they are not always in an ideal location. Perhaps additional research will lend a mobile alternative.",
+      "x": 99,
+      "y": 13,
+      "icon": {
+        "id": "Thaumcraft:blockAiry"
+      },
+      "prerequisites": [
+        "Research and Discovery"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:BlockJarNodeItem"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockAiry"
+        }
+      ]
+    },
+    {
+      "name": "Magical Crafting",
+      "description": "Magic appears to be fluidic in form. It is possible to combine the aspects and magic of other items to form a new magical relic, however further preparation is necessary. In order to get started, just smack with a wand!",
+      "x": 78,
+      "y": 57,
+      "icon": {
+        "id": "Thaumcraft:WandCasting",
+        "nbt": "{cap:\"iron\",rod:\"wood\"}"
+      },
+      "prerequisites": [
+        "Research and Discovery"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockTable"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:cauldron"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockTable",
+                "damage": 15
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:blockMetalDevice"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unnamed",
+      "x": 53,
+      "y": 89,
+      "icon": {
+        "id": "Thaumcraft:blockMetalDevice"
+      },
+      "prerequisites": [
+        "Magical Crafting"
+      ]
+    },
+    {
+      "name": "Unnamed1",
+      "x": 121,
+      "y": 90,
+      "icon": {
+        "id": "Thaumcraft:blockTable",
+        "damage": 15
+      },
+      "prerequisites": [
+        "Magical Crafting"
+      ]
+    },
+    {
+      "name": "Unnamed2",
+      "x": 14,
+      "y": 88,
+      "icon": {
+        "id": "Thaumcraft:blockTube",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Unnamed"
+      ]
+    },
+    {
+      "name": "Unnamed3",
+      "x": 83,
+      "y": 123,
+      "icon": {
+        "id": "Thaumcraft:blockStoneDevice",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Unnamed",
+        "Unnamed1"
+      ]
+    }
+  ],
+  "reputationBar": []
+}
