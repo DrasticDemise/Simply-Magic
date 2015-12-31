@@ -37,7 +37,7 @@
 <minecraft:diamond_boots>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
 <minecraft:diamond_pickaxe>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
 <minecraft:diamond_axe>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
-<minecraft:diamond_shove>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
+<minecraft:diamond_shovel>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
 <minecraft:diamond_hoe>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
 
 <minecraft:iron_axe>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
