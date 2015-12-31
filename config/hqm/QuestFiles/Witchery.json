@@ -45,6 +45,13 @@
               "item": {
                 "id": "witchery:seedsartichoke"
               }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 81,
+                "nbt": "{CurrentPage:19}"
+              }
             }
           ]
         },
@@ -157,6 +164,12 @@
               "item": {
                 "id": "witchery:witchesovenidle"
               }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 46
+              }
             }
           ]
         },
@@ -207,7 +220,7 @@
     {
       "name": "Mutate all the things ",
       "description": "Mutandis is a mutagen that is used by witches and warlocks to mutate plants into other species.",
-      "x": 108,
+      "x": 114,
       "y": 21,
       "icon": {
         "id": "witchery:ingredient",
@@ -334,8 +347,8 @@
     {
       "name": "Altar POWA",
       "description": "The altar when placed with nature around (Sapling, grass, crops, trees, etc.)",
-      "x": 23,
-      "y": 50,
+      "x": 114,
+      "y": 54,
       "icon": {
         "id": "witchery:altar"
       },
@@ -359,7 +372,7 @@
         {
           "type": "CRAFT",
           "description": "Altar Power",
-          "longDescription": "These items pretty important. By placing these items on the altar, you can improve aspects of your altar like charge rate and base energy.",
+          "longDescription": "These items pretty important. By placing these items on the altar, you can improve aspects of your altar like charge rate and base energy. The Arthana Extends the altar reach and can be used to get special drop if used to kill a mob",
           "items": [
             {
               "item": {
@@ -398,8 +411,14 @@
     {
       "name": "Distilling",
       "description": "Witchery requires you to distill vapors into new vapors and other magical components. This requires an altar near by and will use a little of its power to run.",
-      "x": 56,
-      "y": 48,
+      "x": 82,
+      "y": 55,
+      "icon": {
+        "id": "witchery:distilleryidle"
+      },
+      "prerequisites": [
+        "Altar POWA"
+      ],
       "tasks": [
         {
           "type": "CRAFT",
@@ -409,12 +428,19 @@
               "item": {
                 "id": "witchery:distilleryidle"
               }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 47
+              }
             }
           ]
         },
         {
           "type": "DETECT",
           "description": "New fumes",
+          "longDescription": "These fumes are made from other fumes distilled in your new distillery. See how that works.",
           "items": [
             {
               "item": {
@@ -443,6 +469,338 @@
           ]
         }
       ]
+    },
+    {
+      "name": "\"It\u0027s like a circle\"",
+      "description": "The next thing we can do to make use some of that altar power is circle magic. ",
+      "x": 82,
+      "y": 89,
+      "icon": {
+        "id": "witchery:chalkheart"
+      },
+      "prerequisites": [
+        "Distilling"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Sidewalk drawings",
+          "longDescription": "Circle magic is conducted by drawing circles in chalk on the ground. Circle can be different sizes and come in different variety. Different magics will require different combinations. The circle magic book will left you know the specifics.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:chalkritual"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:chalkinfernal"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:chalkotherwhere"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:chalkheart"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 48
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Black Cats",
+      "description": "Hopefully you played around with the fun stuff that circle magic has to offer. Well to progress further you are going to need a familiar bound to you. There are quite a few options for familiars however, to gain witches in you coven and to cast certain curses you will need a cat as one. The others you can presue as sides quest to this one.",
+      "x": 144,
+      "y": 89,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 105
+      },
+      "prerequisites": [
+        "Demon Slayer"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Getting bloody",
+          "longDescription": "Well I can\u0027t make sure you bind your cat but distill that heart and get binding, you won\u0027t be able to do some rituals without it.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 80
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Feed yo new cat",
+          "longDescription": "Wait cats DON\u0027T like drinking blood? They prefer milk, hm? Well then make purified milk too then. You did this to yourself.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 105
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "More mutation",
+      "description": "Mutandis is really cool but it can\u0027t mutate everything. So making it a little more extreme is a good idea. Mutandis Extremis can mutate multi-stage plant like cactus. It can also mutate cooked meat.",
+      "x": 144,
+      "y": 55,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 15
+      },
+      "prerequisites": [
+        "Altar POWA"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Extreme Mutating",
+          "longDescription": "This mutandis can mutate more plants can be used to craft a very useful tool. The mutating sprig.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Mutated food?",
+          "longDescription": "Mutandis Extremis can be used to mutate cooked meat who knew.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:cooked_chicken"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:cooked_beef"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:cooked_porkchop"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Fetch the stick",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:mutator"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cauldron Tips",
+      "description": "Not a quest per say but some much useful knowledge. The cauldron crafts some pretty cool stuff however you should know that some recipes use altar power and some use more power then others. That being said you can find in your book you crafted when you crafted anointing paste, that chalk can be used to lower cost of a recipe in the cauldron and can also lower chance to get some bad effects from the cauldron when crafting in it. ",
+      "x": 56,
+      "y": 56,
+      "icon": {
+        "id": "witchery:cauldron"
+      },
+      "prerequisites": [
+        "Bubble, bubble"
+      ]
+    },
+    {
+      "name": "Demon Slayer",
+      "description": "This may seem daunting but you are going to have to fight a demon. You need his heart. I hope you have tried out some circle magic on your own. You can use more then one ritual at once and they will activate in order of how they show up in the book. So a containment ritual and summoning ritual for the demon can be used in conjuction if need be. ",
+      "x": 113,
+      "y": 89,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 23
+      },
+      "prerequisites": [
+        "\"It\u0027s like a circle\""
+      ],
+      "tasks": [
+        {
+          "type": "KILL",
+          "description": "Kill the beast",
+          "longDescription": "Incase the icon doesn\u0027t show thats the demon your killing.",
+          "mobs": [
+            {
+              "name": "New",
+              "mob": "witchery.demon",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "His Beating heart",
+          "longDescription": "Demon hearts can be distilled, used in crafting, or even placed on your altar for even more power.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 23
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Coven",
+      "description": "Its time to create a coven. You must speak with Witchery witches. In order for them to speak with you one of 2 things must happen. Either preform an infussion on yourself or have a cat familiar. Having 6 witches fills a coven. As a note there is a circle magic ritual to summon a coven witch if you are having trouble finding some",
+      "x": 174,
+      "y": 89,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 94
+      },
+      "prerequisites": [
+        "Black Cats",
+        "Infusing"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Quartz sphere",
+          "longDescription": "The quartz sphere is a component for multiple items. The one you can use with your new witches is the seer stone.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 92
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "The all seeing",
+          "longDescription": "The Seer Stone is an essential object to use your new coven. Using this to activate your circle ritual with call your witches to help out in the magic.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 94
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Infusing",
+      "description": "Infusing gives you super natural powers.",
+      "x": 144,
+      "y": 121,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 83
+      },
+      "prerequisites": [
+        "Demon Slayer"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Infusions",
+          "longDescription": "One of these can be used to infuse a player with magical properties. Depending on which you choose you will have access to different abilities and draw different spells with your wand.... i mean mystic branch",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 42
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 43
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 44
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 45
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 49,
+                "nbt": "{CurrentPage:0}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "With this you can cast spells like a real witch/warlock. consult the symbology book for spells.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 83
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:mysticbranch"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 107,
+                "nbt": "{CurrentPage:0}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sprig uses",
+      "description": "Leach chest etc.",
+      "x": 174,
+      "y": 54
+    },
+    {
+      "name": "Mutating, toads, owls familiars",
+      "x": 200,
+      "y": 52
     }
   ],
   "reputationBar": []
