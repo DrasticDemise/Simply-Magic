@@ -520,14 +520,14 @@
     {
       "name": "Black Cats",
       "description": "Hopefully you played around with the fun stuff that circle magic has to offer. Well to progress further you are going to need a familiar bound to you. There are quite a few options for familiars however, to gain witches in you coven and to cast certain curses you will need a cat as one. The others you can presue as sides quest to this one.",
-      "x": 144,
-      "y": 89,
+      "x": 29,
+      "y": 122,
       "icon": {
         "id": "witchery:ingredient",
         "damage": 105
       },
       "prerequisites": [
-        "Demon Slayer"
+        "Toil and trouble"
       ],
       "tasks": [
         {
@@ -634,7 +634,7 @@
     {
       "name": "Demon Slayer",
       "description": "This may seem daunting but you are going to have to fight a demon. You need his heart. I hope you have tried out some circle magic on your own. You can use more then one ritual at once and they will activate in order of how they show up in the book. So a containment ritual and summoning ritual for the demon can be used in conjuction if need be. ",
-      "x": 113,
+      "x": 56,
       "y": 89,
       "icon": {
         "id": "witchery:ingredient",
@@ -675,8 +675,8 @@
     {
       "name": "Coven",
       "description": "Its time to create a coven. You must speak with Witchery witches. In order for them to speak with you one of 2 things must happen. Either preform an infussion on yourself or have a cat familiar. Having 6 witches fills a coven. As a note there is a circle magic ritual to summon a coven witch if you are having trouble finding some",
-      "x": 174,
-      "y": 89,
+      "x": 29,
+      "y": 154,
       "icon": {
         "id": "witchery:ingredient",
         "damage": 94
@@ -717,14 +717,14 @@
     {
       "name": "Infusing",
       "description": "Infusing gives you super natural powers.",
-      "x": 144,
-      "y": 121,
+      "x": 56,
+      "y": 122,
       "icon": {
         "id": "witchery:ingredient",
         "damage": 83
       },
       "prerequisites": [
-        "Demon Slayer"
+        "Toil and trouble"
       ],
       "tasks": [
         {
@@ -792,15 +792,630 @@
       ]
     },
     {
-      "name": "Sprig uses",
-      "description": "Leach chest etc.",
-      "x": 174,
-      "y": 54
+      "name": "Sprig power",
+      "description": "The mutating sprig can be used to mutate multiple object in the world into one new object. Ill try to talk you through the Items and blocks you can make through this. ",
+      "x": 144,
+      "y": 21,
+      "icon": {
+        "id": "witchery:leechchest"
+      },
+      "prerequisites": [
+        "More mutation"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Leech Chest",
+          "longDescription": "This block is created by first diging a 3x3 cross in the ground. Now dig one block deeper in each of the 4 ends of the cross. Fill those 4 new 1x1 holes with water. Place a trapped chest in the center of the water(will be one block above the water. Now across from the 4 walls of the chest place 1 vine. Hit the chest with the mutating sprig and you have the leech chest. This block will store blood samples from the last 3 players to open it. These samples can be removed with a taglock kit.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:leechchest"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Blood Poppy",
+          "longDescription": "For this one make the same cross dug into the ground. Dig one block deeper into the center of the cross. Fill that 1x1 with water. Place a leach chest above the water. Place 4 poppies next to the chest and activate with the mutating sprig. These poppies will store the blood of one player that walks over it. Blood can be removed with taglock. Flower must be broken with boline or it will be destroyed.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:bloodrose"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Grassper",
+          "longDescription": "Create this the same way you created the blood poppies but instead of a leech chest use a regular chest and instead of poppies use short grass. Grassper can have items place in them to hold them for circle magic or other mutations with the mutating sprig.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:grassper"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Critter Snare",
+          "longDescription": "This is made similar to the Grassper and blood poppies. Difference is where the leech chest/chest was you place a cobweb with a zombie trapped in it and where the poppies/short grass was you place alder sapplings. Use the mutating spring on the cobweb and you are set. These Plants can catch small creatures like Silverfish, bats, and small slimes. ",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:crittersnare"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Ender Bramble",
+          "longDescription": "To get these dig a 3x3 hole. Within this hole dig a 3x3 cross. fill this with watter. Then place dirt back in the center of that. In the 4 corners of the 3x3 place a grassper plant with an ender pearl in it. Then between those grasspers place a Spanish moss.(4 total). Then place sugarcane in the very middle. You can slack up to 16 high. Click the lowest most sugarcane with your mutating sprig and your done. Anything that walks into ender Bramble will be teleported randomly within 500 blocks away. ",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:bramble"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Wild Bramble",
+          "longDescription": "Wild bramble is very similar to craft as ender bramble. Main difference it replace the sugarcane on dirt with cactus on sand(up to 4 high). Also in the grasspers instead of ender pearls place 2 bonemeal and 2 blaze powered. Wild bramble damages any creature or item that passes through them. Breaking them will cause them to spread and the only way to avoid that is to break with a gold axe.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:bramble",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ]
     },
     {
-      "name": "Mutating, toads, owls familiars",
-      "x": 200,
-      "y": 52
+      "name": "Mutating mobs",
+      "description": "The sprig can be used to mutate living creatures to get new familiars to bind to yourself. Familiars like cats giving you different benifits can allow different circle magic to be preformed.",
+      "x": 144,
+      "y": 89,
+      "icon": {
+        "id": "witchery:crittersnare",
+        "damage": 1
+      },
+      "prerequisites": [
+        "More mutation",
+        "\"It\u0027s like a circle\""
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Toad",
+          "longDescription": "Toads can be created from an ocelot or cat. Dig a 3x3 into the ground. Dig one block more down in the center. Place water in that 1x1 hole and put a cobweb above that with the cat trapped in it. In the 4 corners place grasspers (3 with mutandis extremis 1 with a charged attuned stone). Place 4 critter snares with small slimes trapped between the grasspers.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:crittersnare",
+                "damage": 3
+              },
+              "required": 4
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Owl",
+          "longDescription": "Owls are created much like Toads/ They are mutated from Wolves or dogs. Changes from the toad are instead of critter snares with small slimes use ones with bats in them.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:crittersnare",
+                "damage": 1
+              },
+              "required": 4
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Parasytic Louse",
+          "longDescription": "The parasytic louse is an interesting on. Its set up is much like that of the ender bramble. Dig a 3x3 hole into the ground. Then dig a cross in that and fill the cross with water. Place a block back in the center of that cross. Four corners get grasspers 2 with mutandis 1 with tongue of dog and one with charged attuned stone. over the water goes lily pads. and in the center goes the critter snare with a silverfish in it.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:louse"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AROOOOOOOOOOO!!!!!!!!",
+      "description": "Believe it or not, you know enough to become a wolf/werewolf",
+      "x": 29,
+      "y": 185,
+      "icon": {
+        "id": "witchery:wolfhead"
+      },
+      "prerequisites": [
+        "Coven"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Curse of the wolf",
+          "longDescription": "These are the stuff you will need to get together to become a werewolf. Also have your circle magic book on you as there are special requirement involved such as altar power, full moon, and your seer stone to have your witches help out.. ",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:taglockkit"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 31
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 156
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:wolfhead",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 71
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:diamond"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 94
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 48
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Toil and trouble",
+      "description": "The kettle is a fundamental part of being a witch. It is where you will make brews and oils.",
+      "x": 29,
+      "y": 90,
+      "icon": {
+        "id": "witchery:kettle"
+      },
+      "prerequisites": [
+        "Demon Slayer"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Kettle",
+          "longDescription": "In addition to crafting the kettle im making you craft witches\u0027 hat and robes. These will give you a chance to make extra brews. You will need a spining wheel for each piece but ill mention more about it later just use NEI and craft it ill ask you to have it later.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:kettle"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:witchhat"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:witchrobe"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Let me let me upgrade",
+          "longDescription": "One of the first thing you should craft in the kettle is redstone soup. You can use it to fill your chalice you have on the altar and make it even better.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 40
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "I vant to suck your blood",
+      "description": "For those brave enough and who can stomach the horror, you can become a vampire. This quest requires no others however as it is difficult gameplay wise i suggest you get geared up in one way or another. I also recommed you progress in witchery at least a little.",
+      "x": 59,
+      "y": 154,
+      "icon": {
+        "id": "witchery:coffin"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Observations",
+          "longDescription": "Your going to need this book to figure out how to become a vampire. This i a detection quest because you don\u0027t HAVE to craft it. It can be found in some villages.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:vampirebook"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Adding the missing page",
+          "longDescription": "This version of the book is made by crafting your observations of the immortal with a torn page. This can be gotten from monsters or from the same place you can find the book.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:vampirebook",
+                "damage": 9,
+                "nbt": "{pageStack:[0:\"ritual1\",1:\"ritual2\",2:\"ritual3\",3:\"ritual4\",4:\"ritual5\",5:\"transfix\"]}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The unholy deed",
+      "description": "Now its time to do the deed. You will need to kill a chicken over the ritual you will set up.",
+      "x": 87,
+      "y": 155,
+      "icon": {
+        "id": "minecraft:skull"
+      },
+      "prerequisites": [
+        "I vant to suck your blood"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Gob and boline",
+          "longDescription": "Boline to kill and a goblet to catch the blood",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:glassgoblet"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:boline"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Ritual materials",
+          "longDescription": "All the items need to set up the ritual area follow the diagram in the observations of an immortal book.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:skull"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:redstone"
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "minecraft:string"
+              },
+              "required": 24
+            },
+            {
+              "item": {
+                "id": "minecraft:torch"
+              },
+              "required": 4
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Slice the chicken",
+          "longDescription": "Kill the chicken over the skull with the boline. Have the goblet in your hot bar. It can be any time of day. Now you need to pour the goblet on the skull however it needs to be night to do that part.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:glassgoblet",
+                "damage": 1,
+                "nbt": "{WITCBloodUUID:\"__chicken\",WITCBloodName:\"Chicken\"}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Do as you are told",
+      "description": "Now with your follower in tow, listen to you new masters instructions",
+      "x": 86,
+      "y": 123,
+      "icon": {
+        "id": "witchery:glassgoblet",
+        "damage": 1
+      },
+      "prerequisites": [
+        "The unholy deed"
+      ],
+      "tasks": [
+        {
+          "type": "LOCATION",
+          "description": "Go to the nether",
+          "longDescription": "Enter the nether with your new follower",
+          "locations": [
+            {
+              "name": "New",
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "dim": -1,
+              "radius": -1
+            }
+          ]
+        },
+        {
+          "type": "KILL",
+          "description": "Kill Lillith",
+          "longDescription": "lead her into lava and wait. She will turn into lillith. Now kill her.",
+          "mobs": [
+            {
+              "name": "New",
+              "mob": "witchery.lilith",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Lillith blood",
+          "longDescription": "When the lillith is killed she you are worthy and now have two options. Magic or death. For magic she ask that you give her an item to enchant. This can be done multiple times and is usually a max enchant and really good. Death option you give her your glass goblet and she will fill it with her blood. Drink it and you are now a vampire.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:glassgoblet",
+                "damage": 1,
+                "nbt": "{WITCBloodUUID:\"__lilith\",WITCBloodName:\"Lilith\"}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Your first kill",
+      "description": "In the observations of the immortal once you add the torn page you will learn each think you have to do to lvl up your powers. Each paragraph is a new lvl. Read that if you want because i am about to spoil it for you. ",
+      "x": 117,
+      "y": 123,
+      "icon": {
+        "id": "ThaumicHorizons:infusionCheat",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Do as you are told"
+      ],
+      "tasks": [
+        {
+          "type": "KILL",
+          "description": "Feed off a villager",
+          "longDescription": "You will gain a level by getting your new blood bar ont the left o the screen full. You can access this power by pressing 1 to cycle through vampire powers to the left of hotbar. You gain the transfix ability after completing this task.",
+          "mobs": [
+            {
+              "name": "New",
+              "mob": "Villager",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vampire lvl3",
+      "description": "Your Next lvl is gained by draining half of a villager/players blood while they are under your transfix ability. Rememer to cycle powers using 1 key. Once you complete this all your attacks will get extra knockback.",
+      "x": 143,
+      "y": 124,
+      "prerequisites": [
+        "Your first kill"
+      ]
+    },
+    {
+      "name": "Lvl4",
+      "description": "Now you must drink blood from villagers for 4 nights. This new lvl you gain gives you a speed effect you can now activate at the cost of blood.",
+      "x": 141,
+      "y": 155,
+      "prerequisites": [
+        "Vampire lvl3"
+      ]
+    },
+    {
+      "name": "Lvl5",
+      "description": "For this quest you are going to take some damage so if you have not already craft vampire gear. There is men and women versions so i won\u0027t make it required to finish this quest. Once you finish this task your new vampire lvl will allow you to not die instantly in sun.",
+      "x": 171,
+      "y": 155,
+      "prerequisites": [
+        "Lvl4"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Bloody wool",
+          "longDescription": "In order to get blood-stained wool, with blood in your blood pool click wool with a bone needle",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:bloodedwool"
+              },
+              "required": 29
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Cane Sword",
+          "longDescription": "The cane sword is a really neat vampire tool. Kills made with it will be stored in its internal resevoir. While it is sheathed you can use its blood to fill your own blood pool.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:canesword"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Harnessing sun power",
+          "longDescription": "The way to become a lvl 5 vampire is to make sun grenades and get hit by to of them. Sun grenades are created by placing a quartz sphere in a sun collector. The sun collector needs to be near a daylight sensor. I only required you have one of each however you could be more effecient by placing more then one sun collector near a daylight sensor.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:daylight_detector"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:daylightcollector"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:sungrenade"
+              },
+              "required": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lvl6",
+      "description": "For this lvl you must kill 20 blazes. Afther this your new vampire lvl will allow toy to break stone instantly whn sneak clicking with an empty hand.",
+      "x": 199,
+      "y": 155,
+      "prerequisites": [
+        "Lvl5"
+      ],
+      "tasks": [
+        {
+          "type": "KILL",
+          "description": "Death to the men of fire",
+          "longDescription": "Kill 20 blazes ",
+          "mobs": [
+            {
+              "name": "New",
+              "mob": "Blaze",
+              "kills": 20,
+              "exact": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lvl7",
+      "description": "Now you must visit lillith again. This time to request your freedom. One you do this you gain bat swarm ability, transform into a swarm or bad and get creative flight.",
+      "x": 199,
+      "y": 187,
+      "prerequisites": [
+        "Lvl6"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Rebirth",
+          "longDescription": "Repeat the same ritual as before and kill lillith again. This time give lillith her favorite flower. ",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:glassgoblet",
+                "damage": 1,
+                "nbt": "{WITCBloodUUID:\"__chicken\",WITCBloodName:\"Chicken\"}"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:red_flower"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lvl8",
+      "description": "To become a lvl 8 vampire you must fly from one village to another. A sound will chime once a village has been recognized as visited. With this level up Mesmerized villagers will now follow you. ",
+      "x": 173,
+      "y": 186,
+      "prerequisites": [
+        "Lvl7"
+      ]
+    },
+    {
+      "name": "Lvl9",
+      "description": "To become a vampire of lvl 9 you must trap 5 villagers in cages as shown in your observations on an immortal book. Then you must mesemerize and drink each ones blood to half. You must not damage them by going over half. At your new level you will be able to create vampires with your blood.",
+      "x": 141,
+      "y": 187,
+      "prerequisites": [
+        "Lvl8"
+      ]
+    },
+    {
+      "name": "Lvl10",
+      "description": "Your final vampire lvl is given once you turn a villager into a vampire. To do this you must have a villager near a coffin. Drain the villagers blood all the way. To prevent killing the villager you can use regen potion on them.(their blood is not tied to their health).Now with their blood drained fill a glass goblet with your blood  mesmerize him and give him your blood to drink. Now you have completely leveled up and have blood power explained in the next quest.",
+      "x": 113,
+      "y": 183,
+      "prerequisites": [
+        "Lvl9"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:coffin"
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "reputationBar": []
