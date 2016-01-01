@@ -74,13 +74,13 @@
     {
       "name": "I Can See Clearly Now",
       "description": "While the thaumometer is useful for scanning on demand, it can become wearisome holding it all the time. Time for an upgrade.",
-      "x": 124,
-      "y": 13,
+      "x": 103,
+      "y": 29,
       "icon": {
         "id": "Thaumcraft:ItemGoggles"
       },
       "prerequisites": [
-        "Research and Discovery"
+        "Table Crafting"
       ],
       "tasks": [
         {
@@ -99,8 +99,8 @@
     {
       "name": "Node Theory",
       "description": "While the nodes across the world are extremely useful for vis and research, they are not always in an ideal location. Perhaps additional research will lend a mobile alternative.",
-      "x": 99,
-      "y": 13,
+      "x": 79,
+      "y": 37,
       "icon": {
         "id": "Thaumcraft:blockAiry"
       },
@@ -129,8 +129,8 @@
     {
       "name": "Magical Crafting",
       "description": "Magic appears to be fluidic in form. It is possible to combine the aspects and magic of other items to form a new magical relic, however further preparation is necessary. In order to get started, just smack with a wand!",
-      "x": 78,
-      "y": 57,
+      "x": 58,
+      "y": 56,
       "icon": {
         "id": "Thaumcraft:WandCasting",
         "nbt": "{cap:\"iron\",rod:\"wood\"}"
@@ -173,51 +173,303 @@
       ]
     },
     {
-      "name": "Unnamed",
-      "x": 53,
-      "y": 89,
+      "name": "Crucible Crafting",
+      "description": "The crucible is an extremely useful block that can melt items into their essentia counterparts and become reformed at any given moment. Try it out!",
+      "x": 58,
+      "y": 106,
       "icon": {
         "id": "Thaumcraft:blockMetalDevice"
       },
       "prerequisites": [
         "Magical Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemResearchNotes",
+          "damage": 64,
+          "nbt": "{copies:0,color:9896128,complete:1b,hexgrid:[0:{hexq:0b,hexr:0b,aspect:\"limus\",type:2b},1:{hexq:0b,hexr:1b,aspect:\"aqua\",type:2b},2:{hexq:1b,hexr:0b,aspect:\"limus\",type:2b},3:{hexq:-2b,hexr:2b,aspect:\"praecantatio\",type:1b},4:{hexq:2b,hexr:0b,aspect:\"aqua\",type:1b},5:{hexq:-1b,hexr:2b,aspect:\"potentia\",type:2b},6:{hexq:-2b,hexr:1b,aspect:\"sano\",type:2b},7:{hexq:-1b,hexr:1b,aspect:\"ordo\",type:2b},8:{hexq:-1b,hexr:0b,aspect:\"victus\",type:2b},9:{hexq:0b,hexr:-1b,aspect:\"aqua\",type:2b},10:{hexq:0b,hexr:-2b,aspect:\"limus\",type:1b}],key:\"DISTILESSENTIA\"}"
+        }
       ]
     },
     {
-      "name": "Unnamed1",
-      "x": 121,
-      "y": 90,
+      "name": "Table Crafting",
+      "description": "The vis from the wand can be used with mundane items to create something new and repurposed! While there isn\u0027t much you can craft at the moment, further research will lend its uses.",
+      "x": 108,
+      "y": 58,
       "icon": {
         "id": "Thaumcraft:blockTable",
         "damage": 15
       },
       "prerequisites": [
         "Magical Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockCosmeticSolid",
+                "damage": 6
+              }
+            }
+          ]
+        }
       ]
     },
     {
-      "name": "Unnamed2",
-      "x": 14,
-      "y": 88,
+      "name": "Crystal Essence",
+      "description": "Those who wish to craft without waste will often find themselves hard-pressed to find an item composed of a sole aspect. To solve this, thaumaturges have discovered a way to crystallize essentia, useful for alchemy crafts.",
+      "x": 23,
+      "y": 80,
       "icon": {
         "id": "Thaumcraft:blockTube",
         "damage": 7
       },
       "prerequisites": [
-        "Unnamed"
+        "Crucible Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockTube",
+                "damage": 7
+              }
+            }
+          ]
+        }
       ]
     },
     {
-      "name": "Unnamed3",
-      "x": 83,
-      "y": 123,
+      "name": "Infusion Magic",
+      "description": "Infusion crafting is the most complex form of crafting, but the items that can be created are often more powerful than their table or crucible parts. The basis of infusion crafting requires various amounts of liquid essentia as well as a small bit of setup. This powerful form of crafting is not without risks, however. Some infusions can cause adverse reactions to the matrix and the items around it.",
+      "x": 128,
+      "y": 119,
       "icon": {
         "id": "Thaumcraft:blockStoneDevice",
         "damage": 2
       },
       "prerequisites": [
-        "Unnamed",
-        "Unnamed1"
+        "Crucible Crafting",
+        "Table Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockStoneDevice",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockJar",
+          "amount": 3
+        },
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 13,
+          "amount": 3
+        },
+        {
+          "id": "Thaumcraft:ItemResearchNotes",
+          "damage": 64,
+          "nbt": "{copies:0,color:9896128,complete:1b,hexgrid:[0:{hexq:-2b,hexr:2b,aspect:\"potentia\",type:2b},1:{hexq:-3b,hexr:3b,aspect:\"praecantatio\",type:1b},2:{hexq:-1b,hexr:1b,aspect:\"ordo\",type:2b},3:{hexq:-1b,hexr:0b,aspect:\"ordo\",type:2b},4:{hexq:3b,hexr:-3b,aspect:\"pannus\",type:1b},5:{hexq:1b,hexr:-2b,aspect:\"pannus\",type:2b},6:{hexq:0b,hexr:0b,aspect:\"potentia\",type:2b},7:{hexq:0b,hexr:-1b,aspect:\"instrumentum\",type:2b},8:{hexq:2b,hexr:-2b,aspect:\"instrumentum\",type:2b}],key:\"SPELL_CLOTH\"}"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Botania:mushroom",
+          "amount": 3
+        },
+        {
+          "id": "Botania:mushroom",
+          "damage": 1,
+          "amount": 3
+        },
+        {
+          "id": "Botania:mushroom",
+          "damage": 2,
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Additional Research Points",
+      "description": "There may be a time in which research points have been used up and there are few items left to scan. However, fear not! There are many ways in which you can obtain additional research points. The most common method is to use the Deconstruction Table. Items or blocks can be broken down with a chance to provide a single research point. One alternative is the consumption of knowledge fragments which can provide a burst of primal aspects, or the searching of nodes around the world which often provide additional primal aspects.",
+      "x": 21,
+      "y": 48,
+      "icon": {
+        "id": "Thaumcraft:blockTable",
+        "damage": 14
+      },
+      "prerequisites": [
+        "Research and Discovery"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 9
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:blockTable",
+                "damage": 14
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 9,
+          "amount": 9
+        }
+      ]
+    },
+    {
+      "name": "Block Infusion",
+      "x": 176,
+      "y": 20,
+      "icon": {
+        "id": "thaumicinfusion:FocusInfusion"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thaumicinfusion:FocusInfusion"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Animal Infusion",
+      "x": 242,
+      "y": 25,
+      "icon": {
+        "id": "ThaumicHorizons:modMatrix"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ThaumicHorizons:modMatrix"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Totems of the Dark",
+      "description": "These dark totems are rather mysterious...perhaps studying them further will provide answers.",
+      "x": 151,
+      "y": 87,
+      "icon": {
+        "id": "ThaumicTinkerer:enchanter"
+      },
+      "prerequisites": [
+        "Infusion Magic"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockCosmeticSolid"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "More enchantments await.",
+          "items": [
+            {
+              "item": {
+                "id": "ThaumicTinkerer:enchanter"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockCosmeticSolid",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "name": "Golemancy",
+      "description": "Those that delve into the art of golemancy will find their lives a bit less lonely. These tiny automatons can perform mundane and boring tasks when given a single ring of a bell! And a core of course.",
+      "x": 20,
+      "y": 122,
+      "icon": {
+        "id": "Thaumcraft:ItemGolemPlacer"
+      },
+      "prerequisites": [
+        "Crucible Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemGolemPlacer"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:GolemBell"
+        },
+        {
+          "id": "Thaumcraft:GolemBell"
+        }
       ]
     }
   ],
