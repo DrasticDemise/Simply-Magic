@@ -116,6 +116,7 @@
         {
           "type": "CRAFT",
           "description": "Anointing",
+          "longDescription": "Craft this paste",
           "items": [
             {
               "item": {
@@ -651,6 +652,9 @@
           "mobs": [
             {
               "name": "New",
+              "icon": {
+                "id": "Quadrum:demonIcon"
+              },
               "mob": "witchery.demon",
               "kills": 1,
               "exact": false
@@ -682,8 +686,8 @@
         "damage": 94
       },
       "prerequisites": [
-        "Black Cats",
-        "Infusing"
+        "Infusing",
+        "Black Cats"
       ],
       "tasks": [
         {
@@ -937,8 +941,8 @@
     {
       "name": "AROOOOOOOOOOO!!!!!!!!",
       "description": "Believe it or not, you know enough to become a wolf/werewolf",
-      "x": 29,
-      "y": 185,
+      "x": 56,
+      "y": 187,
       "icon": {
         "id": "witchery:wolfhead"
       },
@@ -1053,7 +1057,7 @@
     {
       "name": "I vant to suck your blood",
       "description": "For those brave enough and who can stomach the horror, you can become a vampire. This quest requires no others however as it is difficult gameplay wise i suggest you get geared up in one way or another. I also recommed you progress in witchery at least a little.",
-      "x": 59,
+      "x": 56,
       "y": 154,
       "icon": {
         "id": "witchery:coffin"
@@ -1090,8 +1094,8 @@
     {
       "name": "The unholy deed",
       "description": "Now its time to do the deed. You will need to kill a chicken over the ritual you will set up.",
-      "x": 87,
-      "y": 155,
+      "x": 86,
+      "y": 154,
       "icon": {
         "id": "minecraft:skull"
       },
@@ -1182,6 +1186,9 @@
           "locations": [
             {
               "name": "New",
+              "icon": {
+                "id": "Quadrum:netheritem"
+              },
               "x": 0,
               "y": 0,
               "z": 0,
@@ -1197,6 +1204,9 @@
           "mobs": [
             {
               "name": "New",
+              "icon": {
+                "id": "Quadrum:lilith"
+              },
               "mob": "witchery.lilith",
               "kills": 1,
               "exact": false
@@ -1222,11 +1232,10 @@
     {
       "name": "Your first kill",
       "description": "In the observations of the immortal once you add the torn page you will learn each think you have to do to lvl up your powers. Each paragraph is a new lvl. Read that if you want because i am about to spoil it for you. ",
-      "x": 117,
-      "y": 123,
+      "x": 116,
+      "y": 124,
       "icon": {
-        "id": "ThaumicHorizons:infusionCheat",
-        "damage": 3
+        "id": "Quadrum:BloodDropIcon"
       },
       "prerequisites": [
         "Do as you are told"
@@ -1248,30 +1257,39 @@
       ]
     },
     {
-      "name": "Vampire lvl3",
+      "name": "Frozen at the sight of you",
       "description": "Your Next lvl is gained by draining half of a villager/players blood while they are under your transfix ability. Rememer to cycle powers using 1 key. Once you complete this all your attacks will get extra knockback.",
-      "x": 143,
-      "y": 124,
+      "x": 144,
+      "y": 123,
+      "icon": {
+        "id": "Quadrum:Tranfixicon"
+      },
       "prerequisites": [
         "Your first kill"
       ]
     },
     {
-      "name": "Lvl4",
+      "name": "Four nights of thirst",
       "description": "Now you must drink blood from villagers for 4 nights. This new lvl you gain gives you a speed effect you can now activate at the cost of blood.",
-      "x": 141,
+      "x": 144,
       "y": 155,
+      "icon": {
+        "id": "minecraft:clock"
+      },
       "prerequisites": [
-        "Vampire lvl3"
+        "Frozen at the sight of you"
       ]
     },
     {
-      "name": "Lvl5",
+      "name": "Your blood will boil",
       "description": "For this quest you are going to take some damage so if you have not already craft vampire gear. There is men and women versions so i won\u0027t make it required to finish this quest. Once you finish this task your new vampire lvl will allow you to not die instantly in sun.",
       "x": 171,
       "y": 155,
+      "icon": {
+        "id": "witchery:sungrenade"
+      },
       "prerequisites": [
-        "Lvl4"
+        "Four nights of thirst"
       ],
       "tasks": [
         {
@@ -1325,12 +1343,15 @@
       ]
     },
     {
-      "name": "Lvl6",
+      "name": "Men of pure fire",
       "description": "For this lvl you must kill 20 blazes. Afther this your new vampire lvl will allow toy to break stone instantly whn sneak clicking with an empty hand.",
       "x": 199,
       "y": 155,
+      "icon": {
+        "id": "Quadrum:Blazeicon"
+      },
       "prerequisites": [
-        "Lvl5"
+        "Your blood will boil"
       ],
       "tasks": [
         {
@@ -1340,6 +1361,9 @@
           "mobs": [
             {
               "name": "New",
+              "icon": {
+                "id": "Quadrum:Blazeicon"
+              },
               "mob": "Blaze",
               "kills": 20,
               "exact": false
@@ -1349,12 +1373,15 @@
       ]
     },
     {
-      "name": "Lvl7",
+      "name": "Back to where it all began",
       "description": "Now you must visit lillith again. This time to request your freedom. One you do this you gain bat swarm ability, transform into a swarm or bad and get creative flight.",
       "x": 199,
       "y": 187,
+      "icon": {
+        "id": "minecraft:red_flower"
+      },
       "prerequisites": [
-        "Lvl6"
+        "Men of pure fire"
       ],
       "tasks": [
         {
@@ -1379,30 +1406,39 @@
       ]
     },
     {
-      "name": "Lvl8",
+      "name": "Explore your new domain",
       "description": "To become a lvl 8 vampire you must fly from one village to another. A sound will chime once a village has been recognized as visited. With this level up Mesmerized villagers will now follow you. ",
-      "x": 173,
-      "y": 186,
-      "prerequisites": [
-        "Lvl7"
-      ]
-    },
-    {
-      "name": "Lvl9",
-      "description": "To become a vampire of lvl 9 you must trap 5 villagers in cages as shown in your observations on an immortal book. Then you must mesemerize and drink each ones blood to half. You must not damage them by going over half. At your new level you will be able to create vampires with your blood.",
-      "x": 141,
+      "x": 170,
       "y": 187,
+      "icon": {
+        "id": "Quadrum:villageicon"
+      },
       "prerequisites": [
-        "Lvl8"
+        "Back to where it all began"
       ]
     },
     {
-      "name": "Lvl10",
-      "description": "Your final vampire lvl is given once you turn a villager into a vampire. To do this you must have a villager near a coffin. Drain the villagers blood all the way. To prevent killing the villager you can use regen potion on them.(their blood is not tied to their health).Now with their blood drained fill a glass goblet with your blood  mesmerize him and give him your blood to drink. Now you have completely leveled up and have blood power explained in the next quest.",
-      "x": 113,
-      "y": 183,
+      "name": "Put them in cages",
+      "description": "To become a vampire of lvl 9 you must trap 5 villagers in cages as shown in your observations on an immortal book. Then you must mesemerize and drink each ones blood to half. You must not damage them by going over half. At your new level you will be able to create vampires with your blood.",
+      "x": 144,
+      "y": 187,
+      "icon": {
+        "id": "Quadrum:TrappedVillagericon"
+      },
       "prerequisites": [
-        "Lvl9"
+        "Explore your new domain"
+      ]
+    },
+    {
+      "name": "Make them one of us",
+      "description": "Your final vampire lvl is given once you turn a villager into a vampire. To do this you must have a villager near a coffin. Drain the villagers blood all the way. To prevent killing the villager you can use regen potion on them.(their blood is not tied to their health).Now with their blood drained fill a glass goblet with your blood  mesmerize him and give him your blood to drink. Now you have completely leveled up and have blood power explained in the next quest.",
+      "x": 116,
+      "y": 187,
+      "icon": {
+        "id": "Quadrum:vampireVillagerIcon"
+      },
+      "prerequisites": [
+        "Put them in cages"
       ],
       "tasks": [
         {
@@ -1411,6 +1447,216 @@
             {
               "item": {
                 "id": "witchery:coffin"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wolf Level up",
+      "description": "You shall now learn how to control your power and become even more powerful.",
+      "x": 29,
+      "y": 187,
+      "icon": {
+        "id": "witchery:wolfaltar"
+      },
+      "prerequisites": [
+        "AROOOOOOOOOOO!!!!!!!!"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Pray to your gods",
+          "longDescription": "Craft this altar and please the gods you shall be rewarded. Curently you are a wolve at night and a man during the day.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:wolfaltar"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Get a grip",
+          "longDescription": "The gods asked for gold. Once you have done with for the gods you can get another moon charm the same way you got the first. THe do have durability. With this charm you can prevent forced form change and use the charm to change to wolf/human form at will.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:mooncharm"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Kill for their meat.",
+          "longDescription": "Killing sheep in Wolf or Wolfman Form can result in Raw Lambchops being dropped. Curently you don\u0027t have access to the wolfman form. the next tasks the gods ask are you to kill 30 of the weakest pray can bring their meat. Completing this gives you the ability to dig earth your you bare claws while a wolf. Sometimes you will find bones.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 158
+              },
+              "required": 30
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Cut out their tongue",
+          "longDescription": "The gods now ask that you prove you are an alpha. You must kill wolves/hellhounds and get their tongues. Appon completing this kills from Wolf or Wolfman form will now be eaten, replenishing hunger loss",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 25
+              },
+              "required": 10
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Call the horn one.",
+          "longDescription": "You have spoke to the gods ones more and they have given you a horn. Call the huntsman forth and slay him they say.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:hornofthehunt"
+              }
+            }
+          ]
+        },
+        {
+          "type": "KILL",
+          "description": "Now slay them",
+          "longDescription": "You have called him now kill him. Once complete speak to the gods and they will grant you new form. You can now additionally transform to Wolfman Form using a Moon Charm (while sneaking).",
+          "mobs": [
+            {
+              "name": "New",
+              "icon": {
+                "id": "Quadrum:huntsmanIcon"
+              },
+              "mob": "witchery.hornedHuntsman",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        },
+        {
+          "type": "KILL",
+          "description": "strike down",
+          "longDescription": "You must now kill 10 things in wolf/wolfman form with crits. After talking to the gods once act is complete they will let you know that hitting while sprinting in Wolf of Wolfman form will now cause additional damage (basically a crit)",
+          "mobs": [
+            {
+              "name": "New",
+              "icon": {
+                "id": "Quadrum:ZombieIcon"
+              },
+              "mob": "Zombie",
+              "kills": 10,
+              "exact": false
+            }
+          ]
+        },
+        {
+          "type": "LOCATION",
+          "description": "Now howl",
+          "longDescription": "Let your voices be heard. Howl in 16 locations. Afting doing this Wolfman Form gains the ability to sneak use (shift right-click) while looking straight up to howl and stun nearby creatures",
+          "locations": [
+            {
+              "name": "New",
+              "icon": {
+                "id": "Quadrum:moonicon"
+              },
+              "x": -7,
+              "y": 65,
+              "z": -196,
+              "dim": 0,
+              "radius": -1
+            }
+          ]
+        },
+        {
+          "type": "LOCATION",
+          "description": "Make them follow you",
+          "longDescription": "Now they ask that you bend weaker wolves to your will. While in wolf form right click wild wolves to tame them. Once complete you gain a new ability, Wolf Form gains the ability to sneak use (shift right-click) while looking straight up to howl to summon temporary wolf allies.",
+          "locations": []
+        },
+        {
+          "type": "KILL",
+          "description": "Underworld pigs",
+          "longDescription": "Now to the nether. Kill 30 pigmen as wolfman. Gods sharpen your claws and now Wolfman Form gains the ability to rend armor.",
+          "mobs": [
+            {
+              "name": "New",
+              "mob": "PigZombie",
+              "kills": 30,
+              "exact": false
+            }
+          ]
+        },
+        {
+          "type": "KILL",
+          "description": "village people",
+          "longDescription": "Now you must kill a villager or player with wolfman form. I require a villager. Once this act is complete your training is done. The gods gift you will the ability to spread your curse of the wolf to villagers or players it is spread by attacking in wolfman form and nearly killing.",
+          "mobs": [
+            {
+              "name": "New",
+              "mob": "Villager",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Your minions",
+      "description": "Now that you are the master of a vampire coven you can have your minions collect a little blood for you.",
+      "x": 86,
+      "y": 187,
+      "icon": {
+        "id": "witchery:bloodcrucible"
+      },
+      "prerequisites": [
+        "Make them one of us"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "BLOOD",
+          "longDescription": "Place this by the coffin where your vampire minions were made and sleep. Your minions will place some of their blood they got from villagers into the crucible.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:bloodcrucible"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "The Powers ",
+          "longDescription": "These Items can be placed into a full blood crucible. Each has a different effect. A bone gives you the teleport ability. When activated away from their spawn point, will teleport the vampire to their spawn. When activated near their spawn point, will teleport the vampire to the closest village. The water artichoke will allow you to summon a storm. This will save you if you get caught out when day breaks. Wool of bat gives you bat swarm ability. when used you can summon bats that attack enemys you are looking at.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 24
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 69
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:bone"
               }
             }
           ]
