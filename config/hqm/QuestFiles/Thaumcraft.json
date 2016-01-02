@@ -27,6 +27,17 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemShard",
+          "amount": 3
+        },
+        {
+          "id": "Thaumcraft:ItemShard",
+          "damage": 5,
+          "amount": 3
+        }
       ]
     },
     {
@@ -74,8 +85,8 @@
     {
       "name": "I Can See Clearly Now",
       "description": "While the thaumometer is useful for scanning on demand, it can become wearisome holding it all the time. Time for an upgrade.",
-      "x": 103,
-      "y": 29,
+      "x": 144,
+      "y": 53,
       "icon": {
         "id": "Thaumcraft:ItemGoggles"
       },
@@ -99,8 +110,8 @@
     {
       "name": "Node Theory",
       "description": "While the nodes across the world are extremely useful for vis and research, they are not always in an ideal location. Perhaps additional research will lend a mobile alternative.",
-      "x": 79,
-      "y": 37,
+      "x": 86,
+      "y": 16,
       "icon": {
         "id": "Thaumcraft:blockAiry"
       },
@@ -361,11 +372,15 @@
     },
     {
       "name": "Block Infusion",
-      "x": 176,
-      "y": 20,
+      "description": "Through the constant use of the infusion mechanics, you have learned of a way to infuse aspects directly into any kind of block, granting them new uses!",
+      "x": 107,
+      "y": 99,
       "icon": {
         "id": "thaumicinfusion:FocusInfusion"
       },
+      "prerequisites": [
+        "Infusion Magic"
+      ],
       "tasks": [
         {
           "type": "DETECT",
@@ -380,16 +395,30 @@
       ]
     },
     {
-      "name": "Animal Infusion",
-      "x": 242,
-      "y": 25,
+      "name": "Living Infusion",
+      "description": "You have infused many blocks and items, but nothing yet that has been living. Of course, this type of magic is often looked down upon as \"cruel\" or \"unusual\", but frankly we don\u0027t care. ",
+      "x": 177,
+      "y": 120,
       "icon": {
         "id": "ThaumicHorizons:modMatrix"
       },
+      "prerequisites": [
+        "Infusion Magic"
+      ],
       "tasks": [
         {
           "type": "DETECT",
           "items": [
+            {
+              "item": {
+                "id": "ThaumicHorizons:eggIncubated"
+              }
+            },
+            {
+              "item": {
+                "id": "ThaumicHorizons:syringeEmpty"
+              }
+            },
             {
               "item": {
                 "id": "ThaumicHorizons:modMatrix"
@@ -397,13 +426,18 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "ThaumicHorizons:focusContainment"
+        }
       ]
     },
     {
       "name": "Totems of the Dark",
       "description": "These dark totems are rather mysterious...perhaps studying them further will provide answers.",
-      "x": 151,
-      "y": 87,
+      "x": 145,
+      "y": 99,
       "icon": {
         "id": "ThaumicTinkerer:enchanter"
       },
@@ -443,8 +477,8 @@
     {
       "name": "Golemancy",
       "description": "Those that delve into the art of golemancy will find their lives a bit less lonely. These tiny automatons can perform mundane and boring tasks when given a single ring of a bell! And a core of course.",
-      "x": 20,
-      "y": 122,
+      "x": 19,
+      "y": 111,
       "icon": {
         "id": "Thaumcraft:ItemGolemPlacer"
       },
@@ -469,6 +503,592 @@
         },
         {
           "id": "Thaumcraft:GolemBell"
+        }
+      ]
+    },
+    {
+      "name": "Crimson Cult",
+      "description": "Only those fully trained in the basics of Thaumcraft will be able to understand their intentions.",
+      "x": 287,
+      "y": 16,
+      "icon": {
+        "id": "Thaumcraft:blockWoodenDevice",
+        "damage": 8
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemEldritchObject",
+                "damage": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemEldritchObject"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemEldritchObject",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Wand Foci",
+      "description": "While vis is most often used in crafting, it appears that by focusing your wand, one can expand the uses of the vis.",
+      "x": 228,
+      "y": 93,
+      "icon": {
+        "id": "Thaumcraft:FocusPouch"
+      },
+      "prerequisites": [
+        "Table Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:FocusPouch"
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:FocusTrade"
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:FocusPortableHole"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:FocusFire"
+        },
+        {
+          "id": "Thaumcraft:FocusShock"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Automagy:focusCrafting"
+        },
+        {
+          "id": "Thaumcraft:FocusFrost"
+        }
+      ]
+    },
+    {
+      "name": "Stability in Nodes",
+      "description": "You may have noticed that nodes placed next to eachother can have some rather unintended reactions. For the sake of compact node storage, it is possible to stabilize the nodes at a cost of the node\u0027s recharge rate.",
+      "x": 132,
+      "y": 32,
+      "icon": {
+        "id": "Thaumcraft:blockStoneDevice",
+        "damage": 9
+      },
+      "prerequisites": [
+        "Table Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockStoneDevice",
+                "damage": 9
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockStoneDevice",
+          "damage": 9
+        }
+      ]
+    },
+    {
+      "name": "Vis Usage",
+      "description": "Vis has proven use through crafting with a wand, however that is just the beginning. It is possible to draw the vis out and channel it into various blocks or structures for immediate and constant use, at the cost of the node.",
+      "x": 166,
+      "y": 20,
+      "icon": {
+        "id": "Thaumcraft:blockStoneDevice",
+        "damage": 11
+      },
+      "prerequisites": [
+        "Stability in Nodes"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockStoneDevice",
+                "damage": 11
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:blockMetalDevice",
+                "damage": 14
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockMetalDevice",
+          "damage": 14,
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "name": "Foci Upgrades",
+      "description": "Wand foci have proven their use in combat and in utility but there is much to be improved on. The foci seem to react when given various amounts of vis from a relay. Time for an upgrade.",
+      "x": 222,
+      "y": 47,
+      "icon": {
+        "id": "Thaumcraft:blockStoneDevice",
+        "damage": 13
+      },
+      "prerequisites": [
+        "Wand Foci",
+        "Vis Usage"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockStoneDevice",
+                "damage": 13
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Magical Metal",
+      "description": "It is no secret that the metals of this world are almost entirely worthless for tools and weapons, but a little bit of refining and magic can go a long way.",
+      "x": 31,
+      "y": 138,
+      "icon": {
+        "id": "Thaumcraft:ItemResource",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Crucible Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Runic Shielding",
+      "description": "When aspects are applied to armor, it appears that the armor takes on a new protective quality at the cost of local vis. Runic shielding can extend the effective life of the wearer by appling damage to the available vis instead of the user, to an extent.",
+      "x": 129,
+      "y": 151,
+      "icon": {
+        "id": "Thaumcraft:ItemRingRunic",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Infusion Magic"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemRingRunic",
+                "damage": 1
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemRingRunic",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Infused Tools",
+      "description": "Thaumic weapons can be given additional properties when infused. The Sword of the Zephyr allows the user to knock back groups of enemies and temporary flight.",
+      "x": 92,
+      "y": 149,
+      "icon": {
+        "id": "Thaumcraft:ItemSwordElemental"
+      },
+      "prerequisites": [
+        "Infusion Magic"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemSwordElemental"
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Thaumcraft:ItemShovelElemental"
+        },
+        {
+          "id": "Thaumcraft:ItemAxeElemental"
+        }
+      ]
+    },
+    {
+      "name": "Magical Trees",
+      "description": "The unique trees that dot the landscape are not only for looks. Their wood will have many uses, and having a local source will prove useful.",
+      "x": 86,
+      "y": 82,
+      "icon": {
+        "id": "Thaumcraft:blockCustomPlant",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Magical Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockCustomPlant"
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:blockCustomPlant",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockCustomPlant",
+          "damage": 1,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Crafting Scepters",
+      "description": "Crafting scepters have a much larger capacity and vis discount than regular wands, but are unable to hold foci in return. You may craft any kind of scepter.",
+      "x": 113,
+      "y": 13,
+      "icon": {
+        "id": "Thaumcraft:WandCasting",
+        "damage": 128,
+        "nbt": "{aqua:15000,terra:15000,ignis:15000,cap:\"thaumium\",rod:\"silverwood\",ordo:15000,sceptre:1b,perditio:15000,aer:15000}"
+      },
+      "prerequisites": [
+        "Table Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:WandCasting",
+                "damage": 128,
+                "nbt": "{aqua:15000,terra:15000,ignis:15000,cap:\"thaumium\",rod:\"silverwood\",ordo:15000,sceptre:1b,perditio:15000,aer:15000}"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Staves",
+      "description": "A staff can hold twice the vis of a regular wand but will lose the ability of crafting. Any staff core may be created.",
+      "x": 184,
+      "y": 55,
+      "icon": {
+        "id": "Thaumcraft:WandRod",
+        "damage": 52
+      },
+      "prerequisites": [
+        "Table Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:WandRod",
+                "damage": 50
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Not of This World",
+      "description": "The cultists guard the structures with their lives, but why? The eldritch eyes may be connected as a way to perhaps enter the portal...",
+      "x": 287,
+      "y": 49,
+      "icon": {
+        "id": "Thaumcraft:ItemEldritchObject",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Crimson Cult"
+      ],
+      "tasks": [
+        {
+          "type": "LOCATION",
+          "longDescription": "So far you have gathered the following information for entry: Four eyes, a deep understanding of warp, a full and powerful wand to interact with the node on the structure.",
+          "locations": [
+            {
+              "name": "Eldritch Dimension",
+              "icon": {
+                "id": "Thaumcraft:ItemEldritchObject"
+              },
+              "x": 787,
+              "y": 80,
+              "z": 719,
+              "dim": -42,
+              "radius": -1
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "Can you defeat the monster at the end of the tunnel?",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemEldritchObject",
+                "damage": 3
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemEldritchObject",
+          "damage": 3,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Is Kami Unlocked?",
+      "description": "The ultimate milestone in your Thaumcraft adventures would be to unlock Kami. To see how close you are, you may use the command /iskamiunlocked",
+      "x": 288,
+      "y": 120,
+      "icon": {
+        "id": "ThaumicTinkerer:kamiResource"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ThaumicTinkerer:kamiResource"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ThaumicTinkerer:kamiResource",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "ThaumicTinkerer:kamiResource",
+                "damage": 4
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:nether_star",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Wand Upgrade",
+      "description": "The maximum amount of vis and level of discount can be increased by upgrading the caps on the wand. As you explore other schools of magic, you may find more useful alternatives, however the next upgrade is gold caps.",
+      "x": 230,
+      "y": 128,
+      "icon": {
+        "id": "Thaumcraft:WandCap",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Table Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:WandCap",
+                "damage": 1
+              },
+              "required": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Primal Power",
+      "description": "The Primordial Pearls have opened up a way to repurpose older tools into one large multi-purpose tool.",
+      "x": 288,
+      "y": 85,
+      "icon": {
+        "id": "Thaumcraft:ItemPrimalCrusher"
+      },
+      "prerequisites": [
+        "Not of This World"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemPrimalCrusher"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crucible Crowning",
+      "description": "Through your devious study of fire and alchemy, you have discovered a way to create fires that transform blocks into new forms. However, these are very dangerous and should only be used in a contained area. Because of their extremely dangerous behaviors (and most likely banned on a server), study past these to obtain their less dangerous and more useful counterparts, infused seeds.",
+      "x": 60,
+      "y": 140,
+      "icon": {
+        "id": "ThaumicTinkerer:infusedSeeds",
+        "nbt": "{mainAspect:{Aspects:[0:{amount:1,key:\"ignis\"}]},aspectTendencies:{Aspects:[]}}"
+      },
+      "prerequisites": [
+        "Crucible Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ThaumicTinkerer:infusedSeeds",
+                "nbt": "{mainAspect:{Aspects:[0:{amount:1,key:\"aer\"}]},aspectTendencies:{Aspects:[]}}"
+              }
+            },
+            {
+              "item": {
+                "id": "ThaumicTinkerer:infusedSeeds",
+                "nbt": "{mainAspect:{Aspects:[0:{amount:1,key:\"terra\"}]},aspectTendencies:{Aspects:[]}}"
+              }
+            },
+            {
+              "item": {
+                "id": "ThaumicTinkerer:infusedSeeds",
+                "nbt": "{mainAspect:{Aspects:[0:{amount:1,key:\"ignis\"}]},aspectTendencies:{Aspects:[]}}"
+              }
+            },
+            {
+              "item": {
+                "id": "ThaumicTinkerer:infusedSeeds",
+                "nbt": "{mainAspect:{Aspects:[0:{amount:1,key:\"aqua\"}]},aspectTendencies:{Aspects:[]}}"
+              }
+            },
+            {
+              "item": {
+                "id": "ThaumicTinkerer:infusedSeeds",
+                "nbt": "{mainAspect:{Aspects:[0:{amount:1,key:\"ordo\"}]},aspectTendencies:{Aspects:[]}}"
+              }
+            },
+            {
+              "item": {
+                "id": "ThaumicTinkerer:infusedSeeds",
+                "nbt": "{mainAspect:{Aspects:[0:{amount:1,key:\"perditio\"}]},aspectTendencies:{Aspects:[]}}"
+              }
+            }
+          ]
         }
       ]
     }
