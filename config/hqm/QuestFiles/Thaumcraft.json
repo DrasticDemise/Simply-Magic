@@ -116,7 +116,7 @@
         "id": "Thaumcraft:blockAiry"
       },
       "prerequisites": [
-        "Research and Discovery"
+        "Table Crafting"
       ],
       "tasks": [
         {
@@ -515,6 +515,9 @@
         "id": "Thaumcraft:blockWoodenDevice",
         "damage": 8
       },
+      "prerequisites": [
+        "Foci Upgrades"
+      ],
       "tasks": [
         {
           "type": "DETECT",
@@ -616,7 +619,7 @@
         "damage": 9
       },
       "prerequisites": [
-        "Table Crafting"
+        "Wand Upgrade"
       ],
       "tasks": [
         {
@@ -648,7 +651,7 @@
         "damage": 11
       },
       "prerequisites": [
-        "Stability in Nodes"
+        "Wand Upgrade"
       ],
       "tasks": [
         {
@@ -687,7 +690,6 @@
         "damage": 13
       },
       "prerequisites": [
-        "Wand Foci",
         "Vis Usage"
       ],
       "tasks": [
@@ -948,6 +950,9 @@
       "icon": {
         "id": "ThaumicTinkerer:kamiResource"
       },
+      "prerequisites": [
+        "Foci Upgrades"
+      ],
       "tasks": [
         {
           "type": "DETECT",
@@ -1086,6 +1091,33 @@
               "item": {
                 "id": "ThaumicTinkerer:infusedSeeds",
                 "nbt": "{mainAspect:{Aspects:[0:{amount:1,key:\"perditio\"}]},aspectTendencies:{Aspects:[]}}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Combining Magic",
+      "description": "I heard you like additional research points.",
+      "x": 129,
+      "y": 168,
+      "icon": {
+        "id": "Botania:specialFlower",
+        "nbt": "{type:\"whisperweed\"}"
+      },
+      "prerequisites": [
+        "Infusion Magic"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Lexica Botania and the Forbiddin Magic section of the Thaumonomicon provide additional documentation.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"whisperweed\"}"
               }
             }
           ]

@@ -1,0 +1,200 @@
+{
+  "name": "Botania",
+  "quests": [
+    {
+      "name": "The Basics",
+      "description": "Botanical magic is about mana manipulation in order to perform various tasks around the world. Exploring Botania will yield powerful baubles and items, as well as new sets of armor and unique tools. The Lexica Botania contains full documentation of this mod, however this quest line serves as a supplemental tutorial line for those that wish to obtain a better understanding of progression or those wishing to accomplish milestones. If you are ever in doubt, simply refer to the Lexica Botania once more.",
+      "x": 29,
+      "y": 16,
+      "icon": {
+        "id": "Botania:lexicon"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:lexicon"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "The Petal Apothecary is a stable construct in which all flowers are made. In order to operate the petal apothecary, fill it with water and throw each item of a desired recipe into the apothecary. Once complete, throw a seed of any kind to complete the crafting.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:altar"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "The Pure Daisy is the first flower to be created. It allows you to create Livingwood and Livingrock by placing logs and stone around the daisy. These materials will be crucial for many builds later on, so there is never a harm in stocking up.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"puredaisy\"}"
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:livingrock"
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "Botania:livingwood"
+              },
+              "required": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mana Theory",
+      "description": "Many items and blocks will require some form of mana to be consumed. Flowers are split into two categories, mana producing flowers and mana consuming flowers. In order to begin creating and storing mana, you must first create a mana pool and a mana spreader. The mana pool will hold an extremely large amount of mana, while the mana spreader transports mana from flowers to the mana pool.",
+      "x": 72,
+      "y": 16,
+      "icon": {
+        "id": "Botania:pool"
+      },
+      "prerequisites": [
+        "The Basics"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:pool"
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:spreader"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "While flowers typically perform their job without trouble, they can be rather silly in creating connections to nearby mana spreaders. In order to bind a flower to a spreader, you must create the wand of the forest. This wand has two modes, a Binding mode a Function mode which can be switched by shift right-clicking. In order to bind a flower, ensure the wand is in binding mode and shift right-click the flower until a box appears, and shift right-click the desired location.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:twigWand",
+                "nbt": "{color1:0,color2:0}"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mana Generation",
+      "description": "The vast majority of mana generation will come from mana generating flowers. Mana generating flowers can be broken down into two categories, passive generation and active generation. Passive flowers do not have an associated cost for producing mana, however they produce a very small amount of mana and will only live for three days. Active flowers will live indefinitely, can produce much more mana, however typically cost resources.",
+      "x": 116,
+      "y": 16,
+      "icon": {
+        "id": "Botania:specialFlower",
+        "nbt": "{type:\"daybloomDecor\"}"
+      },
+      "prerequisites": [
+        "Mana Theory"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "It is recommended you create additional night shades or dayblooms until your mana pool has enough mana to create mana powder for an Endoflame.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"daybloom\"}"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:specialFlower",
+          "amount": 3,
+          "nbt": "{type:\"daybloom\"}"
+        },
+        {
+          "id": "Botania:specialFlower",
+          "amount": 3,
+          "nbt": "{type:\"nightshade\"}"
+        }
+      ]
+    },
+    {
+      "name": "Mana Consumption",
+      "description": "The Mana Pool adds a unique function of transforming some mundane items into mana-infused ones by simply tossing the items in. Mana steel is unique in that it can be repaired by mana in the users inventory when created into armor or tools.",
+      "x": 116,
+      "y": 56,
+      "icon": {
+        "id": "Botania:manaResource",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Mana Generation"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Active flowers produce exponentially more mana.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaResource"
+              },
+              "precision": "ORE_DICTIONARY"
+            },
+            {
+              "item": {
+                "id": "Botania:manaResource",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rune Theory",
+      "x": 116,
+      "y": 90,
+      "icon": {
+        "id": "Botania:runeAltar"
+      },
+      "prerequisites": [
+        "Mana Consumption"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:runeAltar"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}
