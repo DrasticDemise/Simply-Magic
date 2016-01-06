@@ -1,0 +1,110 @@
+{
+  "name": "Blood Magic",
+  "quests": [
+    {
+      "name": "Altar",
+      "description": "There is power in blood, however blood just casually spilled becomes mundane and is a waste. Blood spilled into this vessel retains its potency and can be used for incredible things.",
+      "x": 23,
+      "y": 13,
+      "icon": {
+        "id": "AWWayofTime:Altar"
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "The vessel",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:Altar"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "The tools of the trade",
+          "longDescription": "A knife to spill the blood",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:sacrificialKnife"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Babby\u0027s first orb",
+      "description": "offer up a diamond and some of your blood to the blood gods and recieve your first orb and the birth of your LP network(life points).",
+      "x": 51,
+      "y": 13,
+      "icon": {
+        "id": "AWWayofTime:weakBloodOrb"
+      },
+      "prerequisites": [
+        "Altar"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Weak Blood",
+          "longDescription": "After spilling a little blood and placing a diamond into the altar. The gods have returned the favor and gift you this orb. Your network capacity is now 5,000",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:weakBloodOrb"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Spill a little less messy",
+          "longDescription": "Craft yourelf a sigil so spilling your blood can be a little less messy. Rightclicking in air will tell you how much LP you have in your network. Rightclicking on altar to see how much blood is in it, its capacity, and the tier it is at. Now you can make sure you have the amount of blood needed before starting the trade. ",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:divinationSigil"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Tier one sigils",
+          "longDescription": "Sigils can be activated and use LP from your network when used. Lava sigil creates lava block and water sigil crates water block.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:lavaSigil"
+              }
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:waterSigil"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Runes",
+          "longDescription": "Rune blocks can be crafted and are the main component for altar upgrades. ",
+          "items": []
+        }
+      ]
+    },
+    {
+      "name": "Tier 2",
+      "description": "Rune blocks can be crafted and are the main component for altar upgrades. ",
+      "x": 79,
+      "y": 13,
+      "prerequisites": [
+        "Babby\u0027s first orb"
+      ]
+    }
+  ],
+  "reputationBar": []
+}

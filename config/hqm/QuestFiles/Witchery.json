@@ -104,8 +104,8 @@
     {
       "name": "Bubble, bubble",
       "description": "Now that you have the seeds and plants you can craft yourself some anointing paste. Use that on a cauldron and you will get your very own witches cauldron.",
-      "x": 56,
-      "y": 21,
+      "x": 26,
+      "y": 49,
       "icon": {
         "id": "witchery:cauldron"
       },
@@ -148,8 +148,8 @@
     {
       "name": "Fumes",
       "description": "Able to capture the by-products produced in the cooking process, the witches oven is esential in your witching career.",
-      "x": 83,
-      "y": 21,
+      "x": 52,
+      "y": 49,
       "icon": {
         "id": "witchery:witchesovenidle"
       },
@@ -221,8 +221,8 @@
     {
       "name": "Mutate all the things ",
       "description": "Mutandis is a mutagen that is used by witches and warlocks to mutate plants into other species.",
-      "x": 114,
-      "y": 21,
+      "x": 79,
+      "y": 20,
       "icon": {
         "id": "witchery:ingredient",
         "damage": 14
@@ -348,8 +348,8 @@
     {
       "name": "Altar POWA",
       "description": "The altar when placed with nature around (Sapling, grass, crops, trees, etc.)",
-      "x": 114,
-      "y": 54,
+      "x": 79,
+      "y": 49,
       "icon": {
         "id": "witchery:altar"
       },
@@ -412,8 +412,8 @@
     {
       "name": "Distilling",
       "description": "Witchery requires you to distill vapors into new vapors and other magical components. This requires an altar near by and will use a little of its power to run.",
-      "x": 82,
-      "y": 55,
+      "x": 109,
+      "y": 47,
       "icon": {
         "id": "witchery:distilleryidle"
       },
@@ -474,8 +474,8 @@
     {
       "name": "\"It\u0027s like a circle\"",
       "description": "The next thing we can do to make use some of that altar power is circle magic. ",
-      "x": 82,
-      "y": 89,
+      "x": 50,
+      "y": 90,
       "icon": {
         "id": "witchery:chalkheart"
       },
@@ -521,7 +521,7 @@
     {
       "name": "Black Cats",
       "description": "Hopefully you played around with the fun stuff that circle magic has to offer. Well to progress further you are going to need a familiar bound to you. There are quite a few options for familiars however, to gain witches in you coven and to cast certain curses you will need a cat as one. The others you can presue as sides quest to this one.",
-      "x": 29,
+      "x": 21,
       "y": 122,
       "icon": {
         "id": "witchery:ingredient",
@@ -562,8 +562,8 @@
     {
       "name": "More mutation",
       "description": "Mutandis is really cool but it can\u0027t mutate everything. So making it a little more extreme is a good idea. Mutandis Extremis can mutate multi-stage plant like cactus. It can also mutate cooked meat.",
-      "x": 144,
-      "y": 55,
+      "x": 108,
+      "y": 18,
       "icon": {
         "id": "witchery:ingredient",
         "damage": 15
@@ -623,8 +623,8 @@
     {
       "name": "Cauldron Tips",
       "description": "Not a quest per say but some much useful knowledge. The cauldron crafts some pretty cool stuff however you should know that some recipes use altar power and some use more power then others. That being said you can find in your book you crafted when you crafted anointing paste, that chalk can be used to lower cost of a recipe in the cauldron and can also lower chance to get some bad effects from the cauldron when crafting in it. ",
-      "x": 56,
-      "y": 56,
+      "x": 52,
+      "y": 19,
       "icon": {
         "id": "witchery:cauldron"
       },
@@ -635,8 +635,8 @@
     {
       "name": "Demon Slayer",
       "description": "This may seem daunting but you are going to have to fight a demon. You need his heart. I hope you have tried out some circle magic on your own. You can use more then one ritual at once and they will activate in order of how they show up in the book. So a containment ritual and summoning ritual for the demon can be used in conjuction if need be. ",
-      "x": 56,
-      "y": 89,
+      "x": 22,
+      "y": 90,
       "icon": {
         "id": "witchery:ingredient",
         "damage": 23
@@ -679,8 +679,8 @@
     {
       "name": "Coven",
       "description": "Its time to create a coven. You must speak with Witchery witches. In order for them to speak with you one of 2 things must happen. Either preform an infussion on yourself or have a cat familiar. Having 6 witches fills a coven. As a note there is a circle magic ritual to summon a coven witch if you are having trouble finding some",
-      "x": 29,
-      "y": 154,
+      "x": 20,
+      "y": 155,
       "icon": {
         "id": "witchery:ingredient",
         "damage": 94
@@ -721,8 +721,8 @@
     {
       "name": "Infusing",
       "description": "Infusing gives you super natural powers.",
-      "x": 56,
-      "y": 122,
+      "x": 50,
+      "y": 152,
       "icon": {
         "id": "witchery:ingredient",
         "damage": 83
@@ -733,32 +733,15 @@
       "tasks": [
         {
           "type": "DETECT",
-          "description": "Infusions",
+          "description": "Infusing you",
           "longDescription": "One of these can be used to infuse a player with magical properties. Depending on which you choose you will have access to different abilities and draw different spells with your wand.... i mean mystic branch",
           "items": [
             {
               "item": {
                 "id": "witchery:ingredient",
                 "damage": 42
-              }
-            },
-            {
-              "item": {
-                "id": "witchery:ingredient",
-                "damage": 43
-              }
-            },
-            {
-              "item": {
-                "id": "witchery:ingredient",
-                "damage": 44
-              }
-            },
-            {
-              "item": {
-                "id": "witchery:ingredient",
-                "damage": 45
-              }
+              },
+              "precision": "ORE_DICTIONARY"
             },
             {
               "item": {
@@ -771,6 +754,7 @@
         },
         {
           "type": "DETECT",
+          "description": "Mystic Branch",
           "longDescription": "With this you can cast spells like a real witch/warlock. consult the symbology book for spells.",
           "items": [
             {
@@ -792,14 +776,44 @@
               }
             }
           ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Infusing things",
+          "longDescription": "He are other things that can be infused minus the seer stone i mention that in the next quest.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 9
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:crystalball"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 93
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 41
+              }
+            }
+          ]
         }
       ]
     },
     {
       "name": "Sprig power",
       "description": "The mutating sprig can be used to mutate multiple object in the world into one new object. Ill try to talk you through the Items and blocks you can make through this. ",
-      "x": 144,
-      "y": 21,
+      "x": 139,
+      "y": 17,
       "icon": {
         "id": "witchery:leechchest"
       },
@@ -885,8 +899,8 @@
     {
       "name": "Mutating mobs",
       "description": "The sprig can be used to mutate living creatures to get new familiars to bind to yourself. Familiars like cats giving you different benifits can allow different circle magic to be preformed.",
-      "x": 144,
-      "y": 89,
+      "x": 141,
+      "y": 47,
       "icon": {
         "id": "witchery:crittersnare",
         "damage": 1
@@ -941,8 +955,9 @@
     {
       "name": "AROOOOOOOOOOO!!!!!!!!",
       "description": "Believe it or not, you know enough to become a wolf/werewolf",
-      "x": 56,
-      "y": 187,
+      "x": 15,
+      "y": 184,
+      "bigicon": true,
       "icon": {
         "id": "witchery:wolfhead"
       },
@@ -1008,8 +1023,8 @@
     {
       "name": "Toil and trouble",
       "description": "The kettle is a fundamental part of being a witch. It is where you will make brews and oils.",
-      "x": 29,
-      "y": 90,
+      "x": 51,
+      "y": 121,
       "icon": {
         "id": "witchery:kettle"
       },
@@ -1057,8 +1072,9 @@
     {
       "name": "I vant to suck your blood",
       "description": "For those brave enough and who can stomach the horror, you can become a vampire. This quest requires no others however as it is difficult gameplay wise i suggest you get geared up in one way or another. I also recommed you progress in witchery at least a little.",
-      "x": 56,
-      "y": 154,
+      "x": 294,
+      "y": 6,
+      "bigicon": true,
       "icon": {
         "id": "witchery:coffin"
       },
@@ -1094,8 +1110,8 @@
     {
       "name": "The unholy deed",
       "description": "Now its time to do the deed. You will need to kill a chicken over the ritual you will set up.",
-      "x": 86,
-      "y": 154,
+      "x": 297,
+      "y": 42,
       "icon": {
         "id": "minecraft:skull"
       },
@@ -1169,8 +1185,8 @@
     {
       "name": "Do as you are told",
       "description": "Now with your follower in tow, listen to you new masters instructions",
-      "x": 86,
-      "y": 123,
+      "x": 297,
+      "y": 70,
       "icon": {
         "id": "witchery:glassgoblet",
         "damage": 1
@@ -1232,8 +1248,8 @@
     {
       "name": "Your first kill",
       "description": "In the observations of the immortal once you add the torn page you will learn each think you have to do to lvl up your powers. Each paragraph is a new lvl. Read that if you want because i am about to spoil it for you. ",
-      "x": 116,
-      "y": 124,
+      "x": 297,
+      "y": 99,
       "icon": {
         "id": "Quadrum:BloodDropIcon"
       },
@@ -1259,8 +1275,8 @@
     {
       "name": "Frozen at the sight of you",
       "description": "Your Next lvl is gained by draining half of a villager/players blood while they are under your transfix ability. Rememer to cycle powers using 1 key. Once you complete this all your attacks will get extra knockback.",
-      "x": 144,
-      "y": 123,
+      "x": 297,
+      "y": 131,
       "icon": {
         "id": "Quadrum:Tranfixicon"
       },
@@ -1271,8 +1287,8 @@
     {
       "name": "Four nights of thirst",
       "description": "Now you must drink blood from villagers for 4 nights. This new lvl you gain gives you a speed effect you can now activate at the cost of blood.",
-      "x": 144,
-      "y": 155,
+      "x": 297,
+      "y": 158,
       "icon": {
         "id": "minecraft:clock"
       },
@@ -1283,8 +1299,8 @@
     {
       "name": "Your blood will boil",
       "description": "For this quest you are going to take some damage so if you have not already craft vampire gear. There is men and women versions so i won\u0027t make it required to finish this quest. Once you finish this task your new vampire lvl will allow you to not die instantly in sun.",
-      "x": 171,
-      "y": 155,
+      "x": 297,
+      "y": 187,
       "icon": {
         "id": "witchery:sungrenade"
       },
@@ -1345,8 +1361,8 @@
     {
       "name": "Men of pure fire",
       "description": "For this lvl you must kill 20 blazes. Afther this your new vampire lvl will allow toy to break stone instantly whn sneak clicking with an empty hand.",
-      "x": 199,
-      "y": 155,
+      "x": 266,
+      "y": 188,
       "icon": {
         "id": "Quadrum:Blazeicon"
       },
@@ -1375,7 +1391,7 @@
     {
       "name": "Back to where it all began",
       "description": "Now you must visit lillith again. This time to request your freedom. One you do this you gain bat swarm ability, transform into a swarm or bad and get creative flight.",
-      "x": 199,
+      "x": 237,
       "y": 187,
       "icon": {
         "id": "minecraft:red_flower"
@@ -1408,7 +1424,7 @@
     {
       "name": "Explore your new domain",
       "description": "To become a lvl 8 vampire you must fly from one village to another. A sound will chime once a village has been recognized as visited. With this level up Mesmerized villagers will now follow you. ",
-      "x": 170,
+      "x": 212,
       "y": 187,
       "icon": {
         "id": "Quadrum:villageicon"
@@ -1420,8 +1436,8 @@
     {
       "name": "Put them in cages",
       "description": "To become a vampire of lvl 9 you must trap 5 villagers in cages as shown in your observations on an immortal book. Then you must mesemerize and drink each ones blood to half. You must not damage them by going over half. At your new level you will be able to create vampires with your blood.",
-      "x": 144,
-      "y": 187,
+      "x": 182,
+      "y": 186,
       "icon": {
         "id": "Quadrum:TrappedVillagericon"
       },
@@ -1432,8 +1448,8 @@
     {
       "name": "Make them one of us",
       "description": "Your final vampire lvl is given once you turn a villager into a vampire. To do this you must have a villager near a coffin. Drain the villagers blood all the way. To prevent killing the villager you can use regen potion on them.(their blood is not tied to their health).Now with their blood drained fill a glass goblet with your blood  mesmerize him and give him your blood to drink. Now you have completely leveled up and have blood power explained in the next quest.",
-      "x": 116,
-      "y": 187,
+      "x": 147,
+      "y": 184,
       "icon": {
         "id": "Quadrum:vampireVillagerIcon"
       },
@@ -1456,13 +1472,14 @@
     {
       "name": "Wolf Level up",
       "description": "You shall now learn how to control your power and become even more powerful.",
-      "x": 29,
-      "y": 187,
+      "x": 51,
+      "y": 188,
       "icon": {
         "id": "witchery:wolfaltar"
       },
       "prerequisites": [
-        "AROOOOOOOOOOO!!!!!!!!"
+        "AROOOOOOOOOOO!!!!!!!!",
+        "Hybrid"
       ],
       "tasks": [
         {
@@ -1616,8 +1633,8 @@
     {
       "name": "Your minions",
       "description": "Now that you are the master of a vampire coven you can have your minions collect a little blood for you.",
-      "x": 86,
-      "y": 187,
+      "x": 112,
+      "y": 190,
       "icon": {
         "id": "witchery:bloodcrucible"
       },
@@ -1658,6 +1675,386 @@
               "item": {
                 "id": "minecraft:bone"
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hybrid",
+      "description": "Like the wolf and vampire quest you do not need to become either as there are trade offs. As you have gotten to the end of vamprism I figured I would mention that you can be come a hybrid by doing both the vampire and wolf quests. ",
+      "x": 81,
+      "y": 189,
+      "icon": {
+        "id": "Quadrum:hybridicon"
+      },
+      "prerequisites": [
+        "Your minions"
+      ]
+    },
+    {
+      "name": "Spectral familliars",
+      "description": "You can use circle magic to summon a familliar from the beyond. They can be given items dropped by ores and they will try to locate an ore vane for you. ",
+      "x": 72,
+      "y": 100,
+      "icon": {
+        "id": "Quadrum:familiaricon"
+      },
+      "prerequisites": [
+        "\"It\u0027s like a circle\""
+      ],
+      "tasks": [
+        {
+          "type": "KILL",
+          "longDescription": "Unfortunatly these familiars drop spectral dust when they die so you must kill one.",
+          "mobs": [
+            {
+              "name": "New",
+              "icon": {
+                "id": "Quadrum:familiaricon"
+              },
+              "mob": "witchery.familiar",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "This dust is gotten from spectral familiars that die but can allow very rarly drop from mobs killed with arthana.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 66
+              },
+              "required": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rise! Rise!",
+      "description": "The nectromatic Stone, is at the heart of dark magic. It can be used on creature/players at a range to make risen creatures attack that target. Only works on creature you have raised from berw of raising.",
+      "x": 108,
+      "y": 101,
+      "icon": {
+        "id": "Quadrum:armicon"
+      },
+      "prerequisites": [
+        "Spectral familliars"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "The undead",
+          "longDescription": "This brew raises the very undead you often are responsible for placing there, don\u0027t worry they hold no grudges. Tossing the brew raises them in that location.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 65
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "stone",
+          "longDescription": "With stone in hand you can click on a player/mob at a distance and make undead you raised attack that individual. Using it on a block will make them walk to it.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 64
+              },
+              "required": 4
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "some stone uses",
+          "longDescription": "The alluring Skull, both activated and broken by the necromantic stone draws the undead to it as long as it has nothing better to do. The necromantic robes are the counterpart to the witches\u0027 robes. It gives the player the chance fro extra brews but instead of making creapers ignore you it makes undead ignore you.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:alluringskull"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:necromancerrobe"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Brazier",
+      "description": "One more thing you can make out of that necromatic stone. The brazier allows the summoning of some special undead like a spectre or banshee.",
+      "x": 136,
+      "y": 96,
+      "icon": {
+        "id": "witchery:brazier"
+      },
+      "prerequisites": [
+        "Rise! Rise!"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Brazier",
+          "longDescription": "The brazier is where it all happens",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:brazier"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 127,
+                "nbt": "{CurrentPage:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "The stones",
+          "longDescription": "The spectral stone is made from circle magic and circle magic also traps the spirt in the stone to be released later or bound to something else",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:spectralstone"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "wish me a sweet dream",
+      "description": "Now it is on to the spirt world. The spirit world is an alternate reality that mirrors the Overworld in topography.",
+      "x": 95,
+      "y": 161,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 95
+      },
+      "prerequisites": [
+        "Toil and trouble"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Counting sheep",
+          "longDescription": "Brews of Sleeping allow you to pass out and into the Spirit World, leaving their bodies and gear behind. Some items will however come with you. Icy needle and fetishes can enter whiles Wispy Cotton, Disturbed Cotton, Mellifluous Hunger and Brews of Flowing Spirit can pass from the Spirit World to the Real World but can\u0027t return. Icy needles can come in and out. When you die in the spirt world there is no consequences you will just wake up. You can force a way up with an icy needle.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 95
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 78
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "The disturbed",
+          "longDescription": "After you enter the spirt world for the first time it will almost certainly be a nightmare as you only have a brew of sleeping to use. While there run from nightmares and grab a few things that will help with having a good dream in the future.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 99
+              },
+              "required": 12
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Weave a dream weaver",
+          "longDescription": "Now with a dreamcatcher you might have a better chance of having a dream and dreams are great. The Dream Weaver of Nightmares has two effects, firstly it will add a short weakness effect to a player when they wake up from a good nights sleep. Secondly, it will corrupt all other nearby dream weavers so that they have the opposite effect. The effect we care about is that is lowers the chance of a nightmare to 50% Now get into a dream.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 6
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fetishes",
+      "description": "A Fetish is an object believed to have supernatural powers. Spirts can be bound to them.",
+      "x": 122,
+      "y": 133,
+      "icon": {
+        "id": "witchery:scarecrow"
+      },
+      "prerequisites": [
+        "wish me a sweet dream",
+        "Brazier"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "fetishes",
+          "longDescription": "Fetishes are have some interesting properties. The combination of a fetish and a spirt will give a certain effect(listed in the book crafted here.) Fetishes can also be placed in the spirt world and will show in the regular world with the same effect however you can not interact with them. Also can not be brought back from the spirt world. Boline can be used to cycle modes of fetishes and taglocks can also be applied.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:scarecrow"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:trent"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:witchsladder"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 127,
+                "nbt": "{CurrentPage:13}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Trapped",
+          "longDescription": "Trap one of the summoned spirits in a spectral stone using the proper rite of binding. Nei gives you the three you can pick from. You can bind up to 3 of the same type in one stone",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:spectralstone",
+                "damage": 17
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "i am become death",
+      "description": "Call appon death and steal his power. Death can be summoned by attempting to bind five of each spectral undead to a fetish. Death may drop the Hand of Death, Death\u0027s Hood, Death\u0027s Robes, Death\u0027s Footwear or Binky\u0027s Skull when defeated. If wearing all of deaths gear you could be summoned if someone else summons death.",
+      "x": 84,
+      "y": 121,
+      "bigicon": true,
+      "icon": {
+        "id": "Quadrum:deathicon"
+      },
+      "prerequisites": [
+        "Fetishes"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Death",
+          "longDescription": "Kill death a few times take his throne",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:deathshand"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:deathscowl"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:deathsrobe"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:deathsfeet"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 129
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mirror Mirror ",
+      "description": "mirror mirror on the wall who is the fairest of them all. ",
+      "x": 124,
+      "y": 71,
+      "icon": {
+        "id": "witchery:mirror"
+      },
+      "prerequisites": [
+        "\"It\u0027s like a circle\""
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Mirror",
+          "longDescription": "created, using a Rite of Infusion (a medium white circle containing a Brew of Hollow Tears, a Gold Ingot, a Glass Pane and a Demon). Using the mirror will pose it the question of who is the fairest in the land, to which it may respond with the player, or perhaps another nearby NPC. Killing the NPC will drop Heart of Gold. This is used in potion making.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:mirror"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Doppleganger",
+          "longDescription": "Using a Quartz Sphere on a mirror containing a demon will charge it with the players reflection creating a Duplication Grenade (assuming enough altar power is available). Throwing this sphere will create a duplicate of the bound player and cause mobs currently targeting the player to target that instead.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:dupgrenade"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "KILL",
+          "description": "Reflections",
+          "longDescription": "Getting to close to the mirror will suck you in. You will then confront the demon you trapped inside, he has taken on your appearence. Killing him will allow you to use the space as extra storage space. The mirror is now hollow and you can\u0027t ask it questions anymore. Mirrors without demons have another useful property when placed a short distance apart (up to 16 blocks) and back to back, in such a configuration they act as a doorway between each other. This effect can also occur vertically if placed over one another with the same facing.",
+          "mobs": [
+            {
+              "name": "New",
+              "icon": {
+                "id": "minecraft:skull",
+                "damage": 3
+              },
+              "mob": "witchery.reflection",
+              "kills": 1,
+              "exact": false
             }
           ]
         }
