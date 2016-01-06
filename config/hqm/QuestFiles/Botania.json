@@ -114,7 +114,7 @@
       "tasks": [
         {
           "type": "DETECT",
-          "longDescription": "It is recommended you create additional night shades or dayblooms until your mana pool has enough mana to create mana powder for an Endoflame.",
+          "longDescription": "It is recommended you create additional nightshades or dayblooms until your mana pool has enough mana to create mana powder for an Endoflame.",
           "items": [
             {
               "item": {
@@ -174,6 +174,7 @@
     },
     {
       "name": "Rune Theory",
+      "description": "Runes allow you to create extremely powerful tools, baubles, and additional flowers. Rune crafting is the process in which items are combined on a Runic Altar with a small amount of mana. To do this, you must first create a runic altar. In order to give mana to the runic altar, you must point a mana spreader in the direction of the runic altar. The fastest way to do this is to place a mana spreader adjacent to a mana pool, and the runic altar in front of the mana spreader. Mana will be transferred directly from the pool into the altar at an extremely fast rate.",
       "x": 116,
       "y": 90,
       "icon": {
@@ -185,6 +186,7 @@
       "tasks": [
         {
           "type": "DETECT",
+          "longDescription": "To place items on the altar, simply right click them on the altar. To remove an item, shift right-click with an empty hand to remove the item from the altar. When the desired recipe is on the altar, click the altar with a Wand of the Forest to start the process. Once finished, throw one living rock on the altar and right click with the wand of the forest to complete the rune creation.",
           "items": [
             {
               "item": {
@@ -193,6 +195,275 @@
             }
           ]
         }
+      ]
+    },
+    {
+      "name": "Alchemy Catalyst",
+      "x": 90,
+      "y": 69,
+      "icon": {
+        "id": "Botania:alchemyCatalyst"
+      },
+      "prerequisites": [
+        "Mana Consumption"
+      ]
+    },
+    {
+      "name": "Botanical Brewing",
+      "x": 71,
+      "y": 89,
+      "icon": {
+        "id": "Botania:brewery"
+      },
+      "prerequisites": [
+        "Rune Theory"
+      ]
+    },
+    {
+      "name": "Mana Utility",
+      "description": "As your collection of flowers grows, it can become tiresome to bind each flower individually. A floral obedience stick will bind all nearby flowers to a single block. Another useful item to have is the Manastar. When placed next to a mana pool, the Manastar will alert you when your mana consumption is outpacing your production. Useful for when managing large systems.",
+      "x": 157,
+      "y": 17,
+      "icon": {
+        "id": "Botania:obedienceStick"
+      },
+      "prerequisites": [
+        "Mana Consumption"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:obedienceStick"
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"manastar\"}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Useful Baubles",
+      "x": 157,
+      "y": 57,
+      "icon": {
+        "id": "Botania:magnetRing"
+      },
+      "prerequisites": [
+        "Rune Theory"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaRing",
+                "damage": 1000
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Useful Rods",
+      "x": 158,
+      "y": 89,
+      "icon": {
+        "id": "Botania:fireRod"
+      },
+      "prerequisites": [
+        "Rune Theory"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:fireRod"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Terrasteel",
+      "x": 115,
+      "y": 125,
+      "icon": {
+        "id": "Botania:terraPlate"
+      },
+      "prerequisites": [
+        "Rune Theory"
+      ]
+    },
+    {
+      "name": "Elven Portal",
+      "x": 159,
+      "y": 154,
+      "icon": {
+        "id": "Botania:pylon",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Terrasteel"
+      ]
+    },
+    {
+      "name": "Terra Tools",
+      "x": 116,
+      "y": 163,
+      "icon": {
+        "id": "Botania:terraSword"
+      },
+      "prerequisites": [
+        "Terrasteel"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:terraSword"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "More Baubles and Rods",
+      "x": 160,
+      "y": 187,
+      "icon": {
+        "id": "Botania:pixieRing"
+      },
+      "prerequisites": [
+        "Elven Portal"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:pixieRing"
+              },
+              "required": 2,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "More Botanical Play Things",
+      "x": 234,
+      "y": 154,
+      "icon": {
+        "id": "Botania:missileRod"
+      },
+      "prerequisites": [
+        "Gaia Guardian"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:missileRod"
+              },
+              "required": 2,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Botanical Play Things",
+      "x": 157,
+      "y": 122,
+      "icon": {
+        "id": "Botania:baubleBox"
+      },
+      "prerequisites": [
+        "Rune Theory"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:baubleBox"
+              },
+              "required": 2,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mobile Mana",
+      "x": 88,
+      "y": 40,
+      "icon": {
+        "id": "Botania:manaTablet",
+        "nbt": "{mana:500000}"
+      },
+      "prerequisites": [
+        "Mana Consumption"
+      ]
+    },
+    {
+      "name": "Sparks",
+      "x": 87,
+      "y": 113,
+      "icon": {
+        "id": "Botania:spark"
+      },
+      "prerequisites": [
+        "Rune Theory"
+      ]
+    },
+    {
+      "name": "Gaia Guardian",
+      "x": 202,
+      "y": 154,
+      "icon": {
+        "id": "Botania:pylon",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Elven Portal"
+      ]
+    },
+    {
+      "name": "Mana Conjuration",
+      "x": 187,
+      "y": 125,
+      "icon": {
+        "id": "Botania:conjurationCatalyst"
+      },
+      "prerequisites": [
+        "Elven Portal"
       ]
     }
   ],

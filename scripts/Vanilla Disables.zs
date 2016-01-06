@@ -59,3 +59,4 @@
 <minecraft:golden_pickaxe>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
 <minecraft:golden_shovel>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
 <minecraft:golden_hoe>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
+
