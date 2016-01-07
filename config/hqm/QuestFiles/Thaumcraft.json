@@ -1043,7 +1043,7 @@
     },
     {
       "name": "Crucible Crowning",
-      "description": "Through your devious study of fire and alchemy, you have discovered a way to create fires that transform blocks into new forms. However, these are very dangerous and should only be used in a contained area. Because of their extremely dangerous behaviors (and most likely banned on a server), study past these to obtain their less dangerous and more useful counterparts, infused seeds.",
+      "description": "Through your devious study of fire and alchemy, you have discovered a way to create fires that transform blocks into new forms. However, these are very dangerous and should only be used in a contained area. Because of their extremely dangerous behaviors (and are most likely banned on a server), study past these to obtain their less dangerous and more useful counterparts, infused seeds.",
       "x": 60,
       "y": 118,
       "icon": {
@@ -1056,6 +1056,7 @@
       "tasks": [
         {
           "type": "DETECT",
+          "longDescription": "Infused Seeds can grow an array of unique items. When seeds are near eachother, they have a chance to form a new seed of the two seed\u0027s combined aspects. Collecting all of them would be a major milestone and sign of dedication, and all of the silly items are quite the bonus.",
           "items": [
             {
               "item": {
