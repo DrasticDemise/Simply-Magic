@@ -667,8 +667,8 @@
     {
       "name": "Collect Them All",
       "description": "Prove your skill in combat by collecting all six relics!",
-      "x": 237,
-      "y": 185,
+      "x": 263,
+      "y": 182,
       "icon": {
         "id": "Botania:dice"
       },
@@ -732,8 +732,8 @@
     {
       "name": "Rainbow Spreader!",
       "description": "An upgrade from the elven mana spreader, this one is rainbow! (And more efficient, if you care about that)",
-      "x": 220,
-      "y": 126,
+      "x": 186,
+      "y": 177,
       "icon": {
         "id": "Botania:spreader",
         "damage": 3
@@ -757,8 +757,8 @@
     },
     {
       "name": "Round Two",
-      "x": 202,
-      "y": 184,
+      "x": 226,
+      "y": 182,
       "icon": {
         "id": "Botania:manaResource",
         "damage": 14
@@ -785,6 +785,31 @@
                 "id": "Botania:manaResource",
                 "damage": 8
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "404 Corpea Quest Not Found",
+      "description": "More information on the Corpea System coming soon.",
+      "x": 227,
+      "y": 114,
+      "icon": {
+        "id": "HardcoreQuesting:hqmInvalidItem"
+      },
+      "prerequisites": [
+        "Gaia Guardian"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "HardcoreQuesting:hqmInvalidItem"
+              },
+              "required": 99
             }
           ]
         }
