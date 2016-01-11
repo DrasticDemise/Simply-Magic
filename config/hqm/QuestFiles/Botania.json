@@ -55,6 +55,11 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
       ]
     },
     {
@@ -97,6 +102,11 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
       ]
     },
     {
@@ -137,6 +147,15 @@
           "amount": 3,
           "nbt": "{type:\"nightshade\"}"
         }
+      ],
+      "rewardchoice": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "Botania:fertilizer",
+          "amount": 5
+        }
       ]
     },
     {
@@ -170,6 +189,12 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
       ]
     },
     {
@@ -195,6 +220,11 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
       ]
     },
     {
@@ -218,6 +248,20 @@
               }
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:cactus"
+        },
+        {
+          "id": "minecraft:glowstone_dust"
         }
       ]
     },
@@ -247,6 +291,15 @@
               }
             }
           ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "minecraft:nether_wart"
         }
       ]
     },
@@ -278,6 +331,15 @@
             }
           ]
         }
+      ],
+      "rewardchoice": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "Botania:fertilizer",
+          "amount": 5
+        }
       ]
     },
     {
@@ -305,6 +367,15 @@
             }
           ]
         }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Botania:storage"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
       ]
     },
     {
@@ -329,6 +400,12 @@
               "precision": "ORE_DICTIONARY"
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
         }
       ]
     },
@@ -365,6 +442,23 @@
               "required": 5
             }
           ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaResource",
+                "damage": 4
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
         }
       ]
     },
@@ -439,6 +533,12 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
       ]
     },
     {
@@ -463,6 +563,12 @@
               "precision": "ORE_DICTIONARY"
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
         }
       ]
     },
@@ -490,6 +596,12 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
       ]
     },
     {
@@ -516,6 +628,12 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
       ]
     },
     {
@@ -541,6 +659,12 @@
               "precision": "ORE_DICTIONARY"
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
         }
       ]
     },
@@ -569,6 +693,12 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "Botania:manaTablet",
+          "damage": 1000
+        }
       ]
     },
     {
@@ -593,6 +723,12 @@
               "required": 2
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
         }
       ]
     },
@@ -638,6 +774,17 @@
             }
           ]
         }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Botania:manaResource",
+          "damage": 4,
+          "amount": 3
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
       ]
     },
     {
@@ -661,6 +808,20 @@
               }
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:snowball"
+        },
+        {
+          "id": "minecraft:quartz"
         }
       ]
     },
@@ -701,6 +862,11 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
       ]
     },
     {
@@ -726,6 +892,12 @@
               }
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:livingwood",
+          "amount": 16
         }
       ]
     },
@@ -753,10 +925,21 @@
             }
           ]
         }
+      ],
+      "rewardchoice": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "Botania:dreamwood",
+          "amount": 16
+        }
       ]
     },
     {
       "name": "Round Two",
+      "description": "Defeating the Gaia Guardian is a difficult task, however you must challenge yourself further to obtain the rarest Botania items. By combining a Terrasteel ingot and a Gaia Spirit, you can create a Gaia Spirit Ingot. By using the Gaia Spirit Ingot in place of a Terrasteel ingot, you can summon a stronger Gaia Guardian. This version of the Gaia Guardian drops more Gaia Spirits as well as unique armor buffs and rare relics.",
       "x": 226,
       "y": 182,
       "icon": {
@@ -765,6 +948,39 @@
       },
       "prerequisites": [
         "Gaia Guardian"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaResource",
+                "damage": 14
+              }
+            }
+          ]
+        },
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Gaia Guardian",
+              "icon": {
+                "id": "Botania:gaiaHead"
+              },
+              "mob": "Botania.botania:doppleganger",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4
+        }
       ]
     },
     {

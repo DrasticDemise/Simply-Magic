@@ -20,6 +20,11 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
       ]
     },
     {
@@ -107,6 +112,9 @@
         {
           "id": "arsmagica2:spellParchment",
           "amount": 4
+        },
+        {
+          "id": "HardcoreQuesting:bags"
         }
       ]
     },
@@ -201,6 +209,12 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
       ]
     },
     {
@@ -251,6 +265,10 @@
         {
           "id": "arsmagica2:itemOre",
           "amount": 32
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
         }
       ]
     },
@@ -288,6 +306,12 @@
               "required": 2
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
         }
       ]
     },
@@ -358,6 +382,13 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1,
+          "amount": 2
+        }
       ]
     },
     {
@@ -382,6 +413,12 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
       ]
     },
     {
@@ -405,6 +442,12 @@
               }
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
         }
       ]
     },
@@ -445,6 +488,12 @@
             }
           ]
         }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
       ]
     },
     {
@@ -481,6 +530,10 @@
           "id": "arsmagica2:rune",
           "damage": 17,
           "amount": 2
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
         }
       ]
     },
@@ -538,6 +591,12 @@
               }
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
         }
       ]
     },
@@ -600,6 +659,12 @@
               }
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
         }
       ]
     },
