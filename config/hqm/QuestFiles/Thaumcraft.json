@@ -523,7 +523,7 @@
     },
     {
       "name": "Golemancy",
-      "description": "Those that delve into the art of golemancy will find their lives a bit less lonely. These tiny automatons can perform mundane and boring tasks when given a single ring of a bell! And a core of course. ",
+      "description": "Those that delve into the art of golemancy will find their lives a bit less lonely. These tiny automatons can perform mundane and boring tasks when given a single ring of a bell! And a core of course. If you are on a server, crafting the golemancers bell will result in a crash. Because of this, you can craft this \"Throw Me\" item that, when thrown, will spawn a new bell for you.",
       "x": 20,
       "y": 106,
       "icon": {
@@ -540,16 +540,19 @@
               "item": {
                 "id": "Thaumcraft:ItemGolemPlacer"
               }
+            },
+            {
+              "item": {
+                "id": "Quadrum:ThrowMe"
+              }
             }
           ]
         }
       ],
       "reward": [
         {
-          "id": "Thaumcraft:GolemBell"
-        },
-        {
-          "id": "Thaumcraft:GolemBell"
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
         }
       ]
     },
