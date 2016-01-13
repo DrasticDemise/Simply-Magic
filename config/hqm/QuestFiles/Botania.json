@@ -1,5 +1,6 @@
 {
   "name": "Botania",
+  "description": "This quest line provides linear progression through the availability in the Lexica Botania. This quest line does not provide information on all major mechanics of Botania, but instead covers major milestones and points of progression. Exploration into Redstone and the Ender system are highly suggested. This quest line is meant to be supplementary to the Lexica Botania and not a replacement of any form.                   - Authored by DrasticDemise",
   "quests": [
     {
       "name": "The Basics",
@@ -73,6 +74,7 @@
       "prerequisites": [
         "The Basics"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -121,6 +123,7 @@
       "prerequisites": [
         "Mana Theory"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -170,6 +173,7 @@
       "prerequisites": [
         "Mana Generation"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -208,6 +212,7 @@
       "prerequisites": [
         "Mana Consumption"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -420,6 +425,7 @@
       "prerequisites": [
         "Rune Theory"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -474,6 +480,7 @@
       "prerequisites": [
         "Terrasteel"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -712,6 +719,7 @@
       "prerequisites": [
         "Rune Theory"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -744,6 +752,7 @@
       "prerequisites": [
         "Elven Portal"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -846,9 +855,10 @@
         "id": "Botania:sparkUpgrade"
       },
       "prerequisites": [
-        "Sparks",
-        "Augment trigger"
+        "Augment trigger",
+        "Sparks"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -1017,6 +1027,7 @@
       "prerequisites": [
         "Gaia Guardian"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "CONSUME",

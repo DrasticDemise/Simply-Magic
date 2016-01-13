@@ -1,5 +1,6 @@
 {
   "name": "Mystcraft",
+  "description": "This quest line provides information on the Dimension creation and management system in Mystcraft. You will be provided tips on stable dimension creation as well as provided information on Instability, Pages, Portals, and Crystals.                 -Authored by DrasticDemise",
   "quests": [
     {
       "name": "Getting Started",

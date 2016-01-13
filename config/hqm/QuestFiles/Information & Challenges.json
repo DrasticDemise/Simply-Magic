@@ -1,0 +1,446 @@
+{
+  "name": "Information \u0026 Challenges",
+  "description": "General information on pack chanages, mechanics, and automation challenges for players.",
+  "quests": [
+    {
+      "name": "Vanilla Combat Sucks",
+      "description": "All vanilla tools and armor above stone are set to one durability. This is meant to encourage the use of modded armors and weapons, as well as provide a challenge in the early game. The exception to this is Iron Pickaxes which have a durability of 100.",
+      "x": 18,
+      "y": 23,
+      "icon": {
+        "id": "minecraft:diamond_chestplate"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:planks",
+                "damage": 3
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Feedback",
+      "description": "Find an incorrect quest? Want to see more information on a modded item or mechanic? Did we not clarify enough? Provide feedback through the FTB forums or feel free to message DrasticDemise and Brizzle on the FTB forums, Total_Meltdown on the FTB Subreddit or through the Simply-Magic github repository. ",
+      "x": 18,
+      "y": 63,
+      "icon": {
+        "id": "minecraft:written_book"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:planks",
+                "damage": 3
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Quest Rewards",
+      "description": "Basic and Good reward bags are likely to only contain vanilla resources. Higher bags are likely to contain modded-specific items. The current reward tables are still under construction and it is likely you will hit the same reward multiple times.",
+      "x": 19,
+      "y": 104,
+      "icon": {
+        "id": "HardcoreQuesting:bags",
+        "damage": 4
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:planks",
+                "damage": 3
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Credits",
+      "description": "This pack was co-developed by DrasticDemise and Brizzle. This was created with inspiration to fill the niche that Mage Quest no longer fills. This pack will be supported until the end of 1.7.10 and will then be ported over to 1.8.x when available. All credit goes to you, the person reading this quest book. You rock! Happy Crafting!",
+      "x": 19,
+      "y": 140,
+      "icon": {
+        "id": "minecraft:skull",
+        "damage": 3
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:planks",
+                "damage": 3
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Farmer Joe",
+      "description": "Gluten Free GMO Free Logic Free Research Free Research!",
+      "x": 199,
+      "y": 44,
+      "icon": {
+        "id": "minecraft:wheat"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:wheat"
+              },
+              "required": 8000
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Too Stoned",
+      "description": "Smashing and Smelting",
+      "x": 267,
+      "y": 18,
+      "icon": {
+        "id": "minecraft:stone"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:stone"
+              },
+              "required": 10000
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Wisp You Would Stop",
+      "description": "Autofarming never became so tricky!",
+      "x": 197,
+      "y": 111,
+      "icon": {
+        "id": "Thaumcraft:ItemWispEssence",
+        "nbt": "{Aspects:[0:{amount:2,key:\"aer\"}]}"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemWispEssence",
+                "nbt": "{Aspects:[0:{amount:2,key:\"aer\"}]}"
+              },
+              "required": 1500,
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4
+        }
+      ]
+    },
+    {
+      "name": "Slater Nerd!",
+      "description": "Not so clean slate.",
+      "x": 267,
+      "y": 57,
+      "icon": {
+        "id": "AWWayofTime:reinforcedSlate"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:reinforcedSlate"
+              },
+              "required": 1000
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Poor Farming",
+      "description": "You can\u0027t be THAT bad at farming, can you?",
+      "x": 176,
+      "y": 44,
+      "icon": {
+        "id": "minecraft:poisonous_potato"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:poisonous_potato"
+              },
+              "required": 5000
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4
+        }
+      ]
+    },
+    {
+      "name": "Magic Metal",
+      "description": "Essence Infused Metals",
+      "x": 255,
+      "y": 38,
+      "icon": {
+        "id": "Thaumcraft:ItemResource",
+        "damage": 2
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 2
+              },
+              "required": 2500
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Mana Metal",
+      "description": "Mana Infused Metals",
+      "x": 279,
+      "y": 38,
+      "icon": {
+        "id": "Botania:manaResource"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaResource"
+              },
+              "required": 2500
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Shearly You Won\u0027t",
+      "description": "Woold you stop?",
+      "x": 212,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:wool"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:wool"
+              },
+              "required": 5000,
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Lumberjack",
+      "description": "Tree Punching!",
+      "x": 189,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:log"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:log"
+              },
+              "required": 5000,
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Goblin Metal",
+      "description": "Enslavement is bad.",
+      "x": 244,
+      "y": 58,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 150
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 150
+              },
+              "required": 100
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "1,500 Blaze It",
+      "description": "Oooh burn.",
+      "x": 208,
+      "y": 130,
+      "icon": {
+        "id": "minecraft:blaze_rod"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:blaze_rod"
+              },
+              "required": 1500
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4
+        }
+      ]
+    },
+    {
+      "name": "Rotten Puns",
+      "description": "Zombies just want a blanket.",
+      "x": 186,
+      "y": 129,
+      "icon": {
+        "id": "minecraft:rotten_flesh"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:rotten_flesh"
+              },
+              "required": 1500
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}

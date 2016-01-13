@@ -1,5 +1,6 @@
 {
   "name": "Ars Magica",
+  "description": "This quest line introduces the player to major Ars Magica mechanics such as Spell Crafting, Etherium, as well as many functional blocks and tools. This quest line is meant to provide points of direction in the mod through the compendium. Due to issues with clarity, the Compendium is fully unlocked from the beginning. This quest line does not cover the multi-block structures offered in Ars Magica, and this quest line is meant to be supplementary to the Compendium.              -Authored by DrasticDemise",
   "quests": [
     {
       "name": "Getting Started",
@@ -38,6 +39,7 @@
       "prerequisites": [
         "Getting Started"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -73,6 +75,7 @@
       "prerequisites": [
         "Spell Writing"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -130,6 +133,7 @@
       "prerequisites": [
         "Spell Writing"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "CONSUME",
@@ -154,8 +158,9 @@
         "id": "arsmagica2:Aum"
       },
       "prerequisites": [
-        "Crafting Altar"
+        "Spell Writing"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -228,6 +233,7 @@
       "prerequisites": [
         "Crafting Altar"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -283,6 +289,7 @@
       "prerequisites": [
         "Etherium"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -356,6 +363,7 @@
       "prerequisites": [
         "Etherium"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -363,22 +371,26 @@
             {
               "item": {
                 "id": "arsmagica2:mageHood"
-              }
+              },
+              "precision": "FUZZY"
             },
             {
               "item": {
                 "id": "arsmagica2:mageArmor"
-              }
+              },
+              "precision": "FUZZY"
             },
             {
               "item": {
                 "id": "arsmagica2:mageLeggings"
-              }
+              },
+              "precision": "FUZZY"
             },
             {
               "item": {
                 "id": "arsmagica2:mageBoots"
-              }
+              },
+              "precision": "FUZZY"
             }
           ]
         }
@@ -549,6 +561,7 @@
       "prerequisites": [
         "Crafting Altar"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -612,6 +625,7 @@
       "prerequisites": [
         "Special Etherium"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",

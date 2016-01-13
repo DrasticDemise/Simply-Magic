@@ -1,5 +1,6 @@
 {
   "name": "Thaumcraft",
+  "description": "This quest line introduces you to all major mechanics in Thaumcraft as well as providing hints and tips for lesser-known parts of the mod. You will be given several major milestones, but you are encouraged to explore outside of the quest line. Each add-on has some quests from it and quests may be unavailable until you have the required research. If you have played Thaumcraft many times and wish to skip the research game, you may change the difficulty in the Thaumcraft.cfg file.                          -  Authored by DrasticDemise",
   "quests": [
     {
       "name": "Yer a Thaumaturge Harry",
@@ -368,7 +369,7 @@
         "damage": 14
       },
       "prerequisites": [
-        "Research and Discovery"
+        "Table Crafting"
       ],
       "tasks": [
         {
@@ -937,7 +938,8 @@
                 "id": "Thaumcraft:WandCasting",
                 "damage": 128,
                 "nbt": "{aqua:15000,terra:15000,ignis:15000,cap:\"thaumium\",rod:\"silverwood\",ordo:15000,sceptre:1b,perditio:15000,aer:15000}"
-              }
+              },
+              "precision": "NBT_FUZZY"
             }
           ]
         }
@@ -945,8 +947,7 @@
       "reward": [
         {
           "id": "HardcoreQuesting:bags",
-          "damage": 1,
-          "amount": 2
+          "damage": 2
         }
       ]
     },
@@ -971,7 +972,7 @@
                 "id": "Thaumcraft:WandRod",
                 "damage": 50
               },
-              "precision": "FUZZY"
+              "precision": "ORE_DICTIONARY"
             }
           ]
         }
@@ -979,7 +980,7 @@
       "reward": [
         {
           "id": "HardcoreQuesting:bags",
-          "damage": 2
+          "damage": 1
         }
       ]
     },
@@ -1094,7 +1095,7 @@
     },
     {
       "name": "Wand Upgrade",
-      "description": "The maximum amount of vis and level of discount can be increased by upgrading the caps on the wand. As you explore other schools of magic, you may find more useful alternatives, however the next upgrade is gold caps.",
+      "description": "The maximum amount of vis and level of discount can be increased by upgrading the caps on the wand. As you explore other schools of magic, you may find more useful alternatives, however the next upgrade is gold caps and great wood cores.",
       "x": 200,
       "y": 35,
       "icon": {
@@ -1114,7 +1115,8 @@
                 "id": "Thaumcraft:WandCap",
                 "damage": 1
               },
-              "required": 2
+              "required": 2,
+              "precision": "ORE_DICTIONARY"
             }
           ]
         }
