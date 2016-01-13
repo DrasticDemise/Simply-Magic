@@ -1,0 +1,1003 @@
+{
+  "name": "Blood Magic",
+  "description": "This quest line is meant to provide documentation of all major progression as well as provide information on useful tools and fun items. This follows supplementary with the in-game documentation and is meant to provide a more linear direction than the current documentation otherwise provides. Consulting the documentation will be necessary for altar, potions and some unique items.                     -Authored by Brizzle",
+  "quests": [
+    {
+      "name": "Altar",
+      "description": "The blood altar will be the central point in all Blood Magic crafting. Objects can be placed inside of the blood altar to be infused with Life Essence. The Sacrificial Knife is the first method in filling the Altar. By Shift-Clicking into the altar, you can damage yourself in exchange for 200 LP.",
+      "x": 23,
+      "y": 13,
+      "icon": {
+        "id": "AWWayofTime:Altar"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "The Start",
+          "longDescription": "A task where the player has to craft specific items.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:Altar"
+              }
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:sacrificialKnife"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "guideapi:ItemGuideBook",
+          "nbt": "{CreativeBook:0b,G-API_Category_Page:0,G-API_Category:0,G-API_Entry_Page:0}"
+        },
+        {
+          "id": "guideapi:ItemGuideBook",
+          "damage": 1,
+          "nbt": "{CreativeBook:0b}"
+        }
+      ]
+    },
+    {
+      "name": "Tier 1",
+      "description": "In order to obtain your first blood orb, place a diamond in the Blood Altar and begin filling it 2,000 LP. ",
+      "x": 51,
+      "y": 13,
+      "icon": {
+        "id": "AWWayofTime:weakBloodOrb"
+      },
+      "prerequisites": [
+        "Altar"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Weak Blood Orb",
+          "longDescription": "This Weak Blood Orb has a network capacity of 5,000.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:weakBloodOrb"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Altar Upgrade",
+          "longDescription": "Rune blocks can be crafted and are the main component for altar upgrades. Place these new runes below the altar in a hollow 3x3. Higher tier altars will allow you to add more specialized runes as well as create stronger blood orbs.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:speedRune"
+              },
+              "required": 8,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Tier 2",
+      "description": "Placing an emerald in a Tier 2 blood altar with 5,000LP will create a Tier 2 blood orb.",
+      "x": 79,
+      "y": 13,
+      "icon": {
+        "id": "AWWayofTime:apprenticeBloodOrb"
+      },
+      "prerequisites": [
+        "Tier 1"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Apprentice Blood Orb",
+          "longDescription": "This new orb increases your network capacity to 25,000LP.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:apprenticeBloodOrb"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Runes",
+          "longDescription": "You now have access to Sacrificial and Self-Sacrificial runes. Each rune will increase the gain of Life Essence by 10% each. For the tier 3 altar you need 20 more runes of any type. Place them 2 blocks out and 1 down from the last set of runes. It should be form a 7x7 square without corners. In the corners you need a 3 block pillar that is placed one block above the new runes capped with glowstone blocks. Consult the Documentation Book for a visual.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:runeOfSacrifice"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "AWWayofTime:runeOfSelfSacrifice",
+          "amount": 5
+        },
+        {
+          "id": "AWWayofTime:runeOfSacrifice",
+          "amount": 5
+        },
+        {
+          "id": "AWWayofTime:speedRune",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "Self sacrifice",
+      "description": "If you wish to power your altar with self-sacrifices, you may find Incense to be a powerful buff. Incense increase the amount of LP gained through self-sacrifice by a base percentage on top of the amount of Self-Sacrifice Runes respective to the level of incense used. Place the crucible and add your wood ash. The crucible should show small flaming particles and your sacrifical dagger will be glowing. You may then hold down the dagger to charge for a greater sacrifice using 9 hearts. Stronger types of incense will become available as you progress.",
+      "x": 22,
+      "y": 75,
+      "icon": {
+        "id": "AWWayofTime:blockCrucible"
+      },
+      "prerequisites": [
+        "Tier 1"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Incense",
+          "longDescription": "Craft the following incense.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:blockCrucible"
+              }
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:bloodMagicIncenseItem"
+              }
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:bloodMagicIncenseItem",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Mob sacrifice",
+      "description": "Those without access to fast regen will find self-sacrifice slow and tedious. In place of this, you can sacrifice various amounts of entities on top of the altar with the Dagger of Sacrifice. The dagger will instantly kill mobs that are close to the altar and will fill the altar with their essence. The amount of LP is dependent on the type of mob sacrificed as well as the amount of sacrificial runes on the altar.",
+      "x": 108,
+      "y": 13,
+      "icon": {
+        "id": "AWWayofTime:daggerOfSacrifice"
+      },
+      "prerequisites": [
+        "Tier 2"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:daggerOfSacrifice"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "AWWayofTime:runeOfSacrifice"
+        }
+      ]
+    },
+    {
+      "name": "Chemistry",
+      "description": "The chemistry set will allow you to transmute several items into a new item. It is possible to brew new and powerful potions, but your beginning transmutations will be as simple as converting flesh to leather. Each transmutation consumes life essence out of your network.",
+      "x": 22,
+      "y": 43,
+      "icon": {
+        "id": "AWWayofTime:blockWritingTable"
+      },
+      "prerequisites": [
+        "Tier 1"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:blockWritingTable"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Tier 3",
+      "description": "A block of gold and 25,000LP will craft your new blood orb.",
+      "x": 108,
+      "y": 42,
+      "icon": {
+        "id": "AWWayofTime:magicianBloodOrb"
+      },
+      "prerequisites": [
+        "Tier 2"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "T3 Blood Orb",
+          "longDescription": "This orb expands your network to 150,000 LP.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:magicianBloodOrb"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Runes",
+          "longDescription": "These new runes are quite special. Augmented capacity adds an additional 1,500 LP per rune. Buffer tank is allways 10% of the main tank so that will also get larger. Dislocation runes increase the amount of LP moved from the altar buffer per operation.(default per tick without acceleration runes) Tier 4 requires 36 more runes. These are also placed 2 blocks out and 1 down from the previous runes. Create a 11x11 square missing the corners for this level of runes. 5 high block pillar in the 4 corners (one block above the new runes)with the top block being a  large blood stone. ",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:AlchemicalWizardrybloodRune",
+                "damage": 1
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Tier 4",
+      "description": "40,000 LP, a Blood Shard and a Tier 4 Altar will craft your new blood orb.",
+      "x": 138,
+      "y": 42,
+      "icon": {
+        "id": "AWWayofTime:masterBloodOrb"
+      },
+      "prerequisites": [
+        "Tier 3",
+        "Ritual of Binding"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Master Blood Orb",
+          "longDescription": "This orb expands your network capacity to 1,000,000 LP.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:masterBloodOrb"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Summoning",
+      "description": "Some recipes and rituals require demon blood shards. To do this, you must first summon a demon. It is advised that you are well equipped to fight such a monster.",
+      "x": 139,
+      "y": 12,
+      "icon": {
+        "id": "AWWayofTime:blockPlinth"
+      },
+      "prerequisites": [
+        "Tier 3"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "The setup",
+          "longDescription": "For layout of the summoning consult the documentation book.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:blockPlinth"
+              }
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:blockPedestal"
+              },
+              "required": 6
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Elemental",
+          "longDescription": "To summon a basic elemental Use 6 of the same alchemical ingredient. with a master blood orb in the plinth ",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:aether"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Demon Blood",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:demonBloodShard"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Tier 5",
+      "description": "A Demon Shard and 75,000 LP will create your next orb.",
+      "x": 167,
+      "y": 12,
+      "icon": {
+        "id": "AWWayofTime:archmageBloodOrb"
+      },
+      "prerequisites": [
+        "Tier 4"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Archmage\u0027s Blood",
+          "longDescription": "This orb will expand your network by 10,000,000LP.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:archmageBloodOrb"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Tier 6",
+      "description": "Slaying the demons that have settled out of the portal have net you a new form of crystal. These crystals can be used to upgrade your altar one last time and can be used to craft the next level of blood orb. A Crystal Cluster and 200,000 LP will craft your new orb. Consult the in-game book for altar placement.",
+      "x": 201,
+      "y": 43,
+      "icon": {
+        "id": "AWWayofTime:transcendentBloodOrb"
+      },
+      "prerequisites": [
+        "Demon invasion"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "More Orbs",
+          "longDescription": "This orb will increase your network capacity to 30,000,000LP.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:transcendentBloodOrb"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4
+        }
+      ]
+    },
+    {
+      "name": "Demon invasion",
+      "description": "In order to progress, you must open the demon portal. Consulting a form of video is advised as this ritual is extremely complex.",
+      "x": 167,
+      "y": 43,
+      "icon": {
+        "id": "AWWayofTime:demonPortalMain"
+      },
+      "prerequisites": [
+        "Tier 5"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Supplies",
+          "longDescription": "These are the minimum supplies you are going to need to start the ritual convocation of the damned. Place the master ritual stone and make the ritual. Place a blood altar above the master ritual stone. Place those 8 bell jars on top of the pillars of the ritual. Use the alchemical router to link the jars to the master ritual stone. Shift right-click on a jar sets the type. Right-click links. Shift right-click clears the router so you can link the next jar to stone.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:itemAttunedCrystal"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:ritualStone"
+              },
+              "required": 128,
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:blockCrystalBelljar",
+                "nbt": "{reagentTanks:[0:{amount:16000,Reagent:\"terrae\",capacity:16000}]}"
+              }
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:blockCrystalBelljar",
+                "nbt": "{reagentTanks:[0:{amount:16000,Reagent:\"tenebrae\",capacity:16000}]}"
+              }
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:blockCrystalBelljar",
+                "nbt": "{reagentTanks:[0:{amount:16000,Reagent:\"magicales\",capacity:16000}]}"
+              }
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:blockCrystalBelljar",
+                "nbt": "{reagentTanks:[0:{amount:16000,Reagent:\"aquasalus\",capacity:16000}]}"
+              }
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:blockCrystalBelljar",
+                "nbt": "{reagentTanks:[0:{amount:16000,Reagent:\"sanctus\",capacity:16000}]}"
+              }
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:blockCrystalBelljar",
+                "nbt": "{reagentTanks:[0:{amount:16000,Reagent:\"aether\",capacity:16000}]}"
+              }
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:blockCrystalBelljar",
+                "nbt": "{reagentTanks:[0:{amount:16000,Reagent:\"potentia\",capacity:16000}]}"
+              }
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:blockCrystalBelljar",
+                "nbt": "{reagentTanks:[0:{amount:16000,Reagent:\"incendium\",capacity:16000}]}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "Now you must kill one of the lesser demons over the altar and the invasion is underway.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:demonPlacer"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Documentation",
+      "description": "Blood magic has its own form of documentation! You can craft the following books if you wish to follow along with the quest line.",
+      "x": 21,
+      "y": 183,
+      "icon": {
+        "id": "guideapi:ItemGuideBook",
+        "nbt": "{CreativeBook:0b,G-API_Category_Page:0,G-API_Category:0,G-API_Entry_Page:0}"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "guideapi:ItemGuideBook",
+                "nbt": "{CreativeBook:0b,G-API_Category_Page:0,G-API_Category:0,G-API_Entry_Page:0}"
+              }
+            },
+            {
+              "item": {
+                "id": "guideapi:ItemGuideBook",
+                "damage": 1,
+                "nbt": "{CreativeBook:0b}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tier 1 Playthings",
+      "description": "Your first blood orb allows you to create a variety of tools that are useful for early-midgame players. Slates may be created by placing stone in the altar. There are several tiers of slates that require additional life essence.",
+      "x": 51,
+      "y": 42,
+      "icon": {
+        "id": "AWWayofTime:lavaSigil"
+      },
+      "prerequisites": [
+        "Tier 1"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Sigils",
+          "longDescription": "These sigils will create source blocks of their respective types at the cost of Life Essence in your network. If you lack the amount of essence required, you will be damaged immediately. The divinition sigil will reveal the amount of LP in your network and blood altars.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:lavaSigil"
+              },
+              "precision": "ORE_DICTIONARY"
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:divinationSigil"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "The Imperfect Ritual Stone is your first step in powerful rituals. Rituals require a catalyst on top of the stone and 5,000 Life Essence each. To activate the ritual, simply right click the stone. Placing a water source on top of the stone will cause a thunderstorm, a block of Lapis will make it night, and a block of coal will summon a strong zombie. The Lava crystal may be used in various furnaces as fuel at the cost of 25LP per smelting action.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:imperfectRitualStone"
+              }
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:lavaCrystal"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Tier 2 Sigils",
+      "description": "A new blood orb allows you to create a new tier of sigils. The Air Sigil will fling you in the direction you click it. The Sigil of Sight is an upgraded Sigil of divination. It will allow you to see the speed of your altar as well as how full your altar internal tank is. The Sigil of the Green Grove speeds up the growth of crops around you and provides a bonemeal effect when used on plants. The Sigil of The Fast Miner provides a haste effect. The Void Sigil deletes liquid source blocks or one bucket from a tank.",
+      "x": 79,
+      "y": 42,
+      "icon": {
+        "id": "AWWayofTime:sigilOfTheFastMiner"
+      },
+      "prerequisites": [
+        "Tier 2"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Crafting one sigil will complete this qust.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:sigilOfTheFastMiner"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Tier 3 Sigils",
+      "description": "The Sigil of Magnetism pulls blocks towards you within 5 blocks. The Sigil of the Blood Lamp places light sources when used on a block. The Sigil of Elemental Affinity grants the user protection from fall damage, lava damage, and drowning. The Phantom bridge will place ghost blocks under you like a walkway. Shifting when active will place the blocks one space lower allowing you to walk downwards like stairs. The Sigil of holding will hold 5 sigils in a single inventory space. Sigils can be rotated by shift-scrolling.",
+      "x": 50,
+      "y": 75,
+      "icon": {
+        "id": "AWWayofTime:sigilOfHolding"
+      },
+      "prerequisites": [
+        "Tier 3"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Craft one of any Tier 3 Sigil. ",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:itemBloodLightSigil"
+              },
+              "precision": "ORE_DICTIONARY"
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:sigilOfHolding"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Complex Rituals",
+      "description": "A major mechanic to Blood Magic is Rituals. Rituals can perform extremely powerful tasks at the cost of Life Essence. Rituals require a large amount of space and a layout of ritual stones in order to function. By placing a master ritual stone and right-clicking it with the Ritual Diviner with rune stones in your inventory, the ritual will be automatically assembled. Once ready, right-click the ritual with the activation crystal to begin. The documentation book and ftbwiki.org/ritual display a list of available rituals and their functions.",
+      "x": 107,
+      "y": 75,
+      "icon": {
+        "id": "AWWayofTime:itemRitualDiviner"
+      },
+      "prerequisites": [
+        "Tier 3"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:activationCrystal"
+              }
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:itemRitualDiviner"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:masterStone"
+              }
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:ritualStone"
+              },
+              "required": 24
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Ritual of Binding",
+      "description": "In order to advance to the next tier, you must create a bound blade. Start by creating the Ritual of Binding. Once constructed, throw a diamond sword on the top of the Master Ritual Stone and use the Weak Activation Crystal. You will require at least 10,000LP in your network to activate the ritual.",
+      "x": 139,
+      "y": 75,
+      "icon": {
+        "id": "AWWayofTime:weakBloodShard"
+      },
+      "prerequisites": [
+        "Complex Rituals"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Killing mobs with a Bound Blade will give a chance to drop Weak Blood Shards.",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:energySword"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:weakBloodShard"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Basic Spells",
+      "description": "You can create simple spells with a skull and an item. Place the Spell Table next to a blood altar and place any vanilla skull on the table. The skull determines *how* a spell is cast, and any items placed in the altar determine *what* is cast. The following items may be placed in the blood altar: Glowstone, TnT, Ice, Ghast Tear, Flint and Steel, Water Bucket, Obsidian, Ender Pearl, Apprentice blood orb. Once you determine what spell you wish to create, use the Unbound Crystal on the Spell Table to bind the crystal to the spell. You may change the spell at any time, but the crystal is linked by location.",
+      "x": 78,
+      "y": 76,
+      "icon": {
+        "id": "AWWayofTime:blockHomHeart"
+      },
+      "prerequisites": [
+        "Tier 3"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:Altar"
+              }
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:blockHomHeart"
+              }
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:blankSpell"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Complex Spells",
+      "description": "While the table spells are useful, they are far too simple and do not represent the most powerful forms of blood magic. You can now create extremely complex spells by placing blocks in the world, similar to table spells. For full documentation on how to arrange spells, use the provided modded book as well as ftbwiki.org/spell.",
+      "x": 78,
+      "y": 108,
+      "icon": {
+        "id": "AWWayofTime:itemComplexSpellCrystal"
+      },
+      "prerequisites": [
+        "Basic Spells"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Complex spells start with the type(particle, melee, self, tool). then the modifier(Wind, earth, fire, ice). Modifier(Default, offensive, defensive, enviromental).Enhancements(Augment, dampener, empowerer). Different combinations make different effects. Experiment away!",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:AlchemicalWizardrytile.blockSpellParadigm",
+                "damage": 2
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:AlchemicalWizardrytile.blockSpellModifier"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:AlchemicalWizardrytile.blockSpellEnhancement"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:itemComplexSpellCrystal"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Tier 4 Sigils",
+      "description": "Craft a Tier 4 Sigil",
+      "x": 168,
+      "y": 74,
+      "icon": {
+        "id": "AWWayofTime:itemCompressionSigil"
+      },
+      "prerequisites": [
+        "Tier 4"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:itemCompressionSigil",
+                "nbt": "{ownerName:\"DrasticDemise\",worldTimeDelay:24,isActive:0b}"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Dusk Upgrade",
+      "description": "The Tier 4 Altar will expand the available rituals. You can upgrade your ritual diviner to place Dusk stones, and the Master Ritual stone is needed in high-level rituals.",
+      "x": 107,
+      "y": 108,
+      "icon": {
+        "id": "AWWayofTime:itemRitualDiviner",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Complex Rituals"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:activationCrystal",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "AWWayofTime:itemRitualDiviner",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Dawn Upgrade",
+      "description": "A Tier 6 altar opens access to all rituals, however an upgrade to the ritual diviner is needed to place Dawn runes.",
+      "x": 201,
+      "y": 10,
+      "icon": {
+        "id": "AWWayofTime:itemRitualDiviner",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Tier 6"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "AWWayofTime:itemRitualDiviner",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}

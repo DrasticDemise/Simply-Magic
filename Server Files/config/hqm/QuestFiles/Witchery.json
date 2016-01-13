@@ -1,0 +1,2025 @@
+{
+  "name": "Witchery",
+  "description": "This quest line provides near-full documentation of the mod Witchery. You will be introduced to each mechanic of the mod as well as given the optional quest lines of Wolf and Vampire transformations.    - Authored by Brizzle",
+  "quests": [
+    {
+      "name": "Green Thumb",
+      "description": "Witchery adds a variety of plants and seeds that are required for various brews and crafts.",
+      "x": 26,
+      "y": 19,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 21
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Detection",
+          "longDescription": "Seeds can be obtained as grass drops, they do not grow naturally in the world.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:seedsmandrake"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:seedsbelladonna"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:seedssnowbell"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:seedswolfsbane"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:garlic"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:seedsartichoke"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Detection",
+          "longDescription": "Start growing the seeds that you have found in a reasonably large area. You will need an area with a condensed amount of plants in the future. Water Artichoke can be planted on water sources.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 22
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 21
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 78
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 156
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 69
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:dye",
+          "damage": 15,
+          "amount": 64
+        },
+        {
+          "id": "witchery:ingredient",
+          "damage": 81
+        }
+      ]
+    },
+    {
+      "name": "Bubble Bubble",
+      "description": "To begin with Witchery, you will first need a Witches Cauldron. Start by crafting anointing paste and applying it to a minecraft crucible. The Witches Cauldron is a central part for creating various items and crafts for Witchery. ",
+      "x": 26,
+      "y": 49,
+      "icon": {
+        "id": "witchery:cauldron"
+      },
+      "prerequisites": [
+        "Green Thumb"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Anointing",
+          "longDescription": "You will need a source of heat and water for the Cauldron.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 153
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:cauldron"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "witchery:cauldronbook"
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Fumes",
+      "description": "A main tool for any Witch is the Oven. The oven will turn items into unique resources that Furnaces are unable to provide. Another key point to the Oven is the ability to collect Fumes. By placing Clay Jars in the Oven, you are able to collect additional by-products of the things that you burn in the form of fumes. Most of your fumes will come from saplings and plants and these fumes are often needed in many recipes. A stock of Clay Jars can go a long way.",
+      "x": 52,
+      "y": 49,
+      "icon": {
+        "id": "witchery:witchesovenidle"
+      },
+      "prerequisites": [
+        "Bubble Bubble"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "If you need a specific fume, NEI will show the exact resources needed for the Oven.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:witchesovenidle"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 27
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "witchery:ingredient",
+          "damage": 46
+        },
+        {
+          "id": "witchery:ingredient",
+          "damage": 27,
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "name": "Mutandis Mutation",
+      "description": "Mutandis is similar to bonemeal, however instead of accelerating growth it can change plants into new types of vanilla or Witchery plants. Start by collecting each type of witchery plant.",
+      "x": 79,
+      "y": 16,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 14
+      },
+      "prerequisites": [
+        "Fumes"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Mutating",
+          "longDescription": "Cauldron Crafting",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 14
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Witchery Plants",
+          "longDescription": "Mutation is the only way to obtain these new plants. Once obtained, they can then be spread when planted.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:witchsapling"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:witchsapling",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:witchsapling",
+                "damage": 2
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:embermoss"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:spanishmoss"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:glintweed"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "witchery:ingredient",
+          "damage": 14,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Witchery Altar",
+      "description": "Rituals in witchery are done in forms of Circle Magic. Circle Magic requires various circles and colors of chalk, as well as the consumption of items to begin a ritual. Circle Magic requires power that comes from the Altar, a 2x3 multi-block structure that will serve as the central point in your circle magic messes. The Altar gains power and capacity by the amount of unique \"natural\" items around it, such as plants, saplings, dirt, grass and water. Each type has a cap, so it is necessary to use many kinds of plants. You must continue on for more information on circle magic.",
+      "x": 79,
+      "y": 50,
+      "icon": {
+        "id": "witchery:altar"
+      },
+      "prerequisites": [
+        "Mutandis Mutation"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Altar",
+          "longDescription": "Place the altar in a 2x3 structure in an area large enough to contain the largest of circles. Some other blocks will require power from the altar in order to function and they must be placed within a reasonable range of the altar.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:altar"
+              },
+              "required": 6
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Distilling",
+      "description": "Some rituals and items will require items that you cannot find from a simple Oven or Cauldron. You can obtain these items with the Distillery. The Distillery consumes power from the altar and can distill two fumes together for new sets of by-products.",
+      "x": 123,
+      "y": 49,
+      "icon": {
+        "id": "witchery:distilleryidle"
+      },
+      "prerequisites": [
+        "Witchery Altar"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Microbrew",
+          "longDescription": "A task where the player has to craft specific items.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:distilleryidle"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "witchery:ingredient",
+          "damage": 47
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "More Mutation",
+      "description": "Mutandis is useful, but it has its limits. When enhanced with a Nether Wart, it gains new properties. Mutandis Extremis can mutate multi-stage plants like cactus and can also mutate cooked meat. While these new applications may not seem terribly useful, you are certain that more uses will arise.",
+      "x": 139,
+      "y": 16,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 15
+      },
+      "prerequisites": [
+        "Mutandis Mutation",
+        "Witchery Altar"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Extreme Mutating",
+          "longDescription": "Detection Task",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Mutating Sprig",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:mutator"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "witchery:ingredient",
+          "damage": 15,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Demon Slayer",
+      "description": "Summoning a demon is a medium-complexity ritual, however demon hearts are necessary for progression. Slaying a demon is a tough task and can be rather destructive. You may use multiple rituals at a single time if you wish.",
+      "x": 52,
+      "y": 76,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 23
+      },
+      "prerequisites": [
+        "Ritual Chalk"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "description": "Slayer Task",
+          "longDescription": "Slayer task.",
+          "mobs": [
+            {
+              "name": "Demon",
+              "icon": {
+                "id": "Quadrum:demonIcon"
+              },
+              "mob": "witchery.demon",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Detection Task",
+          "longDescription": "Demon hearts can be distilled, used in crafting, or even placed on your altar as an upgrade.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 23
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Coven",
+      "description": "Once you have performed a rite of infusion, you can now recruit Coven Witches to join your Coven. Witches in your coven are required for more powerful spells, however they also provide passive buffs to circle magic and can be summoned on a whim. ",
+      "x": 18,
+      "y": 156,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 94
+      },
+      "prerequisites": [
+        "Infusing"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Coven Summoning",
+          "longDescription": "Using the Seer Stone will summon the Witches of your coven. Holding down the seer stone will summon a larger amount of Witches to assist you. Simply use the Seer Stone on the Heart Glyph.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 94
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "minecraft:spawn_egg",
+          "damage": 6404
+        }
+      ]
+    },
+    {
+      "name": "Infusing",
+      "description": "Your next milestone in Witchery is to become infused. You may infuse yourself with three different types of brews, each granting the player powerful and different abilities. More importantly, however, is that you will be able to form your own coven after becoming infused.",
+      "x": 52,
+      "y": 156,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 83
+      },
+      "prerequisites": [
+        "Additional Tools"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Self Infusion",
+          "longDescription": "Consult the book on Brews and Infusions as well as the book on Rituals in order to perform the Rites of Infusion.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 42
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Sprig Usage",
+      "description": "The Mutating Sprig can be used to transform multi-block setups into new blocks with unique uses, mostly oriented for PvP and the Taglock system. Because of their complexity and lack of documentation in the in-game books, it is recommended you consult the Witchery Wiki for further information on the Mutating Sprig\u0027s transformations.",
+      "x": 187,
+      "y": 18,
+      "icon": {
+        "id": "witchery:leechchest"
+      },
+      "prerequisites": [
+        "More Mutation"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:planks",
+                "damage": 3
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Familiar Options",
+      "description": "As you progress through Witchery you will find that binding a Familiar has its uses. Familiars grant the owner powerful buffs such as stronger curses, better brews, or better broom management. All familiars will split the damage dealt to the owner with the familiar. If a Familiar is killed, it can be summoned again with the Rite of Summoning.",
+      "x": 172,
+      "y": 40,
+      "icon": {
+        "id": "witchery:crittersnare",
+        "damage": 1
+      },
+      "prerequisites": [
+        "More Mutation"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "longDescription": "More information on Familiars in later quests. Wiki information found at sites.google.com/site/witcherymod/familiars",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:planks"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AROOOOOOOOOOO!!!!!!!!",
+      "description": "You require the following items as well as a Full coven and 10,000 power in your Altar. If you wish to no longer be a werewolf, you may remove the curse with the Rite of Remove Curse.",
+      "x": 18,
+      "y": 187,
+      "icon": {
+        "id": "witchery:wolfhead"
+      },
+      "prerequisites": [
+        "Coven"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Curse of the wolf",
+          "longDescription": "Consult the Curse of the Wolf for the layout of the Circle.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:taglockkit"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 31
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 156
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:wolfhead",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 71
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:diamond"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 94
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 48
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Additional Tools",
+      "description": "The Kettle is similar to the Cauldron, however the kettle is used to make many more brews and potions. The Kettle requires a source of constant heat, water, and power from an altar. Black swirls will indicate that the kettle is not recieving enough power. Some brews may require multiple bottles.",
+      "x": 52,
+      "y": 121,
+      "icon": {
+        "id": "witchery:kettle"
+      },
+      "prerequisites": [
+        "Demon Slayer"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Kettle and Wheel",
+          "longDescription": "The kettle and Spinning Wheel require power from an altar in order to function. Witche\u0027s Robes grant the wearer a chance to obtain extra brews from certain recipes.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:kettle"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:witchhat"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:witchrobe"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:spinningwheel"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "witchery:ingredient",
+          "damage": 107,
+          "nbt": "{CurrentPage:14}"
+        },
+        {
+          "id": "witchery:ingredient",
+          "damage": 49,
+          "nbt": "{CurrentPage:33}"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:web",
+          "amount": 10
+        },
+        {
+          "id": "minecraft:lapis_block",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Vampirism",
+      "description": "For those that wish to become a vampire, there are no notable prerequisites in Witchery, however following normal progression is recommended, Those that wish to revert their vampirism may use the Rite of Remove Curse.",
+      "x": 297,
+      "y": 9,
+      "icon": {
+        "id": "witchery:coffin"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Torn Pages",
+          "longDescription": "The Observations of the Immortal may be crafted or found in villages. In order to complete this task, you must have the completed version of the book by crafting the original book with a torn page. Torn pages may also be found in villages in which the book is located.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:vampirebook",
+                "damage": 9,
+                "nbt": "{pageStack:[0:\"ritual1\",1:\"ritual2\",2:\"ritual3\",3:\"ritual4\",4:\"ritual5\",5:\"transfix\",6:\"knockback\",7:\"speed\",8:\"resistsun\",9:\"smashstone\",10:\"bats\"]}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Task One",
+      "description": "Performing the ritual near a nether portal is advised.",
+      "x": 297,
+      "y": 42,
+      "icon": {
+        "id": "minecraft:skull"
+      },
+      "prerequisites": [
+        "Vampirism"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Ritual Tools",
+          "longDescription": "Sacrificial Tools",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:glassgoblet"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:boline"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Ritual Materials",
+          "longDescription": "Once you have acquired the following materials, start constructing the ritual area as seen in the book.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:skull"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:redstone"
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "minecraft:string"
+              },
+              "required": 24
+            },
+            {
+              "item": {
+                "id": "minecraft:torch"
+              },
+              "required": 4
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Sacrifice",
+          "longDescription": "Kill the chicken over the skull with the boline while the goblet is in your hotbar. When it is night time, pour the goblet on the skull.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:glassgoblet",
+                "damage": 1,
+                "nbt": "{WITCBloodUUID:\"__chicken\",WITCBloodName:\"Chicken\"}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Goblet Filling",
+      "description": "Now with your follower in tow, listen to you new masters instructions. Take note that monsters in the nether are likely to attack Elle and having a designated safe path before bringing Elle to the nether would be a good idea. It is advised that you are heavily armed as the fight will be not be so easy.",
+      "x": 297,
+      "y": 70,
+      "icon": {
+        "id": "witchery:glassgoblet",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Task One"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "LOCATION",
+          "description": "Nether",
+          "longDescription": "Enter the nether with your new follower",
+          "locations": [
+            {
+              "name": "Nether",
+              "icon": {
+                "id": "Quadrum:netheritem"
+              },
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "dim": -1,
+              "radius": -1
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Blood Transformation",
+          "longDescription": "Leading Elle to the lakes of lava will summon Lilith. Once you have slain Lilith, you have the option of a max enchantment on any item given to her, and the option to become a Vampire. Give her your chalice in order to obtain her blood, completing the task.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:glassgoblet",
+                "damage": 1,
+                "nbt": "{WITCBloodUUID:\"__lilith\",WITCBloodName:\"Lilith\"}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Feeding",
+      "description": "The Observations of the Immortal provide paths of progression for each vampiric level. Your first task and a central part of vampirism is feeding off of villagers. You will most likely want to feed off of villagers while they sleeping and take care not to draw them below 50% blood. Killing is not necessary for feeding, and is ill-advised if a village has guards. You may access your new feeding ability by scrolling in the hotbar below.",
+      "x": 297,
+      "y": 99,
+      "icon": {
+        "id": "Quadrum:BloodDropIcon"
+      },
+      "prerequisites": [
+        "Goblet Filling"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "longDescription": "By reaching the max amount of blood in the bar to the left, you will gain your first vampire ability. You may cycle through your current vampiric powers by pressing 1. Your first ability gained is Transfix which allows you to stun targets until they are hit, agroed, or drawn below 50% blood. You may also toggle night-vision by sneaking and using Transfix.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:planks",
+                "damage": 3
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "Transfixed",
+      "description": "Your next level can be acquired by draining half of the blood from a villager or player *while* they are under your transfix ability. Your new level will cause your basic attacks to inflict knockback.",
+      "x": 297,
+      "y": 131,
+      "icon": {
+        "id": "Quadrum:Tranfixicon"
+      },
+      "prerequisites": [
+        "Feeding"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:planks",
+                "damage": 3
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Four Nights of Thirst",
+      "description": "Your next level will require you to feed on villager for four nights. This level will grant you a speed effect that can be stacked multiple times at the cost of blood.",
+      "x": 297,
+      "y": 158,
+      "icon": {
+        "id": "minecraft:clock"
+      },
+      "prerequisites": [
+        "Transfixed"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:planks",
+                "damage": 2
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Boiling Blood",
+      "description": "As you may have noticed, the sun is rather harmful to vampires. You have reached the point in which you can begin to off-set this critical flaw in vampirism. In order to upgrade to level 5 you must by hit by 10 sun grenades. Sun grenades can be made by placing a Quartz Sphere on a Sunlight Collector that is adjacent to a Daylight Sensor.",
+      "x": 297,
+      "y": 192,
+      "icon": {
+        "id": "witchery:sungrenade"
+      },
+      "prerequisites": [
+        "Four Nights of Thirst"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Vampire Gear",
+          "longDescription": "In order to get blood-stained wool, click wool with a bone-needle while you have blood in your reservoir. Vampire gear grants extremely useful bonuses. There are sets for male and female.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:bloodedwool"
+              },
+              "required": 29
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Cane Sword",
+          "longDescription": "Kills with the Cane Sword will fill the sword with blood which can then be emptied into your pool when the sword is sheathed.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:canesword"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Sun Resistance",
+          "longDescription": "In order to upgrade to level 5 you must by hit by 10 sun grenades. Sun grenades can be made by placing a Quartz Sphere on a Sunlight Collector that is adjacent to a Daylight Sensor. Level 5 vampires gain the ability to resist the sunlight to a certain degree. When in the sun, blood will be burned at a slowed rate.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:daylight_detector"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:daylightcollector"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:sungrenade"
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "20 Blaze (slay) It",
+      "description": "For this level you must kill 20 blazes. Your new power will allow you to break stone instantly when sneak clicking with an empty hand.",
+      "x": 266,
+      "y": 192,
+      "icon": {
+        "id": "Quadrum:Blazeicon"
+      },
+      "prerequisites": [
+        "Boiling Blood"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "description": "Blazes",
+          "longDescription": "Kill 20 blazes ",
+          "mobs": [
+            {
+              "name": "Blaze",
+              "icon": {
+                "id": "Quadrum:Blazeicon"
+              },
+              "mob": "Blaze",
+              "kills": 20,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Back to Lilith",
+      "description": "Level 7 Vampirism grants the Vampire the ability to transform into a swarm of bats, granting creative flight at the cost of blood.",
+      "x": 236,
+      "y": 191,
+      "icon": {
+        "id": "minecraft:red_flower"
+      },
+      "prerequisites": [
+        "20 Blaze (slay) It"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Rebirth",
+          "longDescription": "In order to advance, you must summon Lilith once more. Give Lilith a Poppy after you have proven your worth again and you will be granted an addtional level.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:glassgoblet",
+                "damage": 1,
+                "nbt": "{WITCBloodUUID:\"__chicken\",WITCBloodName:\"Chicken\"}"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:red_flower"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Flight and Seduction",
+      "description": "To become a lvl 8 vampire you must fly from one village to another. A sound will chime once a village has been recognized as visited. With this level, your transfix ability will mesmorize villagers into following you.",
+      "x": 209,
+      "y": 191,
+      "icon": {
+        "id": "Quadrum:villageicon"
+      },
+      "prerequisites": [
+        "Back to Lilith"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:planks",
+                "damage": 3
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Trapped",
+      "description": "To become a vampire of lvl 9 you must trap 5 villagers in cages as shown in your observations on an immortal book. Then you must mesemerize and drink each ones blood to half. You must not damage them by going over half. Your new level is explained in the next quest.",
+      "x": 176,
+      "y": 191,
+      "icon": {
+        "id": "Quadrum:TrappedVillagericon"
+      },
+      "prerequisites": [
+        "Flight and Seduction"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Consume Task",
+          "longDescription": "A task where the player needs specific items. These do not have to be handed in, having them in one\u0027s inventory is enough.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:planks",
+                "damage": 3
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Converted",
+      "description": "Your final level will require you to convert a villager into a Vampire! This can be done by fully draining him of blood (use regen potions to prevent their death) and then providing him your own blood from a goblet while he is mesmerized.",
+      "x": 143,
+      "y": 191,
+      "icon": {
+        "id": "Quadrum:vampireVillagerIcon"
+      },
+      "prerequisites": [
+        "Trapped"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Detection Task",
+          "longDescription": "Your new vampire coven will require their own coffins.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:coffin"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Wolf Quest",
+      "description": "After performing the Curse of the Wolf, you can begin levelling up your powers by communing with the Wolf Diety. Construct a Wolf Altar and begin completing their tasks. The tasks follow along with this quest line.",
+      "x": 48,
+      "y": 185,
+      "bigicon": true,
+      "icon": {
+        "id": "witchery:wolfaltar"
+      },
+      "prerequisites": [
+        "AROOOOOOOOOOO!!!!!!!!"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Consulting the Wolf God",
+          "longDescription": "Detection Task",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:wolfaltar"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Moon Charm",
+          "longDescription": "By approaching the Wolf Altar with three gold ingots in hand, you can be gifted a Moon Charm. With this charm you can prevent forced form change and use the charm to change to wolf and human form at will.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:mooncharm"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Slayer Task",
+          "longDescription": "Killing sheep while a wolf will cause them to drop raw lambchops. Your task will require you to kill a large amount of sheep and completion of the task will allow you to dig earth and sand with your claws. Doing so will give you a chance to find bones.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 158
+              },
+              "required": 30
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Tongue of Dog",
+          "longDescription": "You are now required to find Tongues of Dog. Upon reaching this level you will now replenish hunger when slaying mobs as a wolf.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 25
+              },
+              "required": 10
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Huntsman",
+          "longDescription": "Speaking to the Wolf God at this rank will grant you the Horn of the Hunt. Using the Horn of the Hunt will summon the Huntsman, your next slaying task.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:hornofthehunt"
+              }
+            }
+          ]
+        },
+        {
+          "type": "KILL",
+          "description": "Slayer Task",
+          "longDescription": "You have called him now kill him. Once complete speak to the gods and they will grant you new form. You can now additionally transform to Wolfman Form using a Moon Charm (while sneaking).",
+          "mobs": [
+            {
+              "name": "Huntsman",
+              "icon": {
+                "id": "Quadrum:huntsmanIcon"
+              },
+              "mob": "witchery.hornedHuntsman",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        },
+        {
+          "type": "KILL",
+          "description": "Critical Accomplishment",
+          "longDescription": "You must now slay 10 monsters with a critical strike as a wolf. Upon completion of this task, you will now be able to crit while sprinting in wolf form. This task will only require 3 zombies, but 10 kills of any kind are necessary to complete the task from the wolf god.",
+          "mobs": [
+            {
+              "name": "Zombie",
+              "icon": {
+                "id": "Quadrum:ZombieIcon"
+              },
+              "mob": "Zombie",
+              "kills": 3,
+              "exact": false
+            }
+          ]
+        },
+        {
+          "type": "LOCATION",
+          "description": "Stunning",
+          "longDescription": "Howl in 16 locations. After this, your wolfman form will gain the ability to stun enemies by shift-right clicking while looking up in the air.",
+          "locations": [
+            {
+              "name": "Howl",
+              "icon": {
+                "id": "Quadrum:moonicon"
+              },
+              "x": 351,
+              "y": 89,
+              "z": 606,
+              "dim": 0,
+              "radius": -1,
+              "visible": "NONE"
+            }
+          ]
+        },
+        {
+          "type": "LOCATION",
+          "description": "Charisma",
+          "longDescription": "While in wolf form right click wild wolves to tame them. Once complete, Wolf Form gains the ability to sneak use (shift right-click) while looking straight up to howl to summon temporary wolf allies.",
+          "locations": [
+            {
+              "name": "Wolf Taming",
+              "icon": {
+                "id": "witchery:wolfhead"
+              },
+              "x": 351,
+              "y": 89,
+              "z": 606,
+              "dim": 0,
+              "radius": -1
+            }
+          ]
+        },
+        {
+          "type": "KILL",
+          "description": "Slayer Task",
+          "longDescription": "Upon killing 30 pigmen, you will gain the ability to rend armor off of mobs and players.",
+          "mobs": [
+            {
+              "name": "Pigmen",
+              "icon": {
+                "id": "minecraft:spawn_egg",
+                "damage": 57
+              },
+              "mob": "PigZombie",
+              "kills": 30,
+              "exact": false
+            }
+          ]
+        },
+        {
+          "type": "KILL",
+          "description": "Spreading Around",
+          "longDescription": "To complete your transformation you must kill a villager or a player. You will gain your final ability that allows you to transform other players or villagers into a wolf by damaging them to near death.",
+          "mobs": [
+            {
+              "name": "Villager",
+              "icon": {
+                "id": "minecraft:spawn_egg",
+                "damage": 6422
+              },
+              "mob": "Villager",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "New Coven",
+      "description": "You may now start your own vampire Coven!",
+      "x": 109,
+      "y": 187,
+      "bigicon": true,
+      "icon": {
+        "id": "witchery:bloodcrucible"
+      },
+      "prerequisites": [
+        "Converted"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Vampire Coven",
+          "longDescription": "Place this by the coffin where your vampire minions were made and sleep. Your minions will place some of their blood that they obtained over the night into the crucible.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:bloodcrucible"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "The Powers ",
+          "longDescription": "These Items can be placed into a full blood crucible. Each has a different effect. A bone gives you the teleport ability. When activated away from their spawn point, will teleport the vampire to their spawn. When activated near their spawn point, will teleport the vampire to the closest village. The water artichoke will allow you to summon a storm. This will save you if you get caught out when day breaks. Wool of bat gives you bat swarm ability. when used you can summon bats that attack enemys you are looking at.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 24
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 69
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:bone"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Spectral Familiars",
+      "description": "One unique rite is the Rite of Summoning which can be used to summon a Spectral Familiar. These familiars are extremely bulky but deal very little damage. A unique function of the spectral familiar is that they can sniff out vanilla ores when given items such as ingots, dusts, or diamonds. When found, the familiar will sit down to indicate that an ore has been found. You may use this skill several times, however each time increases the risk that the familiar will simply disappear with the given item.",
+      "x": 80,
+      "y": 100,
+      "icon": {
+        "id": "Quadrum:familiaricon"
+      },
+      "prerequisites": [
+        "Witchery Altar"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "This dust can drop from spectral familiars or can be rarely dropped by monsters killed with the Arthana",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 66
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "witchery:ingredient",
+          "damage": 66,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Necromancy",
+      "description": "Necromancy, the darker side of Witchery.",
+      "x": 117,
+      "y": 100,
+      "icon": {
+        "id": "Quadrum:armicon"
+      },
+      "prerequisites": [
+        "Spectral Familiars"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Raising the Undead",
+          "longDescription": "The Brew of Raising will cause undead monsters to rise from the ground, attacking nearby enemies.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 65
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Comannding the Undead",
+          "longDescription": "With stone in hand you can click on a player/mob at a distance and make undead you raised attack that entity. When used on a block, it will cause the undead to move in that direction.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 64
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Managing the Undead",
+          "longDescription": "The Alluring Skull will cause undead monsters walk towards the skull, so long as they have no prior commands. The Necromatic Robes will grants buffs to gain additional robes and will cause undead monsters to simply ignore the wearer.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:alluringskull"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:necromancerrobe"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1,
+          "amount": 2
+        },
+        {
+          "id": "minecraft:leather",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Brazier",
+      "description": "The Brazier allows a witch to summon spectral undead. Spectral undead can then be trapped inside stones and later bound to fetishes.",
+      "x": 152,
+      "y": 100,
+      "icon": {
+        "id": "witchery:brazier"
+      },
+      "prerequisites": [
+        "Necromancy"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Brazier",
+          "longDescription": "The brazier is where it all happens",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:brazier"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 127,
+                "nbt": "{CurrentPage:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Spectral Stone",
+          "longDescription": "The spectral stone can be used to contain spectral spirits that can later be used for various crafts or bindings. To store a summoned creature, use this stone in a Ritual of Binding along with spectral dust and a Boline.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:spectralstone"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "witchery:ingredient",
+          "damage": 66
+        },
+        {
+          "id": "witchery:boline"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Sweet Dreams",
+      "description": "The Spirit World mirrors this world, however it contains resources useful for clever witches.",
+      "x": 18,
+      "y": 121,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 95
+      },
+      "prerequisites": [
+        "Additional Tools"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Spirit World",
+          "longDescription": "Brews of Sleeping allow you to pass out and into the Spirit World, leaving their bodies and gear behind. Some items will however come with you. Icy needle and fetishes can enter whiles Wispy Cotton, Disturbed Cotton, Mellifluous Hunger and Brews of Flowing Spirit can pass from the Spirit World to the Real World but can\u0027t return. Icy needles can come in and out. To return, you may simply die or use an icy needle. You can further reduce the chance of future nightmares by adding Wispy Cotton and pools of Flowing Spirit nearby.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 95
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 78
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Disturbed Cotton",
+          "longDescription": "Your first time into the spirit world will almost always be a nightmare. Run from the nightmares that stalk you and collect the necessary cotton in order to prevent future nightmares.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 99
+              },
+              "required": 12
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Dream Weaver",
+          "longDescription": "The Dreamweaver of Nightmares will reduce the chances of having a nightmare by 50%. Witchery adds in several more dream catchers which grant the user various buffs when slept under. Try them out!",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 6
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "witchery:ingredient",
+          "damage": 3
+        },
+        {
+          "id": "witchery:ingredient",
+          "damage": 4
+        },
+        {
+          "id": "witchery:ingredient",
+          "damage": 5
+        },
+        {
+          "id": "witchery:ingredient",
+          "damage": 104
+        }
+      ]
+    },
+    {
+      "name": "Fetishes",
+      "description": "To create a Fetish a witch must first craft the object (Scarecrow, Trent Effigy and Witch\u0027s Ladder). Then spectral creatures must be summoned, and finally a Rite of Binding performed to trap the chosen creatures into the object.The combination of creatures present when the rite of binding is performed determines the powers the Fetish will have. The book, Witchcraft: Conjuration \u0026 Fetishes explains the different effects and required bindings.",
+      "x": 193,
+      "y": 101,
+      "icon": {
+        "id": "witchery:scarecrow"
+      },
+      "prerequisites": [
+        "Brazier"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Spooky Fetishes",
+          "longDescription": "Boline can be used to cycle the mode of the festishes and taglocks can be applied.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:scarecrow"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:trent"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:witchsladder"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "witchery:ingredient",
+          "damage": 127
+        },
+        {
+          "id": "minecraft:wool",
+          "amount": 32
+        },
+        {
+          "id": "minecraft:wool",
+          "damage": 4,
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "name": "Death",
+      "description": "You may summon death by attempting to bind five of each spectral creature onto a fetish. Each time you slay death, he has a chance to drop part of his gear. If you are playing on a server and wearing his full set of gear, there is a chance that you can be summoned as well.",
+      "x": 231,
+      "y": 99,
+      "bigicon": true,
+      "icon": {
+        "id": "Quadrum:deathicon"
+      },
+      "prerequisites": [
+        "Fetishes"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Death",
+          "longDescription": "Major Milestone 1: Acquire All Gear",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:deathshand"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:deathscowl"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:deathsrobe"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:deathsfeet"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 129
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4
+        }
+      ]
+    },
+    {
+      "name": "Mirror Mirror ",
+      "description": "Mirror mirror on the wall, who is the fairest of them all?",
+      "x": 53,
+      "y": 18,
+      "icon": {
+        "id": "witchery:mirror"
+      },
+      "prerequisites": [
+        "Witchery Altar"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Mirror",
+          "longDescription": "Created using a Rite of Infusion (a medium white circle containing a Brew of Hollow Tears, a Gold Ingot, a Glass Pane and a Demon). Using the mirror will pose it the question of who is the fairest in the land, to which it may respond with the player, or perhaps another nearby NPC. Killing the NPC will drop a Heart of Gold. This is used in potion making. Brutal.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:mirror"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Doppleganger",
+          "longDescription": "Using a Quartz Sphere on a mirror containing a demon will charge it with the players reflection creating a Duplication Grenade (assuming enough altar power is available). Throwing this sphere will create a duplicate of the bound player and cause mobs currently targeting the player to target that instead.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:dupgrenade"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "KILL",
+          "description": "Reflections",
+          "longDescription": "Getting to close to the mirror will suck you in. You will then confront the demon you trapped inside, he has taken on your appearence. Killing him will allow you to use the space as extra storage space. The mirror is now hollow and you can\u0027t ask it questions anymore. Mirrors without demons have another useful property when placed a short distance apart (up to 16 blocks) and back to back, in such a configuration they act as a doorway between each other. This effect can also occur vertically if placed over one another with the same facing.",
+          "mobs": [
+            {
+              "name": "Reflection",
+              "icon": {
+                "id": "minecraft:skull",
+                "damage": 3
+              },
+              "mob": "witchery.reflection",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Altar Upgrades",
+      "description": "The altar can be upgraded by placing several items on top of the altar. Some items will boost the maximum power of the altar while some will boost the recharge rate.",
+      "x": 108,
+      "y": 15,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Witchery Altar"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "An Arthana will boost the distribution range of the altar while skulls will boost the charge and power. You may only have one of each type of item. Place the following items on the altar to boost its power and charge: Dragon Egg, Skulls, Wither Skull, Chalice, Filled Chalice, Torch, Candelabra, Pentacle.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:arthana"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:skull"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Ritual Chalk",
+      "description": "You will need chalk of each type for all forms of rituals. If you wish to remove placed chalk, you will need to use a broom for easy removal.",
+      "x": 103,
+      "y": 76,
+      "icon": {
+        "id": "witchery:chalkheart"
+      },
+      "prerequisites": [
+        "Distilling"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:chalkritual"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:chalkotherwhere"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:chalkinfernal"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:chalkheart"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "witchery:ingredient",
+          "damage": 8
+        },
+        {
+          "id": "witchery:ingredient",
+          "damage": 48
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:dye",
+          "damage": 15,
+          "amount": 64
+        },
+        {
+          "id": "witchery:ingredient",
+          "damage": 14,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Symbology",
+      "description": "Infused players also gain access to Symbol magic. Players may cast weak versions of spells as well as various utilities at the cost of their infused power while wielding a Mystic Brance.",
+      "x": 99,
+      "y": 157,
+      "icon": {
+        "id": "witchery:mysticbranch"
+      },
+      "prerequisites": [
+        "Infusing"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "To craft the Mystic Branch you require an Ent Twig, Mystic Unguent, and an altar with 3,000 power. To perform the ritual, construct a small AND medium circle around a heart glyph with white ritual chalk. Drop the Mystic Twig and Unguent into the heart glyph and wait until night time.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:mysticbranch"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 83
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Hobgoblins",
+      "description": "It is possible to further increase your power through hobgoblin enslavement. When given a leash and a pickaxe, hobgoblins will begin digging the ground. As they dig, there is a chance to find Koboldite, a rare dust found only by hobgoblins. Hobgoblins may offer trades and can smelt Koboldite into nuggets and ingots. Once you have obtained an ingot, you may craft the Statue of Hobgoblin Patron which, when bound with the rite of binding, will cause the hobgoblins to worship the statue and grant power to the witch. Take care, the gods do not appreciate having their followers become converted.",
+      "x": 137,
+      "y": 157,
+      "icon": {
+        "id": "witchery:statueofworship"
+      },
+      "prerequisites": [
+        "Symbology"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Hobgoblins have breeding mechanics similar to villagers.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:statueofworship"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Hybrid",
+      "description": "Just because you have completed one line doesn\u0027t mean you can\u0027t do both! The only restriction is that you are unable to use your vampiric powers while transformed.",
+      "x": 81,
+      "y": 190,
+      "icon": {
+        "id": "Quadrum:hybridicon"
+      },
+      "prerequisites": [
+        "Wolf Quest",
+        "New Coven"
+      ],
+      "parentrequirement": 1
+    }
+  ],
+  "reputationBar": []
+}

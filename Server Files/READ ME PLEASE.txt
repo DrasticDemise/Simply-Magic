@@ -1,0 +1,11 @@
+If your server does not launch note the following:
+
+These need to be removed from the server files:
+Launch GUI
+I'm Looking At Blood
+Thaumcraft NEI Plugin
+
+Make sure you accepted the EULA.
+
+You can change your server.properties to generate a world with Alternate Terrain Generation.
+For dedicated servers, set the "level-type" in server.properties to ATG. You'll need to start a new world after that, because the level-type is only considered when creating an entirely new world save folder.

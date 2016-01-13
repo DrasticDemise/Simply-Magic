@@ -1,0 +1,1488 @@
+{
+  "name": "Thaumcraft",
+  "description": "This quest line introduces you to all major mechanics in Thaumcraft as well as providing hints and tips for lesser-known parts of the mod. You will be given several major milestones, but you are encouraged to explore outside of the quest line. Each add-on has some quests from it and quests may be unavailable until you have the required research. If you have played Thaumcraft many times and wish to skip the research game, you may change the difficulty in the Thaumcraft.cfg file.                          -  Authored by DrasticDemise",
+  "quests": [
+    {
+      "name": "Yer a Thaumaturge Harry",
+      "description": "The Thaumonomicon serves as the starting point in Thaumcraft in which accumulated knowledge is stored for later reference. It can be created by tapping a bookcase with a wand.",
+      "x": 23,
+      "y": 14,
+      "icon": {
+        "id": "Thaumcraft:ItemThaumonomicon"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:WandCasting",
+                "nbt": "{cap:\"iron\",rod:\"wood\"}"
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:ItemThaumonomicon"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemShard",
+          "amount": 3
+        },
+        {
+          "id": "Thaumcraft:ItemShard",
+          "damage": 5,
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Research and Discovery",
+      "description": "Those that wish to expand their knowledge will require additional tools, starting with the Research Table which can be crafted by placing two table\u0027s adjacent and tapping it with scribing tools. When accessed, the research table provides information on the available \"research points.\" The Thaumometer allows the user to scan items and blocks in the world for their \"aspects\". Scanning new items or nodes provides additional research points and updates the thaumonomicon to organize each respective item and their aspects.",
+      "x": 60,
+      "y": 14,
+      "icon": {
+        "id": "Thaumcraft:ItemInkwell"
+      },
+      "prerequisites": [
+        "Yer a Thaumaturge Harry"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockTable"
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:ItemInkwell"
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:ItemThaumometer"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemResearchNotes",
+          "damage": 64,
+          "nbt": "{copies:0,color:16761523,complete:1b,hexgrid:[0:{hexq:0b,hexr:0b,aspect:\"lux\",type:2b},1:{hexq:1b,hexr:0b,aspect:\"aer\",type:2b},2:{hexq:-2b,hexr:2b,aspect:\"cognitio\",type:1b},3:{hexq:2b,hexr:0b,aspect:\"sensus\",type:1b},4:{hexq:-1b,hexr:-1b,aspect:\"potentia\",type:2b},5:{hexq:-1b,hexr:1b,aspect:\"ignis\",type:2b},6:{hexq:-1b,hexr:0b,aspect:\"ignis\",type:2b},7:{hexq:0b,hexr:-2b,aspect:\"ordo\",type:1b}],key:\"RESEARCHER1\"}"
+        }
+      ]
+    },
+    {
+      "name": "I Can See Clearly Now",
+      "description": "While the thaumometer is useful for scanning on demand, it can become wearisome holding it all the time. Time for an upgrade.",
+      "x": 126,
+      "y": 84,
+      "icon": {
+        "id": "Thaumcraft:ItemGoggles"
+      },
+      "prerequisites": [
+        "Table Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemGoggles"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Node Theory",
+      "description": "While the nodes across the world are extremely useful for vis and research, they are not always in an ideal location. Perhaps additional research will lend a mobile alternative.",
+      "x": 92,
+      "y": 14,
+      "icon": {
+        "id": "Thaumcraft:blockAiry"
+      },
+      "prerequisites": [
+        "Table Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:BlockJarNodeItem"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockAiry"
+        }
+      ]
+    },
+    {
+      "name": "Magical Crafting",
+      "description": "Magic appears to be fluidic in form. It is possible to combine the aspects and magic of other items to form a new magical relic, however further preparation is necessary. In order to get started, just smack with a wand!",
+      "x": 60,
+      "y": 48,
+      "icon": {
+        "id": "Thaumcraft:WandCasting",
+        "nbt": "{cap:\"iron\",rod:\"wood\"}"
+      },
+      "prerequisites": [
+        "Research and Discovery"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockTable"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:cauldron"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockTable",
+                "damage": 15
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:blockMetalDevice"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Crucible Crafting",
+      "description": "The crucible is an extremely useful block that can melt items into their essentia counterparts and become reformed at any given moment. Try it out!",
+      "x": 60,
+      "y": 81,
+      "icon": {
+        "id": "Thaumcraft:blockMetalDevice"
+      },
+      "prerequisites": [
+        "Magical Crafting"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemResearchNotes",
+          "damage": 64,
+          "nbt": "{copies:0,color:9896128,complete:1b,hexgrid:[0:{hexq:0b,hexr:0b,aspect:\"limus\",type:2b},1:{hexq:0b,hexr:1b,aspect:\"aqua\",type:2b},2:{hexq:1b,hexr:0b,aspect:\"limus\",type:2b},3:{hexq:-2b,hexr:2b,aspect:\"praecantatio\",type:1b},4:{hexq:2b,hexr:0b,aspect:\"aqua\",type:1b},5:{hexq:-1b,hexr:2b,aspect:\"potentia\",type:2b},6:{hexq:-2b,hexr:1b,aspect:\"sano\",type:2b},7:{hexq:-1b,hexr:1b,aspect:\"ordo\",type:2b},8:{hexq:-1b,hexr:0b,aspect:\"victus\",type:2b},9:{hexq:0b,hexr:-1b,aspect:\"aqua\",type:2b},10:{hexq:0b,hexr:-2b,aspect:\"limus\",type:1b}],key:\"DISTILESSENTIA\"}"
+        }
+      ]
+    },
+    {
+      "name": "Table Crafting",
+      "description": "The vis from the wand can be used with mundane items to create something new and repurposed! While there isn\u0027t much you can craft at the moment, further research will lend its uses.",
+      "x": 92,
+      "y": 48,
+      "icon": {
+        "id": "Thaumcraft:blockTable",
+        "damage": 15
+      },
+      "prerequisites": [
+        "Magical Crafting"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockCosmeticSolid",
+                "damage": 6
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Crystal Essence",
+      "description": "Those who wish to craft without waste will often find themselves hard-pressed to find an item composed of a sole aspect. To solve this, thaumaturges have discovered a way to crystallize essentia, useful for alchemy crafts.",
+      "x": 20,
+      "y": 80,
+      "icon": {
+        "id": "Thaumcraft:blockTube",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Crucible Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockTube",
+                "damage": 7
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Infusion Magic",
+      "description": "Infusion crafting is the most complex form of crafting, but the items that can be created are often more powerful than their table or crucible parts. The basis of infusion crafting requires various amounts of liquid essentia as well as a small bit of setup. This powerful form of crafting is not without risks, however. Some infusions can cause adverse reactions to the matrix and the items around it.",
+      "x": 126,
+      "y": 119,
+      "icon": {
+        "id": "Thaumcraft:blockStoneDevice",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Crucible Crafting",
+        "Table Crafting"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockStoneDevice",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockJar",
+          "amount": 3
+        },
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 13,
+          "amount": 3
+        },
+        {
+          "id": "Thaumcraft:ItemResearchNotes",
+          "damage": 64,
+          "nbt": "{copies:0,color:9896128,complete:1b,hexgrid:[0:{hexq:-2b,hexr:2b,aspect:\"potentia\",type:2b},1:{hexq:-3b,hexr:3b,aspect:\"praecantatio\",type:1b},2:{hexq:-1b,hexr:1b,aspect:\"ordo\",type:2b},3:{hexq:-1b,hexr:0b,aspect:\"ordo\",type:2b},4:{hexq:3b,hexr:-3b,aspect:\"pannus\",type:1b},5:{hexq:1b,hexr:-2b,aspect:\"pannus\",type:2b},6:{hexq:0b,hexr:0b,aspect:\"potentia\",type:2b},7:{hexq:0b,hexr:-1b,aspect:\"instrumentum\",type:2b},8:{hexq:2b,hexr:-2b,aspect:\"instrumentum\",type:2b}],key:\"SPELL_CLOTH\"}"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Botania:mushroom",
+          "amount": 3
+        },
+        {
+          "id": "Botania:mushroom",
+          "damage": 1,
+          "amount": 3
+        },
+        {
+          "id": "Botania:mushroom",
+          "damage": 2,
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Additional Research Points",
+      "description": "There may be a time in which research points have been used up and there are few items left to scan. However, fear not! There are many ways in which you can obtain additional research points. The most common method is to use the Deconstruction Table. Items or blocks can be broken down with a chance to provide a single research point. One alternative is the consumption of knowledge fragments which can provide a burst of primal aspects, or the searching of nodes around the world which often provide additional primal aspects.",
+      "x": 22,
+      "y": 48,
+      "icon": {
+        "id": "Thaumcraft:blockTable",
+        "damage": 14
+      },
+      "prerequisites": [
+        "Table Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 9
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:blockTable",
+                "damage": 14
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 9,
+          "amount": 9
+        }
+      ]
+    },
+    {
+      "name": "Block Infusion",
+      "description": "Through the constant use of the infusion mechanics, you have learned of a way to infuse aspects directly into any kind of block, granting them new uses!",
+      "x": 192,
+      "y": 137,
+      "icon": {
+        "id": "thaumicinfusion:FocusInfusion"
+      },
+      "prerequisites": [
+        "Infusion Magic"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thaumicinfusion:FocusInfusion"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Living Infusion",
+      "description": "You have infused many blocks and items, but nothing yet that has been living. Of course, this type of magic is often looked down upon as \"cruel\" or \"unusual\", but frankly we don\u0027t care. ",
+      "x": 179,
+      "y": 118,
+      "icon": {
+        "id": "ThaumicHorizons:modMatrix"
+      },
+      "prerequisites": [
+        "Infusion Magic"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ThaumicHorizons:eggIncubated"
+              }
+            },
+            {
+              "item": {
+                "id": "ThaumicHorizons:syringeEmpty"
+              }
+            },
+            {
+              "item": {
+                "id": "ThaumicHorizons:modMatrix"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ThaumicHorizons:focusContainment"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Totems of the Dark",
+      "description": "These dark totems are rather mysterious...perhaps studying them further will provide answers.",
+      "x": 158,
+      "y": 86,
+      "icon": {
+        "id": "ThaumicTinkerer:enchanter"
+      },
+      "prerequisites": [
+        "Infusion Magic"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockCosmeticSolid"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "More enchantments await.",
+          "items": [
+            {
+              "item": {
+                "id": "ThaumicTinkerer:enchanter"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockCosmeticSolid",
+          "amount": 12
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "Thaumcraft:blockCosmeticSolid",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Golemancy",
+      "description": "Those that delve into the art of golemancy will find their lives a bit less lonely. These tiny automatons can perform mundane and boring tasks when given a single ring of a bell! And a core of course. If you are on a server, crafting the golemancers bell will result in a crash. Because of this, you can craft this \"Throw Me\" item that, when thrown, will spawn a new bell for you.",
+      "x": 20,
+      "y": 106,
+      "icon": {
+        "id": "Thaumcraft:ItemGolemPlacer"
+      },
+      "prerequisites": [
+        "Crucible Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemGolemPlacer"
+              }
+            },
+            {
+              "item": {
+                "id": "Quadrum:ThrowMe"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Crimson Cult",
+      "description": "Only those fully trained in the basics of Thaumcraft will be able to understand their intentions.",
+      "x": 287,
+      "y": 16,
+      "icon": {
+        "id": "Thaumcraft:blockWoodenDevice",
+        "damage": 8
+      },
+      "prerequisites": [
+        "Foci Upgrades"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemEldritchObject",
+                "damage": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemEldritchObject"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemEldritchObject",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Wand Foci",
+      "description": "While vis is most often used in crafting, it appears that by focusing your wand, one can expand the uses of the vis.",
+      "x": 227,
+      "y": 90,
+      "icon": {
+        "id": "Thaumcraft:FocusPouch"
+      },
+      "prerequisites": [
+        "Table Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:FocusPouch"
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:FocusTrade"
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:FocusPortableHole"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:FocusFire"
+        },
+        {
+          "id": "Thaumcraft:FocusShock"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Automagy:focusCrafting"
+        },
+        {
+          "id": "Thaumcraft:FocusFrost"
+        }
+      ]
+    },
+    {
+      "name": "Stability in Nodes",
+      "description": "You may have noticed that nodes placed next to eachother can have some rather unintended reactions. For the sake of compact node storage, it is possible to stabilize the nodes at a cost of the node\u0027s recharge rate.",
+      "x": 227,
+      "y": 9,
+      "icon": {
+        "id": "Thaumcraft:blockStoneDevice",
+        "damage": 9
+      },
+      "prerequisites": [
+        "Wand Upgrade"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockStoneDevice",
+                "damage": 9
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockStoneDevice",
+          "damage": 9
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Vis Usage",
+      "description": "Vis has proven use through crafting with a wand, however that is just the beginning. It is possible to draw the vis out and channel it into various blocks or structures for immediate and constant use, at the cost of the node.",
+      "x": 227,
+      "y": 36,
+      "icon": {
+        "id": "Thaumcraft:blockStoneDevice",
+        "damage": 11
+      },
+      "prerequisites": [
+        "Wand Upgrade"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockStoneDevice",
+                "damage": 11
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:blockMetalDevice",
+                "damage": 14
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockMetalDevice",
+          "damage": 14,
+          "amount": 4
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Foci Upgrades",
+      "description": "Wand foci have proven their use in combat and in utility but there is much to be improved on. The foci seem to react when given various amounts of vis from a relay. Time for an upgrade.",
+      "x": 227,
+      "y": 63,
+      "icon": {
+        "id": "Thaumcraft:blockStoneDevice",
+        "damage": 13
+      },
+      "prerequisites": [
+        "Vis Usage"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockStoneDevice",
+                "damage": 13
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Magical Metal",
+      "description": "It is no secret that the metals of this world are almost entirely worthless for tools and weapons, but a little bit of refining and magic can go a long way.",
+      "x": 20,
+      "y": 133,
+      "icon": {
+        "id": "Thaumcraft:ItemResource",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Crucible Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Runic Shielding",
+      "description": "When aspects are applied to armor, it appears that the armor takes on a new protective quality at the cost of local vis. Runic shielding can extend the effective life of the wearer by appling damage to the available vis instead of the user, to an extent.",
+      "x": 157,
+      "y": 157,
+      "icon": {
+        "id": "Thaumcraft:ItemRingRunic",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Infusion Magic"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemRingRunic",
+                "damage": 1
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemRingRunic",
+          "damage": 1
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Infused Tools",
+      "description": "Thaumic weapons can be given additional properties when infused. The Sword of the Zephyr allows the user to knock back groups of enemies and temporary flight.",
+      "x": 136,
+      "y": 156,
+      "icon": {
+        "id": "Thaumcraft:ItemSwordElemental"
+      },
+      "prerequisites": [
+        "Infusion Magic"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemSwordElemental"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Thaumcraft:ItemShovelElemental"
+        },
+        {
+          "id": "Thaumcraft:ItemAxeElemental"
+        }
+      ]
+    },
+    {
+      "name": "Magical Trees",
+      "description": "The unique trees that dot the landscape are not only for looks. Their wood will have many uses, and having a local source will prove useful.",
+      "x": 91,
+      "y": 82,
+      "icon": {
+        "id": "Thaumcraft:blockCustomPlant",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Magical Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockCustomPlant"
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:blockCustomPlant",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockCustomPlant",
+          "damage": 1,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Crafting Scepters",
+      "description": "Crafting scepters have a much larger capacity and vis discount than regular wands, but are unable to hold foci in return. A Thaumium Crafting Scepter will allow you to store a large amount of vis with a nice discount.",
+      "x": 127,
+      "y": 14,
+      "icon": {
+        "id": "Thaumcraft:WandCasting",
+        "damage": 128,
+        "nbt": "{aqua:15000,terra:15000,ignis:15000,cap:\"thaumium\",rod:\"silverwood\",ordo:15000,sceptre:1b,perditio:15000,aer:15000}"
+      },
+      "prerequisites": [
+        "Table Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:WandCasting",
+                "damage": 128,
+                "nbt": "{aqua:15000,terra:15000,ignis:15000,cap:\"thaumium\",rod:\"silverwood\",ordo:15000,sceptre:1b,perditio:15000,aer:15000}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Staves",
+      "description": "A staff can hold twice the vis of a regular wand but will lose the ability of crafting. Any staff core may be created.",
+      "x": 151,
+      "y": 14,
+      "icon": {
+        "id": "Thaumcraft:WandRod",
+        "damage": 52
+      },
+      "prerequisites": [
+        "Table Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:WandRod",
+                "damage": 50
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Not of This World",
+      "description": "The cultists guard the structures with their lives, but why? The eldritch eyes may be connected as a way to perhaps enter the portal...",
+      "x": 287,
+      "y": 49,
+      "icon": {
+        "id": "Thaumcraft:ItemEldritchObject",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Crimson Cult"
+      ],
+      "tasks": [
+        {
+          "type": "LOCATION",
+          "longDescription": "So far you have gathered the following information for entry: Four eyes, a deep understanding of warp, a full and powerful wand to interact with the node on the structure.",
+          "locations": [
+            {
+              "name": "Eldritch Dimension",
+              "icon": {
+                "id": "Thaumcraft:ItemEldritchObject"
+              },
+              "x": 787,
+              "y": 80,
+              "z": 719,
+              "dim": -42,
+              "radius": -1
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "Can you defeat the monster at the end of the tunnel?",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemEldritchObject",
+                "damage": 3
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Is Kami Unlocked?",
+      "description": "The ultimate milestone in your Thaumcraft adventures would be to unlock Kami. To see how close you are, you may use the command /iskamiunlocked",
+      "x": 288,
+      "y": 120,
+      "icon": {
+        "id": "ThaumicTinkerer:kamiResource"
+      },
+      "prerequisites": [
+        "Foci Upgrades"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ThaumicTinkerer:kamiResource"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ThaumicTinkerer:kamiResource",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "ThaumicTinkerer:kamiResource",
+                "damage": 4
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "ThaumicTinkerer:kamiResource",
+                "damage": 5
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:nether_star",
+          "amount": 2
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Wand Upgrade",
+      "description": "The maximum amount of vis and level of discount can be increased by upgrading the caps on the wand. As you explore other schools of magic, you may find more useful alternatives, however the next upgrade is gold caps and great wood cores.",
+      "x": 200,
+      "y": 35,
+      "icon": {
+        "id": "Thaumcraft:WandCap",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Table Crafting"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:WandCap",
+                "damage": 1
+              },
+              "required": 2,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Primal Power",
+      "description": "The Primordial Pearls have opened up a way to repurpose older tools into one large multi-purpose tool.",
+      "x": 287,
+      "y": 84,
+      "icon": {
+        "id": "Thaumcraft:ItemPrimalCrusher"
+      },
+      "prerequisites": [
+        "Not of This World"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemPrimalCrusher"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4
+        }
+      ]
+    },
+    {
+      "name": "Crucible Crowning",
+      "description": "Through your devious study of fire and alchemy, you have discovered a way to create fires that transform blocks into new forms. However, these are very dangerous and should only be used in a contained area. Because of their extremely dangerous behaviors (and are most likely banned on a server), study past these to obtain their less dangerous and more useful counterparts, infused seeds.",
+      "x": 20,
+      "y": 159,
+      "icon": {
+        "id": "ThaumicTinkerer:infusedSeeds",
+        "nbt": "{mainAspect:{Aspects:[0:{amount:1,key:\"ignis\"}]},aspectTendencies:{Aspects:[]}}"
+      },
+      "prerequisites": [
+        "Crucible Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Infused Seeds can grow an array of unique items. When seeds are near eachother, they have a chance to form a new seed of the two seed\u0027s combined aspects. Collecting all of them would be a major milestone and sign of dedication, and all of the silly items are quite the bonus.",
+          "items": [
+            {
+              "item": {
+                "id": "ThaumicTinkerer:infusedSeeds",
+                "nbt": "{mainAspect:{Aspects:[0:{amount:1,key:\"aer\"}]},aspectTendencies:{Aspects:[]}}"
+              }
+            },
+            {
+              "item": {
+                "id": "ThaumicTinkerer:infusedSeeds",
+                "nbt": "{mainAspect:{Aspects:[0:{amount:1,key:\"terra\"}]},aspectTendencies:{Aspects:[]}}"
+              }
+            },
+            {
+              "item": {
+                "id": "ThaumicTinkerer:infusedSeeds",
+                "nbt": "{mainAspect:{Aspects:[0:{amount:1,key:\"ignis\"}]},aspectTendencies:{Aspects:[]}}"
+              }
+            },
+            {
+              "item": {
+                "id": "ThaumicTinkerer:infusedSeeds",
+                "nbt": "{mainAspect:{Aspects:[0:{amount:1,key:\"aqua\"}]},aspectTendencies:{Aspects:[]}}"
+              }
+            },
+            {
+              "item": {
+                "id": "ThaumicTinkerer:infusedSeeds",
+                "nbt": "{mainAspect:{Aspects:[0:{amount:1,key:\"ordo\"}]},aspectTendencies:{Aspects:[]}}"
+              }
+            },
+            {
+              "item": {
+                "id": "ThaumicTinkerer:infusedSeeds",
+                "nbt": "{mainAspect:{Aspects:[0:{amount:1,key:\"perditio\"}]},aspectTendencies:{Aspects:[]}}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "minecraft:emerald",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Combining Magic",
+      "description": "I heard you like additional research points.",
+      "x": 169,
+      "y": 138,
+      "icon": {
+        "id": "Botania:specialFlower",
+        "nbt": "{type:\"whisperweed\"}"
+      },
+      "prerequisites": [
+        "Infusion Magic"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Lexica Botania and the Forbiddin Magic section of the Thaumonomicon provide additional documentation.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"whisperweed\"}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Botania:rune",
+          "damage": 13
+        },
+        {
+          "id": "Botania:rune",
+          "damage": 9
+        }
+      ]
+    },
+    {
+      "name": "Automation Unleashed",
+      "description": "Automagy offers an array of tools for complex redstone control and compact automation, ranging from redstone that can go straight up walls, complex inventory storage, up to custom made mob spawners.",
+      "x": 19,
+      "y": 187,
+      "icon": {
+        "id": "Automagy:crystalBrain",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Crucible Crafting"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Redcrystals can pass a redstone signal much like normal redstone, however it has unique perks such as the ability to pass a current over corners as well as being placed up walls.",
+          "items": [
+            {
+              "item": {
+                "id": "Automagy:blockRedcrystal"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "More research will reveal their uses.",
+          "items": [
+            {
+              "item": {
+                "id": "Automagy:crystalBrain"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Liquid Harvesting",
+      "description": "Further study in Automagy reveals a new way to obtain essentia. You can now break down liquids for their essentia!",
+      "x": 60,
+      "y": 187,
+      "icon": {
+        "id": "Automagy:blockBoiler"
+      },
+      "prerequisites": [
+        "Automation Unleashed"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Automagy:blockBoiler"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Alchemy Automation",
+      "description": "Studying past the Centrifuge will reveal research that will make Crucible crafting exponentially easier.",
+      "x": 60,
+      "y": 118,
+      "icon": {
+        "id": "Thaumcraft:blockMetalDevice",
+        "damage": 9
+      },
+      "prerequisites": [
+        "Crucible Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockMetalDevice",
+                "damage": 9
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Thaumcraft:ItemShard",
+          "damage": 6,
+          "amount": 2
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Automagy Capstone",
+      "description": "The Nethermind allows the wary mage to conjure items from the nether at the cost of essentia. Useful for those that wish to obtain lava at the expense of renewable resources.",
+      "x": 96,
+      "y": 187,
+      "icon": {
+        "id": "Automagy:blockNethermind"
+      },
+      "prerequisites": [
+        "Liquid Harvesting"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Automagy:blockNethermind"
+              }
+            },
+            {
+              "item": {
+                "id": "Automagy:blockRunedObsidian"
+              },
+              "required": 20
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "The Dimensional Lure allows users to spawn creatures of the night at the cost of essentia, much like the Nether Mind.",
+          "items": [
+            {
+              "item": {
+                "id": "Automagy:blockDimensionLure"
+              }
+            },
+            {
+              "item": {
+                "id": "Automagy:blockRunedObsidian"
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        },
+        {
+          "id": "Automagy:blockMobLure"
+        }
+      ]
+    },
+    {
+      "name": "Terraforming",
+      "description": "Witching Gadgets reveals a way to customize the surrounding biome on a whim! A must-have for those that hate searching for jungles or taint biomes.",
+      "x": 113,
+      "y": 154,
+      "icon": {
+        "id": "WitchingGadgets:WG_MetalDevice",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Infusion Magic"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "WitchingGadgets:WG_MetalDevice",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "WitchingGadgets:WG_MetalDevice",
+          "damage": 2
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}

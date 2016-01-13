@@ -1,0 +1,14 @@
+{
+    "events":
+            [
+{
+            "event_type": "CHAT",
+            "text": "identify",
+            "tasks": [
+                        {
+                            "task_type": "IDENTIFY"  
+                        }
+                    ]
+            }
+]
+}

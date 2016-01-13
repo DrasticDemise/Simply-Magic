@@ -1,0 +1,271 @@
+{
+  "name": "Mystcraft",
+  "description": "This quest line provides information on the Dimension creation and management system in Mystcraft. You will be provided tips on stable dimension creation as well as provided information on Instability, Pages, Portals, and Crystals.                 -Authored by DrasticDemise",
+  "quests": [
+    {
+      "name": "Getting Started",
+      "description": "Before you begin to create new dimensions, you must first construct a few blocks. When supplied with Ink Vials and Paper, the ink mixer will create Linking Pages. When provided with Ink Vials and paper, the Writing Desk will allow you to create copies of the pages that you have found, as well as providing an interface of all available pages inside of Collation Folders or Symbol Books. To copy a page, place it in the writing desk and right-click the page. When supplied with Leather, the Book Binder will create an age out of linking panels and any provided \"pages.\"",
+      "x": 158,
+      "y": 191,
+      "icon": {
+        "id": "Mystcraft:BlockInkMixer"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Mystcraft:BlockInkMixer"
+              }
+            },
+            {
+              "item": {
+                "id": "Mystcraft:writingdesk"
+              }
+            },
+            {
+              "item": {
+                "id": "Mystcraft:BlockBookBinder"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Ticket Home",
+      "description": "While simple ages are extremely easy to create, they do not come with a portal back. To solve this, you must create an unlinked book by placing a Linked Panel and Leather in the crafting table. Right-clicking an unlinked book will store your current location in the book and transform it into a Linked Book. Linked books may be used in any dimension *except* the one it was created in. Because of this, it is possible to create a warp hub for the overworld in a differing dimension. You MUST have a linked book if you wish to ever exit the age you have created. The only other possible way to leave the dimension is if a Star Fissure has formed, but that is unlikely. Star Fissures are cracks in the ground with a starry background.",
+      "x": 158,
+      "y": 155,
+      "icon": {
+        "id": "Mystcraft:linkbook"
+      },
+      "prerequisites": [
+        "Getting Started"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Mystcraft:unlinkedbook"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "Mystcraft:linkbook",
+                "nbt": "{SpawnY:4,SpawnZ:299,SpawnYaw:-348.9131f,SpawnX:-447,DisplayName:\"Overworld\",Dimension:0,Flags:{},MaxHealth:10.0f,TargetUUID:\"00000000-0000-0000-0000-000000000000\"}"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "When used from the inventory, age books and linked books will become an entity and fall to the ground. These books can be damaged over time on the ground or damaged by rain. Creating a book stand will allow the book to remain indefinitely.",
+          "items": [
+            {
+              "item": {
+                "id": "Mystcraft:BlockBookstand"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Your First Age",
+      "description": "Ages can be created with just a linking panel and leather in a book binder. However, ages created this way are entirely random and often unstable. You can construct a custom age exactly how you wish if you own descriptive pages, however the syntax is still a mystery to you. First create a simple and random age out of the book binder. MAKE SURE YOU HAVE A LINKING BOOK BACK.",
+      "x": 159,
+      "y": 118,
+      "icon": {
+        "id": "Mystcraft:agebook",
+        "nbt": "{Pages:[0:{id:4609s,Count:1b,tag:{linkpanel:{}},Damage:0s}],Authors:[0:\"DrasticDemise\"],DisplayName:\"New World\",Flags:{},MaxHealth:10.0f}"
+      },
+      "prerequisites": [
+        "Ticket Home"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Mystcraft:agebook",
+                "nbt": "{Pages:[0:{id:4609s,Count:1b,tag:{linkpanel:{}},Damage:0s}],Authors:[0:\"DrasticDemise\"],DisplayName:\"a\",Flags:{},MaxHealth:10.0f}"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Crystals and Portals",
+      "description": "Sometimes a rare crystal can be found in random or page-modified ages. This crystal has little use other than creating actual portals rather than accessing the book. To create a portal, make a closed structure of any size and place a Book Receptale on the portal structure. Next, place your linking book or age in the receptacle and you have a new portal! You must enter the age manually before you can place it in a crystal portal, and you still require a linking book to get back.",
+      "x": 112,
+      "y": 131,
+      "icon": {
+        "id": "Mystcraft:BlockCrystal"
+      },
+      "prerequisites": [
+        "Your First Age"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Mystcraft:BlockBookReceptacle"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "More Pages",
+      "description": "Pages can be used to customize ages however obtaining them is a bit tricky. Some villagers will offer trades for pages or notebooks at the expense of emeralds, however this is extremely expensive if you are unable to collect large amounts of emeralds. One other alternative is to traverse the ages you create and find temples that contain pages. Make sure to check the corners!",
+      "x": 111,
+      "y": 93,
+      "icon": {
+        "id": "Mystcraft:booster"
+      },
+      "prerequisites": [
+        "Your First Age"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Mystcraft:booster"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Mystcraft:booster"
+        }
+      ]
+    },
+    {
+      "name": "Instability",
+      "description": "Upon creation, each age has a designated \"stability\" value. Ages that provide overwhelmingly beneficial resources, such as dungeons, dense ores or special ore types will often become highly unstable. Unstable ages will afflict the player with undesired effects such as constant lightning, burning surface, or hunger/poison rain. Ages can by balanced or made more desireable if you add \"instability pages\", such as scorched earth or Charged.",
+      "x": 201,
+      "y": 139,
+      "icon": {
+        "id": "Mystcraft:BlockDecay"
+      },
+      "prerequisites": [
+        "Your First Age"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:planks",
+                "damage": 2
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Proper Age Making",
+      "description": "Now that you have created an age that was entirely random, it is time to create an age that is specified to your needs. Keep the following things in mind: Any primary aspects of the world not specified in pages will be provided randomly. Modifiers unused will cause instability. Categories of primary pages are generally limited to one, adding additional will cause instability.",
+      "x": 159,
+      "y": 75,
+      "icon": {
+        "id": "Mystcraft:page",
+        "nbt": "{symbol:\"ModClear\"}"
+      },
+      "prerequisites": [
+        "Your First Age"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Detection task",
+          "longDescription": "These Categories MUST be added or they will be provided: Terrain Generator, Biome Controller, Weather, Lighting (These are all limited to one each). Sun, Moon, Stars, Populators (Villages, dungeons, crystals ETC.), Terrain Alterations. Modifiers must be added before the primary category, but any dangling modifers will cause instability. To solve this, adding the Clear Modifiers page at the end will ensure that incorrectly used modifiers will be deleted.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:planks"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Mystcraft:page",
+          "nbt": "{symbol:\"ModClear\"}"
+        }
+      ]
+    },
+    {
+      "name": "Portal Modification",
+      "description": "By mixing items into the ink mixer it is possible to give your linked panels a new effect. By adding Gunpowder or Mushroom stew, your portals will Disarm players and cause their inventory to be dropped on the ground upon entry. Adding Clay will cause the portal to generate a platform upon entry. Adding Feathers will cause users to maintain their momentum upon entry. And finally, adding Ender Pearls will cause portals to become Intralinking, meaning that they can be used in the same dimension.",
+      "x": 203,
+      "y": 91,
+      "icon": {
+        "id": "Mystcraft:BlockInkMixer"
+      },
+      "prerequisites": [
+        "Your First Age"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:planks"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}

@@ -1,0 +1,1047 @@
+{
+  "name": "Botania",
+  "description": "This quest line provides linear progression through the availability in the Lexica Botania. This quest line does not provide information on all major mechanics of Botania, but instead covers major milestones and points of progression. Exploration into Redstone and the Ender system are highly suggested. This quest line is meant to be supplementary to the Lexica Botania and not a replacement of any form.                   - Authored by DrasticDemise",
+  "quests": [
+    {
+      "name": "The Basics",
+      "description": "Botanical magic is about mana manipulation in order to perform various tasks around the world. Exploring Botania will yield powerful baubles and items, as well as new sets of armor and unique tools. The Lexica Botania contains full documentation of this mod, however this quest line serves as a supplemental tutorial line for those that wish to obtain a better understanding of progression or those wishing to accomplish milestones. If you are ever in doubt, simply refer to the Lexica Botania once more.",
+      "x": 29,
+      "y": 16,
+      "icon": {
+        "id": "Botania:lexicon"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:lexicon"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "The Petal Apothecary is a stable construct in which all flowers are made. In order to operate the petal apothecary, fill it with water and throw each item of a desired recipe into the apothecary. Once complete, throw a seed of any kind to complete the crafting.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:altar"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "The Pure Daisy is the first flower to be created. It allows you to create Livingwood and Livingrock by placing logs and stone around the daisy. These materials will be crucial for many builds later on, so there is never a harm in stocking up.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"puredaisy\"}"
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:livingrock"
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "Botania:livingwood"
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Mana Theory",
+      "description": "Many items and blocks will require some form of mana to be consumed. Flowers are split into two categories, mana producing flowers and mana consuming flowers. In order to begin creating and storing mana, you must first create a mana pool and a mana spreader. The mana pool will hold an extremely large amount of mana, while the mana spreader transports mana from flowers to the mana pool.",
+      "x": 72,
+      "y": 16,
+      "icon": {
+        "id": "Botania:pool"
+      },
+      "prerequisites": [
+        "The Basics"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:pool"
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:spreader"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "While flowers typically perform their job without trouble, they can be rather silly in creating connections to nearby mana spreaders. In order to bind a flower to a spreader, you must create the wand of the forest. This wand has two modes, a Binding mode a Function mode which can be switched by shift right-clicking. In order to bind a flower, ensure the wand is in binding mode and shift right-click the flower until a box appears, and shift right-click the desired location.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:twigWand",
+                "nbt": "{color1:0,color2:0}"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Mana Generation",
+      "description": "The vast majority of mana generation will come from mana generating flowers. Mana generating flowers can be broken down into two categories, passive generation and active generation. Passive flowers do not have an associated cost for producing mana, however they produce a very small amount of mana and will only live for three days. Active flowers will live indefinitely, can produce much more mana, however typically cost resources.",
+      "x": 116,
+      "y": 16,
+      "icon": {
+        "id": "Botania:specialFlower",
+        "nbt": "{type:\"daybloomDecor\"}"
+      },
+      "prerequisites": [
+        "Mana Theory"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "It is recommended you create additional nightshades or dayblooms until your mana pool has enough mana to create mana powder for an Endoflame.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"daybloom\"}"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:specialFlower",
+          "amount": 3,
+          "nbt": "{type:\"daybloom\"}"
+        },
+        {
+          "id": "Botania:specialFlower",
+          "amount": 3,
+          "nbt": "{type:\"nightshade\"}"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "Botania:fertilizer",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "Mana Consumption",
+      "description": "The Mana Pool adds a unique function of transforming some mundane items into mana-infused ones by simply tossing the items in. Mana steel is unique in that it can be repaired by mana in the users inventory when created into armor or tools.",
+      "x": 116,
+      "y": 56,
+      "icon": {
+        "id": "Botania:manaResource",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Mana Generation"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Active flowers produce exponentially more mana.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaResource"
+              },
+              "precision": "ORE_DICTIONARY"
+            },
+            {
+              "item": {
+                "id": "Botania:manaResource",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Rune Theory",
+      "description": "Runes allow you to create extremely powerful tools, baubles, and additional flowers. Rune crafting is the process in which items are combined on a Runic Altar with a small amount of mana. To do this, you must first create a runic altar. In order to give mana to the runic altar, you must point a mana spreader in the direction of the runic altar. The fastest way to do this is to place a mana spreader adjacent to a mana pool, and the runic altar in front of the mana spreader. Mana will be transferred directly from the pool into the altar at an extremely fast rate.",
+      "x": 116,
+      "y": 90,
+      "icon": {
+        "id": "Botania:runeAltar"
+      },
+      "prerequisites": [
+        "Mana Consumption"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "To place items on the altar, simply right click them on the altar. To remove an item, shift right-click with an empty hand to remove the item from the altar. When the desired recipe is on the altar, click the altar with a Wand of the Forest to start the process. Once finished, throw one living rock on the altar and right click with the wand of the forest to complete the rune creation.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:runeAltar"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Alchemy Catalyst",
+      "description": "A key feature of the Mana Pool is that it can be customized with two catalysts. The only one that you can currently create is the Alchemy Catalyst. When placed under a mana pool you can transform various items into their similar parts at the cost of mana. Try the following transformations: Cactus, Sapling, Seed, Redstone, Cobble, Sand. Many mundane vanilla items will have exchanges that would otherwise demand you to discover specific biomes.",
+      "x": 90,
+      "y": 69,
+      "icon": {
+        "id": "Botania:alchemyCatalyst"
+      },
+      "prerequisites": [
+        "Mana Consumption"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:alchemyCatalyst"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:cactus"
+        },
+        {
+          "id": "minecraft:glowstone_dust"
+        }
+      ]
+    },
+    {
+      "name": "Botanical Brewing",
+      "description": "Botania provides an alternative to the vanilla brewing system through the Botanical Brewery. Much like a potion stand, the Brewery takes a defined list of ingredients and a small bit of mana to form a potion. The key difference is that these potions have multiple uses and are always better than their vanilla counterparts. ",
+      "x": 71,
+      "y": 89,
+      "icon": {
+        "id": "Botania:brewery"
+      },
+      "prerequisites": [
+        "Rune Theory"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:brewery"
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:vial"
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "minecraft:nether_wart"
+        }
+      ]
+    },
+    {
+      "name": "Mana Utility",
+      "description": "As your collection of flowers grows, it can become tiresome to bind each flower individually. A floral obedience stick will bind all nearby flowers to a single block. Another useful item to have is the Manastar. When placed next to a mana pool, the Manastar will alert you when your mana consumption is outpacing your production. Useful for when managing large systems.",
+      "x": 157,
+      "y": 17,
+      "icon": {
+        "id": "Botania:obedienceStick"
+      },
+      "prerequisites": [
+        "Mana Consumption"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:obedienceStick"
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"manastar\"}"
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "Botania:fertilizer",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "Useful Baubles",
+      "description": "Botania offers a wide variety of baubles to fit almost any play style. You may construct two (differenet or same) baubles of the first tier to complete this quest. Most of these baubles will require some form of inventory mana, so increase your mana production if necessary.",
+      "x": 157,
+      "y": 57,
+      "icon": {
+        "id": "Botania:magnetRing"
+      },
+      "prerequisites": [
+        "Rune Theory"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaRing",
+                "damage": 1000
+              },
+              "required": 2,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Botania:storage"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Useful Rods",
+      "description": "Rods can perform very specialized tasks at the cost of mana, but only when used. To complete this quest, create any rod of the first tier. ",
+      "x": 158,
+      "y": 89,
+      "icon": {
+        "id": "Botania:fireRod"
+      },
+      "prerequisites": [
+        "Rune Theory"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:fireRod"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Terrasteel",
+      "description": "Terrasteel is an extremely powerful metal that has many purposes amongst the highest tier of Botania gear. However, the creation of Terrasteel is a bit tricky. The first step is to create a Terrestrial Agglomeration Plate. Once constructed, create the multiblock structure in the Lexica Botania. One Terrasteel demands half a mana pool each, and the transfusion can be rather slow. To speed this up, place one spark above the plate and another spark above the mana pool you wish to drain. Once you are ready, throw one Manasteel, Mana Diamond and Mana Pearl onto the plate and watch it go, careful not to pick them up while being created.",
+      "x": 115,
+      "y": 125,
+      "icon": {
+        "id": "Botania:terraPlate"
+      },
+      "prerequisites": [
+        "Rune Theory"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:terraPlate"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:lapis_block"
+              },
+              "required": 7
+            },
+            {
+              "item": {
+                "id": "Botania:livingrock"
+              },
+              "required": 5
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaResource",
+                "damage": 4
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Elven Portal",
+      "description": "Progression in botania goes much further than simple Terrasteel, but contact with the elves will be necessary. Consult the Portal to Alfheim in the Lexica Botania for full instruction on the creation of the multiblock. Additional mana production may be necessary to keep the portal open. Once opened, toss your Lexica Botania through the portal.",
+      "x": 159,
+      "y": 154,
+      "icon": {
+        "id": "Botania:pylon",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Terrasteel"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:alfheimPortal"
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:livingwood",
+                "damage": 5
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "Botania:pylon",
+                "damage": 1
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "Botania:pool"
+              },
+              "required": 2
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaResource",
+                "damage": 7
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:manaResource",
+                "damage": 8
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:manaResource",
+                "damage": 9
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:elfGlass"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Terra Tools",
+      "description": "Terrasteel tools have unique properties that set them apart from their Manasteel and diamond counterparts. The Terra Blade can shoot a projectile in the direction that it is swung. The Terra Truncator can chop entire trees, while the Terra Shatterer can become increasingly powerful and mine huge areas. Creating one of these will complete the quest.",
+      "x": 97,
+      "y": 153,
+      "icon": {
+        "id": "Botania:terraSword"
+      },
+      "prerequisites": [
+        "Terrasteel"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:terraSword"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "More Baubles and Rods",
+      "description": "Access to elven resources allows you to create another level of botania tools. Create two of any kind, same or differing, of this tier.",
+      "x": 160,
+      "y": 187,
+      "icon": {
+        "id": "Botania:pixieRing"
+      },
+      "prerequisites": [
+        "Elven Portal"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:pixieRing"
+              },
+              "required": 2,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Moar Botanical Play Things",
+      "description": "Gaia spirits can be used to create the most powerful tools and items available in Botania. Create two of any (same or differing) of the following items.",
+      "x": 234,
+      "y": 154,
+      "icon": {
+        "id": "Botania:missileRod"
+      },
+      "prerequisites": [
+        "Gaia Guardian"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:missileRod"
+              },
+              "required": 2,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Botanical Play Things",
+      "description": "Botania offers many powerful tools that do not require a bauble slot or mana. Each item has a unique purpose, and it would be wise to look at each item before creating them. To complete this quest, create two (same of differing) of these ten botanical items. ",
+      "x": 157,
+      "y": 122,
+      "icon": {
+        "id": "Botania:baubleBox"
+      },
+      "prerequisites": [
+        "Rune Theory"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:baubleBox"
+              },
+              "required": 2,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Mobile Mana",
+      "description": "As your collection of botanical baubles and tools grows, you will find that most of them require some form of mana in your inventory. A Mana tablet can hold a great deal of mana which can be used by equipped items directly, or can be used to transport mana between two mana pools. To give mana to a mana pool, make sure that the mana pool is set on \"Giving mana to items\" with the wand of the forest.",
+      "x": 88,
+      "y": 40,
+      "icon": {
+        "id": "Botania:manaTablet",
+        "nbt": "{mana:500000}"
+      },
+      "prerequisites": [
+        "Mana Consumption"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaTablet",
+                "damage": 1000
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:manaTablet",
+          "damage": 1000
+        }
+      ]
+    },
+    {
+      "name": "Sparks",
+      "description": "Mana management can become very messy if it is not carefully constructed and arranged. One of the most powerful tools for any serious mana manager are Sparks. The main purpose of a spark is mana transportation. Some blocks that require mana may also demand access to a mana pool connected through sparks. To use, simply place a spark above a mana pool and another spark over the block that requires mana. There are not many uses for these now, but further study will reveal their purpose.",
+      "x": 87,
+      "y": 113,
+      "icon": {
+        "id": "Botania:spark"
+      },
+      "prerequisites": [
+        "Rune Theory"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:spark"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Gaia Guardian",
+      "description": "The elven knowledge points to a ritual to summon the Gaia Guardian. The Gaia Guardian will drop materials and tools that will allow you to create the most powerful items Botania has to offer, but the fight is no joke. The Ritual to summon the Gaia Guardian requires four Gaia Pylons and a lit Beacon. The Guardian has a nasty habit of cleansing its foes of potion effects, however is still affected by active flowers. To start the ritual, construct the multiblock found in the Lexica Botania and offer a Terrasteel ingot to the Beacon.",
+      "x": 202,
+      "y": 154,
+      "icon": {
+        "id": "Botania:pylon",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Elven Portal"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:pylon",
+                "damage": 2
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "minecraft:beacon"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "Only those equipped with the highest level of baubles and gear will be able to defeat the Gaia Guardian. Good luck.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaResource",
+                "damage": 5
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Botania:manaResource",
+          "damage": 4,
+          "amount": 3
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Mana Conjuration",
+      "description": "Elven resources allow you to create a new catalyst that allows you to duplicate certain items at the cost of mana. Hit \"U\" on the Conjuration Catalyst to see a full list of duplications. The most notable duplications are: Redstone, Glowstone, Coal, Snow, Soul Sand, Leaves, Grass, Nether Quartz.",
+      "x": 187,
+      "y": 125,
+      "icon": {
+        "id": "Botania:conjurationCatalyst"
+      },
+      "prerequisites": [
+        "Elven Portal"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:conjurationCatalyst"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:snowball"
+        },
+        {
+          "id": "minecraft:quartz"
+        }
+      ]
+    },
+    {
+      "name": "Collect Them All",
+      "description": "Prove your skill in combat by collecting all six relics!",
+      "x": 263,
+      "y": 182,
+      "icon": {
+        "id": "Botania:dice"
+      },
+      "prerequisites": [
+        "Round Two"
+      ]
+    },
+    {
+      "name": "Spark Augmentation",
+      "description": "You have unlocked the ability to augment sparks for advanced mana manipulation. Each augment will cause the spark to do different things with the mana in the pool below, and augments are necessary for complex mana storage or systems. One practical use that you can apply now is to automatically feed mana into your portal pools without needing to manually insert mana or creating extra spreader systems.",
+      "x": 50,
+      "y": 113,
+      "icon": {
+        "id": "Botania:sparkUpgrade"
+      },
+      "prerequisites": [
+        "Augment trigger",
+        "Sparks"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:sparkUpgrade",
+                "damage": 2
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Spreader Upgrade",
+      "description": "The Elven Mana Spreader is more efficient than regular spreaders. It can more more mana faster!",
+      "x": 127,
+      "y": 154,
+      "icon": {
+        "id": "Botania:spreader",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Elven Portal"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:spreader",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:livingwood",
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "name": "Rainbow Spreader!",
+      "description": "An upgrade from the elven mana spreader, this one is rainbow! (And more efficient, if you care about that)",
+      "x": 186,
+      "y": 177,
+      "icon": {
+        "id": "Botania:spreader",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Gaia Guardian"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:spreader",
+                "damage": 3
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "Botania:dreamwood",
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "name": "Round Two",
+      "description": "Defeating the Gaia Guardian is a difficult task, however you must challenge yourself further to obtain the rarest Botania items. By combining a Terrasteel ingot and a Gaia Spirit, you can create a Gaia Spirit Ingot. By using the Gaia Spirit Ingot in place of a Terrasteel ingot, you can summon a stronger Gaia Guardian. This version of the Gaia Guardian drops more Gaia Spirits as well as unique armor buffs and rare relics.",
+      "x": 226,
+      "y": 182,
+      "icon": {
+        "id": "Botania:manaResource",
+        "damage": 14
+      },
+      "prerequisites": [
+        "Gaia Guardian"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaResource",
+                "damage": 14
+              }
+            }
+          ]
+        },
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Gaia Guardian",
+              "icon": {
+                "id": "Botania:gaiaHead"
+              },
+              "mob": "Botania.botania:doppleganger",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4
+        }
+      ]
+    },
+    {
+      "name": "Augment trigger",
+      "x": 51,
+      "y": 147,
+      "icon": {
+        "id": "Botania:manaResource",
+        "damage": 8
+      },
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaResource",
+                "damage": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "404 Corpea Quest Not Found",
+      "description": "More information on the Corpea System coming soon.",
+      "x": 227,
+      "y": 114,
+      "icon": {
+        "id": "HardcoreQuesting:hqmInvalidItem"
+      },
+      "prerequisites": [
+        "Gaia Guardian"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "HardcoreQuesting:hqmInvalidItem"
+              },
+              "required": 99
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}
