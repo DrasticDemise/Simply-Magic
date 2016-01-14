@@ -13,6 +13,6 @@ Those that wish to modify or add quests need to keep the following in mind:
 
 3. You will be credited for each quest you create or change.
 
-4. Do not change any quests that you were not approved for, and PLEASE document every change you have made and why you made it. This isto make sure that everybody is on the same page for merges and updates.
+4. Do not change any quests that you were not approved for, and PLEASE document every change you have made and why you made it. This is to make sure that everybody is on the same page for merges and updates.
 
 5. By submitting quests and pull requests, you relinquish the rights of the quests and config/mod changes to this repository and are not promised any future modifications over the same/differing/future config/mod changes. 
