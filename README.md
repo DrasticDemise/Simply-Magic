@@ -6,6 +6,7 @@ If you wish to contribute to this mod pack through quest additions, corrections,
 Those that wish to take on approved tasks need to simply state that they intend to take on the project (IN that issue) and you will be assigned. 
 
 Those that wish to modify or add quests need to keep the following in mind:
+
 1. It needs to have the same tone as the rest of the quest book. This is to ensure a sort of consistency in what to expect in each quest line.
 
 2. I will edit and modify your presented quests if information is unclear or does not have the same theme as the rest of the quest book.
