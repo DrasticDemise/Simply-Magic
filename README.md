@@ -7,7 +7,13 @@ Those that wish to take on approved tasks need to simply state that they intend 
 
 Those that wish to modify or add quests need to keep the following in mind:
 1. It needs to have the same tone as the rest of the quest book. This is to ensure a sort of consistency in what to expect in each quest line.
+
 2. I will edit and modify your presented quests if information is unclear or does not have the same theme as the rest of the quest book.
+
 3. You will be credited for each quest you create or change.
-4. Do not change any quests that you were not approved for, and PLEASE document every change you have made and why you made it. This is to make sure that everybody is on the same page for merges and updates.
-5. By submitting quests and pull requests, you relinquish the rights of the quests and config/mod changes to this repository and are not promised any future modifications over the same/differing/future config/mod changes. 
+
+4. Do not change any quests that you were not approved for, and PLEASE document every change you have made and why you made it. This isto make sure that everybody is on the same page for merges and updates.
+
+5. By submitting quests and pull requests, you relinquish the rights of the quests and config/mod changes to this repository and are
+
+7. not promised any future modifications over the same/differing/future config/mod changes. 
