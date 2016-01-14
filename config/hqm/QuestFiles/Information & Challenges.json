@@ -1,6 +1,6 @@
 {
   "name": "Information \u0026 Challenges",
-  "description": "General information on pack chanages, mechanics, and automation challenges for players.",
+  "description": "General information on pack changes, mechanics, and automation challenges for players.",
   "quests": [
     {
       "name": "Vanilla Combat Sucks",
@@ -84,6 +84,7 @@
       "tasks": [
         {
           "type": "CONSUME",
+          "longDescription": "Thanks for your input, Zieg777!",
           "items": [
             {
               "item": {
@@ -438,6 +439,33 @@
         {
           "id": "HardcoreQuesting:bags",
           "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Quest Delivery",
+      "description": "If you choose to take on these challenge quests, you will need a Quest Delivery System. The QDS will submit items in a designated quest when items \"enter\" the block. One way to funnel items into the QDS is with a hopper. In order to set the quest, place down the QDS, go to the desired quest, hit Select, and right click on the QDS to set it.",
+      "x": 18,
+      "y": 174,
+      "icon": {
+        "id": "HardcoreQuesting:item_barrel"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "HardcoreQuesting:item_barrel"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
         }
       ]
     }

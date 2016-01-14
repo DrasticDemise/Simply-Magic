@@ -1,5 +1,6 @@
 {
   "name": "Ars Magica",
+  "description": "This quest line introduces the player to major Ars Magica mechanics such as Spell Crafting, Etherium, as well as many functional blocks and tools. This quest line is meant to provide points of direction in the mod through the compendium. Due to issues with clarity, the Compendium is fully unlocked from the beginning. This quest line does not cover the multi-block structures offered in Ars Magica, and this quest line is meant to be supplementary to the Compendium.       -Authored by Drasticdemise and Zieg777",
   "quests": [
     {
       "name": "Getting Started",
@@ -288,7 +289,7 @@
         "id": "arsmagica2:blackAurem"
       },
       "prerequisites": [
-        "Special Stones"
+        "Etherium"
       ],
       "tasks": [
         {
@@ -697,7 +698,7 @@
       "tasks": [
         {
           "type": "DETECT",
-          "description": "Consume task",
+          "description": "Detection Task",
           "longDescription": "A task where the player can hand in items or fluids. One can also use the Quest Delivery System to submit items and fluids.",
           "items": [
             {
@@ -757,7 +758,9 @@
       ],
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
+          "description": "Detection Task",
+          "longDescription": "Detection Task",
           "items": [
             {
               "item": {
@@ -801,7 +804,9 @@
       ],
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
+          "description": "Detection Task",
+          "longDescription": "A task where the player has to craft specific items.",
           "items": [
             {
               "item": {
@@ -832,7 +837,8 @@
       ],
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
+          "description": "Detection Task",
           "longDescription": "Start by creating the Flicker Focus: Item Transport as well as a Flicker Habitat",
           "items": [
             {
@@ -849,7 +855,8 @@
           ]
         },
         {
-          "type": "CRAFT",
+          "type": "DETECT",
+          "description": "Detection Task",
           "longDescription": "Now that you have a Flicker Focus and a habitat for it, you need crystals to tell the flicker what to do. Import crystals import items into the flicker network. Export crystals output to inventories. Set Export Crystals allow you to instruct which items should go to that inventory.",
           "items": [
             {

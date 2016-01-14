@@ -569,6 +569,7 @@
       "prerequisites": [
         "Foci Upgrades"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -706,8 +707,9 @@
         "damage": 11
       },
       "prerequisites": [
-        "Wand Upgrade"
+        "Stability in Nodes"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -996,6 +998,7 @@
       "prerequisites": [
         "Crimson Cult"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "LOCATION",
@@ -1045,6 +1048,7 @@
       "prerequisites": [
         "Foci Upgrades"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -1139,6 +1143,7 @@
       "prerequisites": [
         "Not of This World"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
