@@ -1,0 +1,1077 @@
+{
+  "name": "Ars Magica",
+  "quests": [
+    {
+      "name": "Getting Started",
+      "description": "To begin Ars Magica, you require an Arcane Compendium. To obtain one, place a book inside of an item frame in front of a pool of liquid etherium. The Compendium is set to unlock all knowledge rather than staged progression. This quest line serves to give a rough path of progression through the book. Take special care to take your magic level into consideration when attempting high level combat. ",
+      "x": 17,
+      "y": 19,
+      "icon": {
+        "id": "arsmagica2:ArcaneCompendium"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:ArcaneCompendium"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Spell Writing",
+      "description": "To begin writing your first spell, you will need to craft an Occulus and an Inscription Table. The Occulus allows you to unlock new spells with skill points that you have acquired, while the inscription table allows you to write your spells down in order to later craft them. It is recommended you allocate your skill points so that you may craft an actual spell. Do not place one point in each tree. More info is available in the next quest.",
+      "x": 60,
+      "y": 19,
+      "icon": {
+        "id": "arsmagica2:InscriptionTable"
+      },
+      "prerequisites": [
+        "Getting Started"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:InscriptionTable"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:occulus"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:writable_book",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Crafting Altar",
+      "description": "The most important part of Ars Magica is spell crafting and usage. You can combine many spell components together to form new and customized spells. In order to begin crafting spells, you must first construct the Multiblock Crafting Altar. Consult the Structures tab in the Compendium for the exact layout of the crafting altar. Once created, you may use the inscription table with your book and quill to obtain a spell recipe. A spell requires at least one shape and component to function. Place your recipe on the lectern and throw one blank rune into the altar to begin the crafting process.",
+      "x": 113,
+      "y": 19,
+      "icon": {
+        "id": "arsmagica2:CraftingAltar"
+      },
+      "prerequisites": [
+        "Spell Writing"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "The altar can be created based on your available resources. The better the altar, the more powerful your spells can become. Consult the compendium for modification of the altar.",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:CraftingAltar"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:magicWall"
+              },
+              "required": 6
+            },
+            {
+              "item": {
+                "id": "arsmagica2:blockLectern"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:lever"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:rune",
+          "damage": 1,
+          "amount": 4
+        },
+        {
+          "id": "arsmagica2:spellParchment",
+          "amount": 4
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Skill Points",
+      "description": "You can obtain additional skill points through several methods. The most common method is through levelling up your magic level. Every even level that you progress will grant one skill point. Types of skill points earned through level are dependent on the level that you have reached. You may also obtain skill points by finding Infinity Orbs. Infinity Orbs can be found in dungeon chests as well as drops off of AM2 boss monsters.",
+      "x": 60,
+      "y": 56,
+      "icon": {
+        "id": "arsmagica2:rune",
+        "damage": 17
+      },
+      "prerequisites": [
+        "Spell Writing"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:planks",
+                "damage": 2
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:rune",
+          "damage": 17
+        }
+      ]
+    },
+    {
+      "name": "Magical Worldgen",
+      "description": "Ars Magica adds many flora and ores to the world. Many of these will be required in certain spells and related blocks.",
+      "x": 24,
+      "y": 57,
+      "icon": {
+        "id": "arsmagica2:Aum"
+      },
+      "prerequisites": [
+        "Spell Writing"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:desertNova"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:TarmaRoot"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:wakebloom"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:Aum"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:blueOrchid"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:saplingWitchwood"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:itemOre",
+                "damage": 5
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:itemOre"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:itemOre",
+                "damage": 4
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Etherium",
+      "description": "Etherium is the main \"power\" system of Ars Magica and is used to power many blocks and is involved in some spell creation. The most basic form of Etherium is Neutral Etherium. You can create neutral Etherium by burning Vinteum Dust or Liquid Etherium inside of an Obelisk. In order to transfer Etherium from one block to another, you must bind the Obelisk to the designated block or Crafting Altar with the Crystal Wrench. In order to use Etherium in the crafting altar, ensure that the source is linked and flip the lever. The Magitech Staff and Goggles will reveal the amount of Etherium inside of blocks when used.",
+      "x": 158,
+      "y": 57,
+      "icon": {
+        "id": "arsmagica2:obelisk"
+      },
+      "prerequisites": [
+        "Crafting Altar"
+      ],
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "By default, the Obelisk must be within 10 blocks of the desired binding.",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:crystal_wrench",
+                "nbt": "{WRENCHMODE:0}"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:obelisk"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:magitechStaff"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:magitechGoggles"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:itemOre",
+          "amount": 32
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Special Etherium",
+      "description": "While Neutral Etherium can be used in a variety of means, there are two more types of Etherium with their own special properties. In order to produce Dark and Light Etherium, you must first obtain their respective key blocks through Rituals. In order to transform your obelisks, consult the Ritual section in the Structure tab for information on layout.",
+      "x": 229,
+      "y": 20,
+      "icon": {
+        "id": "arsmagica2:blackAurem"
+      },
+      "prerequisites": [
+        "Special Stones"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:blueChalk"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:wardingCandle"
+              },
+              "required": 4,
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:obelisk"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Etherium Conduit",
+      "description": "You may extend the range of accessibly Etherium from an Obelisk by using an Etherium Conduit. The Etherium Conduit acts as a wireless pathway for the Etherium to flow. Each Conduit has a range of 10 blocks, and can be chained up to 100 blocks from the original source. When pairing Etherium consuming blocks to sources, simply use the Crystal Wrench on the source and then on the consumer; There is no need to link the conduits in between.",
+      "x": 124,
+      "y": 57,
+      "icon": {
+        "id": "arsmagica2:essenceConduit"
+      },
+      "prerequisites": [
+        "Etherium"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:essenceConduit"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:essenceConduit",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Mage Armor",
+      "description": "You can construct armor that is specifically attuned to your demands as a mage. Wearing a full set of Mage Armor will increase your mana regen as well as increase the power of your spells. Magical Armors can be repaired with current mana reserves, and the armor is highly enchantable.",
+      "x": 158,
+      "y": 136,
+      "icon": {
+        "id": "arsmagica2:mageHood"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:mageHood"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:mageArmor"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:mageLeggings"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:mageBoots"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Armor Imbuement",
+      "description": "As you may have noticed, hovering over all types of armor and holding shift will reveal an Armor exp and level value. AM2 allows all armors to gain levels and in turn, use those levels in the Armor Imbuement Table. These special enchantments will assist you as a mage by reducing burnout, increasing exp gains, step assist, as well as many damage reductions. This allows you to create your own form of \"mage armor\" if the AM2 provided armor is not as good as another mod\u0027s armor you have choosen to wear.",
+      "x": 127,
+      "y": 157,
+      "icon": {
+        "id": "arsmagica2:armorInfuser"
+      },
+      "prerequisites": [
+        "Mage Armor"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:armorInfuser"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Essence Refiner",
+      "description": "Some items or spells will require various essences in order to be created. The Essence Refiner will create various types of essences when given Etherium and a Recipe. Check the section on Essence under the Items tab for more information on how to craft a specific essence.",
+      "x": 230,
+      "y": 57,
+      "icon": {
+        "id": "arsmagica2:essenceRefiner"
+      },
+      "prerequisites": [
+        "Etherium"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:essenceRefiner"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Battle Mage Armor",
+      "description": "Battle Mage Armor provides similar benefits as the mage armor, but to a lesser degree. However, the tradeoff is that Battle Mage Armor provides many more bonuses against physical damage, useful if the mage armor wasn\u0027t enough.",
+      "x": 158,
+      "y": 180,
+      "icon": {
+        "id": "arsmagica2:battlemageArmor"
+      },
+      "prerequisites": [
+        "Mage Armor"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:battlemageHood"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:battlemageArmor"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:battlemageLeggings"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:battlemageBoots"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Guardians",
+      "description": "One way to test your strength as a mage is to summon various guardians. Guardians have unique abilities and attacks, and are extremely bulky. They are usually immune to phsyical damage by swords, so crafting powerful attack spells with a hefty amount of mana regen would be in your favor. Each boss will drop an Infinity Orb and has a chance to drop their respective Essence. Rarely, they can also drop a unique piece of equipment. Each boss has a unique method of summoning, consult the boss tab for more information.",
+      "x": 187,
+      "y": 155,
+      "icon": {
+        "id": "arsmagica2:AMSpawnEgg",
+        "damage": 16
+      },
+      "prerequisites": [
+        "Mage Armor"
+      ],
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Water Guardian",
+              "icon": {
+                "id": "arsmagica2:AMSpawnEgg",
+                "damage": 16
+              },
+              "mob": "arsmagica2.BossWaterGuardian",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:rune",
+          "damage": 17,
+          "amount": 2
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Spell Book",
+      "description": "As you grow your collection of spells, your inventory will soon suffer. To aide this, you can craft a spell book that will contain a large amount of spells that can be cycled through with Shift-Scrolling.",
+      "x": 159,
+      "y": 20,
+      "icon": {
+        "id": "arsmagica2:spellBook",
+        "nbt": "{spellbookactiveslot:0}"
+      },
+      "prerequisites": [
+        "Crafting Altar"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:spellBook",
+                "nbt": "{spellbookactiveslot:0}"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:manaPotionBundle",
+          "damage": 259,
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Arcane Deconstruction",
+      "description": "By feeding an Arcane Deconstructor with Dark Etherium, you can break down old spells or items into their original crafting components.",
+      "x": 111,
+      "y": 83,
+      "icon": {
+        "id": "arsmagica2:arcaneDeconstructor"
+      },
+      "prerequisites": [
+        "Etherium"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:arcaneDeconstructor"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Special Stones",
+      "description": "Along with standard world generation, Ars Magica also adds two more stones that are obtained through other means. Moon Stone can fall onto the world around mages with a level higher than 10, and Sun Stone can be found where lava is abundant. ",
+      "x": 193,
+      "y": 20,
+      "icon": {
+        "id": "arsmagica2:itemOre",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Etherium"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:itemOre",
+                "damage": 6
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:itemOre",
+                "damage": 7
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:rune",
+          "damage": 17
+        }
+      ]
+    },
+    {
+      "name": "Reconstructing",
+      "description": "By feeding Etherium into an Arcane Reconstructor, you can repair mundane tools and items. May not work on some modded items.",
+      "x": 194,
+      "y": 57,
+      "icon": {
+        "id": "arsmagica2:blockArcaneReconstructor"
+      },
+      "prerequisites": [
+        "Etherium"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:blockArcaneReconstructor"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Finding Finicky Flickers",
+      "description": "Flickers are an automation system in Ars Magica. To start, You must first build a Flicker Lure and provide it with Etherium. It is a good idea to do this in an enclosed area so that the flickers do not escape. Capture a flicker by right clicking it with an Empty Flicker Jar. It is mostly random what type is summoned, but environment may have an effect.",
+      "x": 93,
+      "y": 134,
+      "icon": {
+        "id": "arsmagica2:flickerJar",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Etherium"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Consume task",
+          "longDescription": "A task where the player can hand in items or fluids. One can also use the Quest Delivery System to submit items and fluids.",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:flickerLure"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:flickerJar"
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:flickerJar",
+          "damage": 5
+        },
+        {
+          "id": "arsmagica2:flickerJar",
+          "damage": 6
+        },
+        {
+          "id": "arsmagica2:flickerJar",
+          "damage": 1
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "arsmagica2:flickerJar",
+          "damage": 3
+        },
+        {
+          "id": "arsmagica2:flickerJar",
+          "damage": 5
+        },
+        {
+          "id": "arsmagica2:flickerJar",
+          "damage": 9
+        }
+      ]
+    },
+    {
+      "name": "Fallen Oak",
+      "description": "Who needs a tech mod for farming trees? Not a Mage! The Flicker Focus: Fallen Oak can take down even the largest Greatwood tree in an instant. Provide with Etherium for less down time between trees. A Lightning Flicker in an adjacent habitat can speed it up even more. A Nature Flicker will allow the habitat to replant saplings from an adjacent chest if it is also powered.",
+      "x": 41,
+      "y": 134,
+      "icon": {
+        "id": "arsmagica2:bindingCatalyst",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Finding Finicky Flickers"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:flickerFocus",
+                "damage": 384
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:elementalAttuner"
+        },
+        {
+          "id": "arsmagica2:magicBroom"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "arsmagica2:flickerJar",
+          "damage": 8
+        },
+        {
+          "id": "arsmagica2:flickerJar",
+          "damage": 6
+        }
+      ]
+    },
+    {
+      "name": "Bountiful Harvests",
+      "description": "Another useful flicker is the Flicker Focus: Nature\u0027s Bounty. This focus speeds growth rate in its area. This works on crops as well as trees.",
+      "x": 63,
+      "y": 164,
+      "icon": {
+        "id": "arsmagica2:bindingCatalyst",
+        "damage": 4
+      },
+      "prerequisites": [
+        "Finding Finicky Flickers"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:flickerFocus",
+                "damage": 832
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Arcane Sorting",
+      "description": "A handy use for flickers is automation of item transport. An Item Transport Flicker Focus is just the trick. While this focus does not require etherium, it does work faster with it. Additionally, if you wish to upgrade the quantity or speed per transfer, power will be required.",
+      "x": 61,
+      "y": 105,
+      "icon": {
+        "id": "minecraft:chest"
+      },
+      "prerequisites": [
+        "Finding Finicky Flickers"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "longDescription": "Start by creating the Flicker Focus: Item Transport as well as a Flicker Habitat",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:flickerFocus",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:elementalAttuner"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "longDescription": "Now that you have a Flicker Focus and a habitat for it, you need crystals to tell the flicker what to do. Import crystals import items into the flicker network. Export crystals output to inventories. Set Export Crystals allow you to instruct which items should go to that inventory.",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:crystalMarker"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:crystalMarker",
+                "damage": 3
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:crystalMarker",
+          "damage": 1,
+          "amount": 3
+        },
+        {
+          "id": "arsmagica2:crystalMarker",
+          "damage": 2,
+          "amount": 3
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "arsmagica2:crystalMarker",
+          "damage": 3,
+          "amount": 3
+        },
+        {
+          "id": "arsmagica2:crystalMarker",
+          "damage": 4,
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Arcane Smelting",
+      "description": "The Calefactor is an Etherium powered furnace. When provided with Etherium, the Calefactor will smelt materials and cook food. Food has a small chance to be doubled without needing any upgrades. Provide with all three types of Etherium, and all output is doubled! Additionally, the Calefactor has a chance to produce Vinteum Dust. More Vinteum Dust is produced than is needed to run it!",
+      "x": 179,
+      "y": 86,
+      "icon": {
+        "id": "arsmagica2:calefactor"
+      },
+      "prerequisites": [
+        "Etherium"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:calefactor"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "arsmagica2:itemOre",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Focused Smelting",
+      "description": "The Calefactor has three slots for upgrades. Mana Foci increase the efficiency; requiring less Etherium per smelting operation. Charge Foci increase the speed while slightly increasing the cost per operation.",
+      "x": 208,
+      "y": 86,
+      "icon": {
+        "id": "arsmagica2:manaFocus"
+      },
+      "prerequisites": [
+        "Arcane Smelting"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:manaFocus"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:chargeFocus"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "arsmagica2:manaFocus"
+        },
+        {
+          "id": "arsmagica2:chargeFocus"
+        }
+      ]
+    },
+    {
+      "name": "Complete the Set",
+      "description": "Show you are the true Master of the Arcane by defeating all of the Elemental Guardians and obtaining their Treasures!",
+      "x": 201,
+      "y": 186,
+      "icon": {
+        "id": "arsmagica2:BoundSwordNor"
+      },
+      "prerequisites": [
+        "Guardians"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:water_orbs",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:earth_armor",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:air_sled",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:winter_arm",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:lightningCharm"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:natureScythe",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:fire_ears",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:lifeWard"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:arcane_spellbook",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:enderBoots"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4,
+          "amount": 2
+        },
+        {
+          "id": "arsmagica2:manaMartini"
+        },
+        {
+          "id": "arsmagica2:manaCake",
+          "amount": 10
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}
