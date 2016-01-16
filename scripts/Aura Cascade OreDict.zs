@@ -56,7 +56,6 @@ val ACConsumer3 = <ore:machineCascadingT3>;
 ACConsumer3.add(<aura:consumerBlockoreAdv>);
 ACConsumer3.add(<aura:consumerBlockend>);
 ACConsumer3.add(<aura:consumerBlockminer>);
-
 //Storage Books
 
 val ACBook = <ore:bookStorage>;
@@ -90,6 +89,17 @@ ACBauble.add(<aura:angelJumpAmulet>);
 ACBauble.add(<aura:angelStepBelt>);
 ACBauble.add(<aura:amuletFood>);
 ACBauble.add(<aura:explosionRing>);
+
+//Misc Tools
+val ACThings = <ore:ACThings>;
+ACThings.add(<aura:redHole>);
+ACThings.add(<aura:blackHole>);
+ACThings.add(<aura:prismaticWand>);
+ACThings.add(<aura:magicRoad>);
+ACThings.add(<aura:swordThief>);
+ACThings.add(<aura:comboSword>);
+ACThings.add(<aura:trampoline>);
+ACThings.add(<aura:mirror>);
 
 //Aura Manipulators
 
