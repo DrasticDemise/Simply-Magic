@@ -1,0 +1,1327 @@
+{
+  "name": "Aura Cascade",
+  "description": "This quest line provides information on the power system and other mechanics provided by Aura Cascade. The Encyclopedia Aura covers the items and such in more depth, but this tutorial will give you everything to know about aura, power, Vortex Infusion and more.                 - Authored by Fortanono",
+  "quests": [
+    {
+      "name": "Getting Started",
+      "description": "Aura manipulation can seem quite complex and magical, but it borrows a lot from real-life systems like water and electricity. This guide will try to explain everything, but if it ever fails you, resort to the official documentation, the Encyclopedia Aura.",
+      "x": 63,
+      "y": 60,
+      "icon": {
+        "id": "aura:lexicon"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "The Encyclopedia Aura will be your best friend, explaining many details about the mod should the quest book fail you. Unlike similar quest lines with a guide book, this line tries to explain most things in the world of aura, but a few gadgets are still hidden in the Encyclopedia due to space issues.",
+          "items": [
+            {
+              "item": {
+                "id": "aura:lexicon"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "Aura is a mystical energy that is stored inside blocks called Aura Nodes. These Nodes are given Aura by Aura Crystals. Aura is evenly distributed between nodes in line-of-sight to each other until said Nodes reach equilibrium.",
+          "items": [
+            {
+              "item": {
+                "id": "aura:auraNode"
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "aura:AuraCrystal"
+              },
+              "required": 5
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "Aura Nodes placed above one another will drop Aura from the higher one to the lower one. If the bottom Node is placed next to a power consumer, the consumer will gain the Power required for it to operate. How to get it back up to the top node? Well, for that you need a pump. There are many pumps in the mod, but the only one accessible to you now is the Burning one.",
+          "items": [
+            {
+              "item": {
+                "id": "aura:auraNodepump"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Cascading Machines",
+      "description": "Cascading Machines rely on Power, which is generated when an Aura Node receiving Aura from above is placed next to the Cascading Machine. They are also called Consumers. The Smelter will smelt your food and ores for you, and the Colorer will dye Sheep many different colors one after another. What do you need that Wool for? You\u0027ll see!",
+      "x": 64,
+      "y": 11,
+      "icon": {
+        "id": "aura:consumerBlockfurnace"
+      },
+      "prerequisites": [
+        "Getting Started"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:consumerBlockfurnace"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "aura:AuraCrystal",
+          "damage": 3,
+          "amount": 10
+        },
+        {
+          "id": "aura:AuraCrystal",
+          "damage": 6,
+          "amount": 10
+        },
+        {
+          "id": "aura:AuraCrystal",
+          "damage": 1,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Processing with Aura",
+      "description": "The Cascading processor will turn your ores into two dust, which can be smelted into two ingots. Pretty simple, a million other ways to do its job. But you know, it has another use. Throwing an Iron Ingot and a piece of Wool will color the ingot that color and infuse it with magical energy. These ingots will be required to progress through the mod.",
+      "x": 113,
+      "y": 40,
+      "icon": {
+        "id": "aura:consumerBlockore"
+      },
+      "prerequisites": [
+        "Getting Started"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:consumerBlockore"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Watching Your Machines",
+      "description": "Okay, let\u0027s face it: Consumer automation is HARD. But it becomes easier with this tool right here! The monitor will output a redstone signal when there is no work for an adjacent Consumer to do. For example, your Cascading Smelter will output a redstone signal through the Monitor when there is nothing to smelt.",
+      "x": 19,
+      "y": 18,
+      "icon": {
+        "id": "aura:monitor"
+      },
+      "prerequisites": [
+        "Getting Started"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:monitor"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Vanishing Act",
+      "description": "Yellow aura takes half the energy to pump upwards, conserving your fuel. But it decays in the Aura Node, which is far from a good thing.",
+      "x": 45,
+      "y": 85,
+      "icon": {
+        "id": "aura:AuraCrystal",
+        "damage": 5
+      },
+      "prerequisites": [
+        "Getting Started"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:AuraCrystal",
+                "damage": 5
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:ingotYellow"
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Follow My Lead",
+      "description": "While Orange Aura cannot produce power, it has a certain... talent about it. Orange Aura has the ability to make any other types of Aura go in the same direction it is going, which is extremely useful for complex contraptions.",
+      "x": 33,
+      "y": 104,
+      "icon": {
+        "id": "aura:AuraCrystal",
+        "damage": 4
+      },
+      "prerequisites": [
+        "Getting Started"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:AuraCrystal",
+                "damage": 4
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:ingotOrange"
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Like It\u0027s Dynamite",
+      "description": "Red aura is so cool, it doesn\u0027t need a pump to operate! All it needs is a piece opf TNT to explode in its face! But thankfully, any blasts next to a Node with Red Aura will not blow up.",
+      "x": 21,
+      "y": 123,
+      "icon": {
+        "id": "aura:AuraCrystal",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Getting Started"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:AuraCrystal",
+                "damage": 3
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:ingotRed"
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Rising When the Sun Sets",
+      "description": "Green aura will produce twice the power when falling during the day, and use half the power rising at night. However, the other part of it is true as well. Green aura will produce half the power at night, and use twice the power during the day.",
+      "x": 81,
+      "y": 85,
+      "icon": {
+        "id": "aura:AuraCrystal",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Getting Started"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:AuraCrystal",
+                "damage": 1
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:ingotGreen"
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Save for a Rainy Day",
+      "description": "Blue Aura is an extremely powerful aura, only taking a quarter of the energy to pump up... when it\u0027s raining. When it\u0027s not, it takes twice as much.",
+      "x": 93,
+      "y": 105,
+      "icon": {
+        "id": "aura:AuraCrystal",
+        "damage": 6
+      },
+      "prerequisites": [
+        "Getting Started"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:AuraCrystal",
+                "damage": 6
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:ingotBlue"
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Growing in Power",
+      "x": 104,
+      "y": 123,
+      "icon": {
+        "id": "aura:AuraCrystal",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Getting Started"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:AuraCrystal",
+                "damage": 7
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:ingotViolet"
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "The Boring Option",
+      "description": "White Aura has no upsides or downsides of using. It\u0027s used by most people, but if you can think of a more interesting strategy, by all means, use it!",
+      "x": 31,
+      "y": 142,
+      "icon": {
+        "id": "aura:AuraCrystal"
+      },
+      "prerequisites": [
+        "Getting Started"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:AuraCrystal"
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:ingotWhite"
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Completely Useless?",
+      "description": "While black aura cannot power anything and cannot move any way other than down, it has interesting properties that allow it to be synthesized from nothing. This will be further discussed in other quests.",
+      "x": 93,
+      "y": 142,
+      "icon": {
+        "id": "aura:AuraCrystal",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Getting Started"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:AuraCrystal",
+                "damage": 2
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:ingotBlack"
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Aura Manipulation",
+      "description": "Black and Orange Aura types do not produce power, so what\u0027s the point in making all those crystals? Well, as it turns out, there is another option. Aura Manipulators are devices that output massive amounts of Black or Orange Aura with a redstone signal. Otherwise, they destroy any of that type of Aura coming their way.",
+      "x": 61,
+      "y": 119,
+      "icon": {
+        "id": "aura:auraNodeorange"
+      },
+      "prerequisites": [
+        "Follow My Lead",
+        "Completely Useless?"
+      ],
+      "parentrequirement": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:auraNodeblack"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Arcane Ingots",
+      "description": "As mentioned earlier, Arcane Ingots are bars of iron infused with a block of colored wool and mystical power. There are eight types total, which is half of the available wool colors. Each type is used for different recipes, and each has at least one use.",
+      "x": 142,
+      "y": 11,
+      "icon": {
+        "id": "aura:ingotViolet"
+      },
+      "prerequisites": [
+        "Processing with Aura"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:ingotWhite"
+              },
+              "required": 5,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "aura:AuraCrystal",
+          "damage": 5,
+          "amount": 15
+        },
+        {
+          "id": "aura:AuraCrystal",
+          "damage": 7,
+          "amount": 15
+        },
+        {
+          "id": "aura:AuraCrystal",
+          "damage": 4,
+          "amount": 15
+        }
+      ]
+    },
+    {
+      "name": "Vortex Infusion",
+      "description": "Vortex Infusion is an advanced crafting mechanic used to make more advanced consumers as well as Arcane Gems. The core block, the Vortex Controller must be powered on all four sides with Vortex Pedestals instead of Nodes. The Pedestals can hold items, which are your components for the recipe.",
+      "x": 170,
+      "y": 36,
+      "icon": {
+        "id": "aura:auraNodecraftingCenter"
+      },
+      "prerequisites": [
+        "Arcane Ingots"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:auraNodecraftingCenter"
+              }
+            },
+            {
+              "item": {
+                "id": "aura:auraNodecraftingPedestal"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Advanced Pumps",
+      "description": "While burning fuel is easy, perhaps you want a pump with a bit more power. You can get ones powered by Redstone, light sources, fired projectiles, or mobs falling to their doom.",
+      "x": 200,
+      "y": 13,
+      "icon": {
+        "id": "aura:auraNodepumpFall"
+      },
+      "prerequisites": [
+        "Arcane Ingots"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:auraNodepumpRedstone"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Fairy Ring",
+      "description": "The Ring of Binding, infused with four mineral blocks and four aura types, is equipped as a ring in your Baubles inventory. It does not do anything on its own, but it can hold up to fifteen fairy charms, which are equipped by using them. These fairies will do different things, depending on what you want them to do.",
+      "x": 172,
+      "y": 116,
+      "icon": {
+        "id": "aura:fairyRing"
+      },
+      "prerequisites": [
+        "Vortex Infusion"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:fairyRing"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        },
+        {
+          "id": "aura:fairyCharm",
+          "amount": 5
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "aura:fairyCharm",
+          "damage": 3,
+          "amount": 2
+        },
+        {
+          "id": "aura:fairyCharm",
+          "damage": 2,
+          "amount": 2
+        },
+        {
+          "id": "aura:fairyCharm",
+          "damage": 15,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Arcane Gems",
+      "description": "Arcane gems are powerful crystals that are made with a Diamond, three Arcane Ingots of the color you want to have, and Aura of any color. These Gems are the basis of most Consumers, as well as the elusive Arcane Prism.",
+      "x": 225,
+      "y": 59,
+      "icon": {
+        "id": "aura:gemOrange"
+      },
+      "prerequisites": [
+        "Vortex Infusion"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:gemWhite"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "An Alternate Way",
+      "description": "By combining any Pump with four pieces of Redstone, you can make a pump that can be way more powerful at times, but also way weaker at times. There is one for every pump in the game.",
+      "x": 240,
+      "y": 13,
+      "icon": {
+        "id": "aura:auraNodepumpLightAlt"
+      },
+      "prerequisites": [
+        "Advanced Pumps"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:auraNodepumpRedstoneAlt"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Taste the Rainbow",
+      "description": "Throwing down all eight Arcane Gems in front of a Cascading Processor will make an Arcane Prism. This Prism is a very advanced material used in a lot of endgame recipes.",
+      "x": 225,
+      "y": 102,
+      "icon": {
+        "id": "aura:prismWhite"
+      },
+      "prerequisites": [
+        "Arcane Gems"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:prismWhite"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "aura:AuraCrystal",
+          "amount": 20
+        },
+        {
+          "id": "aura:AuraCrystal",
+          "damage": 2,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Advanced Consumers",
+      "description": "Right now, there\u0027s not much you can do with Aura. Your discovery of the Arcane Gems has changed that. Using four gems and a specific color of Aura, you can infuse powerful contraptions that can grow crops, create dungeon loot, maybe even turn the biome into the Nether!",
+      "x": 193,
+      "y": 82,
+      "icon": {
+        "id": "aura:consumerBlockloot"
+      },
+      "prerequisites": [
+        "Arcane Gems"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:consumerBlockpotion"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Amulets of Protection",
+      "description": "Protection Amulets will heal you when you would normally be damaged, but it only works with one damage source. The source of damage depends on the gem used in the creation of the bauble.",
+      "x": 247,
+      "y": 82,
+      "icon": {
+        "id": "aura:redAmulet"
+      },
+      "prerequisites": [
+        "Arcane Gems"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:purpleAmulet"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Enchanting with Aura",
+      "description": "By throwing a tool down with an Aura Crystal in front of the Kaleidoscopic Enchanter, you can enchant said tool with a special enchantment. These enchantments barely do anything on their own, but they interact, creating effects both positive and negative. Each effect is described in the Encyclopedia Aura.",
+      "x": 252,
+      "y": 36,
+      "icon": {
+        "id": "aura:consumerBlockenchant"
+      },
+      "prerequisites": [
+        "Arcane Gems"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:consumerBlockenchant"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Prismatic Consumers",
+      "description": "Many new machines can be made with your Arcane Prism, including a mining reactor, a better Processor that triples your ore output, and a machine to transform the biome into the End.",
+      "x": 188,
+      "y": 192,
+      "icon": {
+        "id": "aura:consumerBlockoreAdv"
+      },
+      "prerequisites": [
+        "Taste the Rainbow"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:consumerBlockoreAdv"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Cascading Synthesizer",
+      "description": "This is it. The pinnacle of aura technology. The Cascading Synthesizer forms Angel\u0027s Steel out of raw Power, which can make extremely powerful tools and swords. There are eleven different degrees. The Synthesizer creates first-degree ingots, and each further degree is made by throwing three of the previous degree on the ground.",
+      "x": 251,
+      "y": 193,
+      "icon": {
+        "id": "aura:consumerBlockangel"
+      },
+      "prerequisites": [
+        "Taste the Rainbow"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:consumerBlockangel"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Prismatic Baublery",
+      "description": "Many accessories can be made with Acrane Prisms, each of which can be very useful.",
+      "x": 175,
+      "y": 157,
+      "icon": {
+        "id": "aura:angelStepBelt"
+      },
+      "prerequisites": [
+        "Taste the Rainbow"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:angelJumpAmulet"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Degree Eleven",
+      "description": "59049 first-degree ingots. I\u0027m surprised you\u0027re still here.",
+      "x": 279,
+      "y": 13,
+      "icon": {
+        "id": "aura:ingotAngelSteel",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Degree Ten"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:ingotAngelSteel",
+                "damage": 10
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4
+        }
+      ]
+    },
+    {
+      "name": "Degree Nine",
+      "description": "6561 first-degree ingots.",
+      "x": 277,
+      "y": 48,
+      "icon": {
+        "id": "aura:ingotAngelSteel",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Degree Eight"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:ingotAngelSteel",
+                "damage": 8
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4
+        }
+      ]
+    },
+    {
+      "name": "Degree Six",
+      "description": "243 first-degree ingots.",
+      "x": 286,
+      "y": 103,
+      "icon": {
+        "id": "aura:ingotAngelSteel",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Degree Five"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:ingotAngelSteel",
+                "damage": 5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Degree Eight",
+      "description": "2187 first-degree ingots.",
+      "x": 287,
+      "y": 67,
+      "icon": {
+        "id": "aura:ingotAngelSteel",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Degree Seven"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:ingotAngelSteel",
+                "damage": 7
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4
+        }
+      ]
+    },
+    {
+      "name": "Degree Three",
+      "description": "9 first-degree ingots.",
+      "x": 274,
+      "y": 157,
+      "icon": {
+        "id": "aura:ingotAngelSteel",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Degree Two"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:ingotAngelSteel",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Degree Five",
+      "description": "81 first-degree ingots.",
+      "x": 274,
+      "y": 121,
+      "icon": {
+        "id": "aura:ingotAngelSteel",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Degree Four"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:ingotAngelSteel",
+                "damage": 4
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Degree Four",
+      "description": "27 first-degree ingots.",
+      "x": 286,
+      "y": 139,
+      "icon": {
+        "id": "aura:ingotAngelSteel",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Degree Three"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:ingotAngelSteel",
+                "damage": 3
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Degree Ten",
+      "description": "19683 first-degree ingots.",
+      "x": 290,
+      "y": 31,
+      "icon": {
+        "id": "aura:ingotAngelSteel",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Degree Nine"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:ingotAngelSteel",
+                "damage": 9
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Degree Seven",
+      "description": "729 first-degree ingots.",
+      "x": 275,
+      "y": 86,
+      "icon": {
+        "id": "aura:ingotAngelSteel",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Degree Six"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:ingotAngelSteel",
+                "damage": 6
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Degree One",
+      "description": "Simplistic, fresh-out-of-the-oven Angel\u0027s Steel. The most basic you can get.",
+      "x": 273,
+      "y": 193,
+      "icon": {
+        "id": "aura:ingotAngelSteel",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Cascading Synthesizer"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:ingotAngelSteel"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Degree Two",
+      "description": "3 first-degree ingots.",
+      "x": 285,
+      "y": 175,
+      "icon": {
+        "id": "aura:ingotAngelSteel",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Degree One"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:ingotAngelSteel",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Book Storage",
+      "description": "If you\u0027re playing this pack, you\u0027re likely trying to learn magic mods. So you probably already know tech mods. So this is pretty much an ME System powered by Aura. Different Storage Books are placed in Bookshelves, and items can be put into or extracted from these books using the Bookshelf Coordinator.",
+      "x": 221,
+      "y": 188,
+      "icon": {
+        "id": "aura:basicBook"
+      },
+      "prerequisites": [
+        "Taste the Rainbow"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:storageBookshelfCoordinator"
+              }
+            },
+            {
+              "item": {
+                "id": "aura:storageBookshelf"
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "aura:basicBook"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}
