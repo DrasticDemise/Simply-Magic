@@ -84,7 +84,7 @@
       "tasks": [
         {
           "type": "CONSUME",
-          "longDescription": "Thanks for your input, Zieg777!",
+          "longDescription": "Thanks for your input, Zieg777! Thanks for your Aura Cascade line, Fortanono!",
           "items": [
             {
               "item": {
@@ -466,6 +466,149 @@
       "reward": [
         {
           "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Mana Infused Cakes",
+      "description": "High on mana. Suggested by Zieg777",
+      "x": 242,
+      "y": 155,
+      "icon": {
+        "id": "arsmagica2:manaCake"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:manaCake"
+              },
+              "required": 1500
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4
+        }
+      ]
+    },
+    {
+      "name": "Calefactorization",
+      "description": "Got Etherium? Suggested by Zieg777",
+      "x": 256,
+      "y": 77,
+      "icon": {
+        "id": "arsmagica2:itemOre"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:itemOre"
+              },
+              "required": 10000
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4
+        }
+      ]
+    },
+    {
+      "name": "Many Potions",
+      "description": "Many crafting tables. Suggested by Zieg777",
+      "x": 263,
+      "y": 155,
+      "icon": {
+        "id": "arsmagica2:manaPotionBundle",
+        "damage": 1027
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:legendaryManaPotion"
+              },
+              "required": 1000
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Which Wood?",
+      "description": "Good luck! Suggested by Zieg777",
+      "x": 188,
+      "y": 62,
+      "icon": {
+        "id": "arsmagica2:WitchwoodLog"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:WitchwoodLog"
+              },
+              "required": 5000
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4
+        }
+      ]
+    },
+    {
+      "name": "Bright Gems",
+      "description": "Arcane and all!",
+      "x": 252,
+      "y": 175,
+      "icon": {
+        "id": "aura:gemGreen"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "aura:gemGreen"
+              },
+              "required": 500,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4
         }
       ]
     }

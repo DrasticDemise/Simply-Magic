@@ -710,16 +710,29 @@
         {
           "type": "DETECT",
           "description": "Torn Pages",
-          "longDescription": "The Observations of the Immortal may be crafted or found in villages. In order to complete this task, you must have the completed version of the book by crafting the original book with a torn page. Torn pages may also be found in villages in which the book is located.",
+          "longDescription": "The Observations of the Immortal may be crafted or found in villages. In order to complete this task, you must have the completed version of the book by crafting the original book with the torn pages. Torn pages may also be found in villages in which the book is located.",
           "items": [
             {
               "item": {
                 "id": "witchery:vampirebook",
-                "damage": 9,
-                "nbt": "{pageStack:[0:\"ritual1\",1:\"ritual2\",2:\"ritual3\",3:\"ritual4\",4:\"ritual5\",5:\"transfix\",6:\"knockback\",7:\"speed\",8:\"resistsun\",9:\"smashstone\",10:\"bats\"]}"
-              }
+                "damage": 9
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 160
+              },
+              "required": 9
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
         }
       ]
     },
