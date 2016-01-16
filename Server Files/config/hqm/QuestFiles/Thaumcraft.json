@@ -1487,6 +1487,70 @@
           "damage": 1
         }
       ]
+    },
+    {
+      "name": "Ethereal Familiar",
+      "description": "Knowledge of runic shielding and artificial light has given you an idea. Wild wisps are far too hostile to be tamed, however you have discovered a way to create your own version of the wisp that is...rather protective of you.",
+      "x": 176,
+      "y": 185,
+      "icon": {
+        "id": "gadomancy:ItemFamiliar",
+        "nbt": "{aspect:\"praecantatio\"}"
+      },
+      "prerequisites": [
+        "Runic Shielding"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Any type of familiar will work.",
+          "items": [
+            {
+              "item": {
+                "id": "gadomancy:ItemFamiliar",
+                "nbt": "{aspect:\"praecantatio\"}"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Mirrored Jars",
+      "description": "Essentia Mirrors can server a unique purpose for complex base setups, however there is an alternative. By combining a mirror and a jar, it is possible to create jars that can be linked across great distances. Contents added to the jar are split amongst the amount of jars in that designated network. Neat!",
+      "x": 89,
+      "y": 137,
+      "prerequisites": [
+        "Infusion Magic"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "gadomancy:BlockRemoteJar"
+              },
+              "required": 2,
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1,
+          "amount": 2
+        }
+      ]
     }
   ],
   "reputationBar": []

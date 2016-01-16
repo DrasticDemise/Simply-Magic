@@ -154,7 +154,7 @@
     },
     {
       "name": "Magical Worldgen",
-      "description": "Ars Magica adds many flora and ores to the world. Many of these will be required in certain spells and related blocks.",
+      "description": "Ars Magica adds many flora and ores to the world. Many of these will be required in certain spells and related blocks. Thanks to Am2 Plant Fix, you can now obtain plants through bonemeal. You may use bonemeal on the following areas: brightly lit grass, water source blocks when dark and open to the sky, well lit sand, in the dark beneath ground on stone, grass under witchwood leaves. ",
       "x": 24,
       "y": 57,
       "icon": {
@@ -235,7 +235,7 @@
       "prerequisites": [
         "Crafting Altar"
       ],
-      "trigger": "QUEST_TRIGGER",
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
@@ -695,6 +695,7 @@
       "prerequisites": [
         "Etherium"
       ],
+      "trigger": "ANTI_TRIGGER",
       "tasks": [
         {
           "type": "DETECT",
