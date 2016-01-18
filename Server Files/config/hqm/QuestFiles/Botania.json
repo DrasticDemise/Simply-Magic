@@ -17,7 +17,8 @@
             {
               "item": {
                 "id": "Botania:lexicon"
-              }
+              },
+              "precision": "FUZZY"
             }
           ]
         },

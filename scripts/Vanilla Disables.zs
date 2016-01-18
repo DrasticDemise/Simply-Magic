@@ -14,9 +14,9 @@
 <minecraft:iron_chestplate>.maxDamage = 1;
 <minecraft:iron_leggings>.maxDamage = 1;
 <minecraft:iron_boots>.maxDamage = 1;
-<minecraft:iron_pickaxe>.maxDamage = 50;
-<minecraft:iron_axe>.maxDamage = 1;
-<minecraft:iron_shovel>.maxDamage = 1;
+<minecraft:iron_pickaxe>.maxDamage = 175;
+<minecraft:iron_axe>.maxDamage = 150;
+<minecraft:iron_shovel>.maxDamage = 200;
 <minecraft:iron_hoe>.maxDamage = 1;
 
 <minecraft:golden_pickaxe>.maxDamage = 1;
@@ -40,14 +40,14 @@
 <minecraft:diamond_shovel>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
 <minecraft:diamond_hoe>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
 
-<minecraft:iron_axe>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
+<minecraft:iron_axe>.addTooltip(format.green("Seems to have less durability than usual.."));
 <minecraft:iron_sword>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
 <minecraft:iron_helmet>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
 <minecraft:iron_chestplate>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
 <minecraft:iron_leggings>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
 <minecraft:iron_boots>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
 <minecraft:iron_pickaxe>.addTooltip(format.green("Seems to have less durability than usual.."));
-<minecraft:iron_shovel>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
+<minecraft:iron_shovel>.addTooltip(format.green("Seems to have less durability than usual.."));
 <minecraft:iron_hoe>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
 
 <minecraft:golden_sword>.addTooltip(format.green("THIS IS FOR CRAFTING ONLY"));
