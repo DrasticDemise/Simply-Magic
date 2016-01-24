@@ -611,6 +611,28 @@
           "damage": 4
         }
       ]
+    },
+    {
+      "name": "Obtaining Obsidian",
+      "description": "Since diamond tools only have a durability of one, you may be wondering how you are going to obtain obsidian. It just so happens that Thaumium and Manasteel pickaxes can harvest obsidian at a relatively normal rate. ",
+      "x": 56,
+      "y": 24,
+      "icon": {
+        "id": "minecraft:obsidian"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:planks"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
     }
   ],
   "reputationBar": []
