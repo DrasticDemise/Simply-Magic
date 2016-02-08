@@ -4,6 +4,7 @@ These need to be removed from the server files:
 Launch GUI
 I'm Looking At Blood
 Thaumcraft NEI Plugin
+Mouse Tweaks
 
 Make sure you accepted the EULA.
 
