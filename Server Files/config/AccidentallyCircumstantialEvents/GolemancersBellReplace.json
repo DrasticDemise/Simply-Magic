@@ -15,7 +15,7 @@
 						},
 						{
 							"task_type": "COMMAND",
-							"command": "/give @p 4228",
+							"command": "/give @p Thaumcraft:GolemBell",
 							"ignorePrivilages": "true"
 						}
 						
